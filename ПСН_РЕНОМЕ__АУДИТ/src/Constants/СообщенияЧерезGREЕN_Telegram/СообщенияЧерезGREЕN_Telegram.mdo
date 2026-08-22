@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef3faf36-b4c2-4e4b-8610-cf8cb8624a35">
+  <producedTypes>
+    <managerType typeId="9988c35d-41b7-4b5c-a501-f17d128dd1ac" valueTypeId="fe0375af-a929-42cd-b48a-ece24fd786bb"/>
+    <valueManagerType typeId="908144f2-ddd6-4706-904a-e1d77cefe91f" valueTypeId="021d6bdc-1dbf-4bcc-a545-3f7895b12d51"/>
+    <valueKeyType typeId="e46775d3-9fc5-4f99-99d2-e9b38a5f424f" valueTypeId="7fbf513b-5dc0-45c9-bb0b-31a53955aace"/>
+  </producedTypes>
+  <name>СообщенияЧерезGREЕN_Telegram</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения через GREЕN telegram</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

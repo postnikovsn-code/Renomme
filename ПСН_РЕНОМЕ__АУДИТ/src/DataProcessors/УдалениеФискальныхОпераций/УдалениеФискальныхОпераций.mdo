@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76bdfc9d-5dee-4f66-affb-578a82e59e6e">
+  <producedTypes>
+    <objectType typeId="ed0f8467-0d5e-420e-b950-62ea937bd902" valueTypeId="9a56dadc-d6e4-4749-bd31-27805c8226a1"/>
+    <managerType typeId="6177f2e6-801f-4014-b16b-cd5f82dc0277" valueTypeId="db427a2e-4949-41fc-949a-6318e1f9539b"/>
+  </producedTypes>
+  <name>УдалениеФискальныхОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление фискальных операций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалениеФискальныхОпераций.Form.Форма</defaultForm>
+  <forms uuid="c36e7c9c-f708-4871-bcc2-673c69656841">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e1653c3-3fdf-4b2c-ab46-24f4c2705a8b">
+  <producedTypes>
+    <selectionType typeId="905d24ce-67f9-43a1-a49b-dc9c0fc93d75" valueTypeId="1701e3fc-a922-485c-ab4b-4c5297e2253c"/>
+    <listType typeId="617c7421-7bd4-4039-976b-b5e709772110" valueTypeId="6ceaa8db-7f60-40c4-b8da-d55851216d49"/>
+    <managerType typeId="e50fe443-aca6-4322-95dd-91ac01d945c8" valueTypeId="aa4aa931-d07d-466f-bbf9-9e311aba51fa"/>
+    <recordSetType typeId="b8739c2b-ee23-47b7-a0d8-dfc2b363e53f" valueTypeId="0c0a5b8f-d5c0-4be3-945c-fd14b265b0ab"/>
+    <recordKeyType typeId="0ad1f5b2-adbf-43a4-a911-84c91d5e6fa1" valueTypeId="4836c263-3d7e-47dd-aab4-f1a6a5b04af8"/>
+    <recordType typeId="e66f9739-b2a3-4e60-9b50-3f0e47aac423" valueTypeId="57f20d40-eb51-4844-ae39-c98dcfc66578"/>
+    <recordManagerType typeId="a6b685d3-d1cf-4aa9-ad55-08459f6756d5" valueTypeId="462b8783-2b89-4fd6-b4bd-bbc258dd1dcd"/>
+  </producedTypes>
+  <name>КалендарьЦенБазовыйИстория</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь цен базовый история</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="1ebc1772-f3af-4a3a-ad6f-d4df92335465">
+    <name>ЦенаДоплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена доплата</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="5659bef4-89d1-43b3-b992-eb17cbcf5064">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="fae10321-cd79-4cd3-a1aa-b5d0c5e55420">
+    <name>ДатаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата цены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f1b08334-bb12-41ba-bde6-621223011de2">
+    <name>ТипЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цены</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КалендарьЦенТипЦены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="23f86a53-a3c0-4cc0-b9e5-474539b3e8a1">
+    <name>ВидЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КалендарьЦенВидЦены</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c519f892-c27a-4fc9-8101-129e61e22c57">
+    <name>ДатаВремяИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата время изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

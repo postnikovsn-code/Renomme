@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0293cd7-9978-4cff-b7a5-419f9802eedf">
+  <producedTypes>
+    <objectType typeId="8316634b-0fa5-4392-8459-c8197542aa2c" valueTypeId="6f4447d2-ccb2-472c-983e-c8db58630ee9"/>
+    <managerType typeId="a7e71733-4b9c-4eb4-a23f-af195079b2c2" valueTypeId="951075cc-4efb-4420-a842-f5987872a108"/>
+  </producedTypes>
+  <name>РаспространенныеЗамечания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распространенные замечания</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.РаспространенныеЗамечания.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c7379feb-8fdd-45a3-9f21-a54701e00188">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

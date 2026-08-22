@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2213ddfb-fb11-479e-aee6-af98aded708e">
+  <producedTypes>
+    <managerType typeId="a805c6a1-e1ff-4e6b-abad-c82b0d7c7321" valueTypeId="36cd3b35-97b9-4834-acee-35de4e4b567c"/>
+    <valueManagerType typeId="03bd7dd6-4e7f-4b48-a4c0-46a82a194d12" valueTypeId="93bec4c2-a82c-4c75-95b3-00c0e873eb50"/>
+    <valueKeyType typeId="2a756f5c-22e1-434e-b03a-c493264424b4" valueTypeId="3b1263b3-72f4-46a6-b664-c2b107e30c0d"/>
+  </producedTypes>
+  <name>БонШансЦена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бон шанс цена</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

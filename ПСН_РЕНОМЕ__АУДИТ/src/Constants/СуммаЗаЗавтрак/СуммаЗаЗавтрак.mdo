@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="693aa1f0-9ea2-4da0-87d8-7ec8617d8c00">
+  <producedTypes>
+    <managerType typeId="d180e948-6ce3-441c-9121-ab9d8b11dd01" valueTypeId="e82120db-d367-4ea1-93a9-7bbf278954ca"/>
+    <valueManagerType typeId="60f80aca-2217-49d3-93d8-f10b634439b8" valueTypeId="3395d17c-58bb-49c6-b74a-bd5fe6c93c93"/>
+    <valueKeyType typeId="cc376de8-1637-4f89-be71-10a92e0c5e23" valueTypeId="8b53c62e-3384-42c2-92b8-9a87ff505319"/>
+  </producedTypes>
+  <name>СуммаЗаЗавтрак</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сумма за завтрак</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

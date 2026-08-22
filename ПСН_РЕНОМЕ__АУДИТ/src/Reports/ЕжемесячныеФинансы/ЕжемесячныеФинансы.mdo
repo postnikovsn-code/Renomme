@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c992371-80b2-44e5-aae4-873bd4e1f520">
+  <producedTypes>
+    <objectType typeId="bb91aecb-95f2-4d2e-801d-9721ae01180f" valueTypeId="1df3a6a6-1492-46e2-885c-4671d1e0c9b9"/>
+    <managerType typeId="cab2e943-1898-4a1b-8220-f1d26c483b7c" valueTypeId="a594ea29-df87-470d-b05a-d9a7d9f280bd"/>
+  </producedTypes>
+  <name>ЕжемесячныеФинансы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ежемесячные финансы</value>
+  </synonym>
+  <defaultForm>Report.ЕжемесячныеФинансы.Form.ФормаОтчета</defaultForm>
+  <forms uuid="2395732b-6873-4f8c-b7f2-ef662e317084">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9836eb36-52dd-4a0a-be11-7b98a5e3d9a2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fba409ac-f0b3-4a71-8e27-dd889068f6cd">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="73ab6088-d180-4c62-bd85-753f94ed6c14">
+    <name>Макет1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет1</value>
+    </synonym>
+  </templates>
+  <templates uuid="73bf97a0-6f1b-4418-9529-73f1c6adc381">
+    <name>МакетАудит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет аудит</value>
+    </synonym>
+  </templates>
+  <templates uuid="ba00876e-caa5-4fb7-9dc8-30efdf31c8b0">
+    <name>МакетНезаезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет незаезд</value>
+    </synonym>
+  </templates>
+  <templates uuid="64cefa2c-8d56-48d8-9687-a2b7b77c8c1e">
+    <name>МакетАннуляции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет аннуляции</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

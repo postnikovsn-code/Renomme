@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: ОТЕЛЬ — HTTP-сервисы, ЭКСПОНИРУЕМЫЕ системой
+  version: "1.0.0-reconstructed"
+  description: |
+    Сводка входящих (экспонируемых) HTTP-сервисов конфигурации «ОТЕЛЬ».
+
+    РЕЗУЛЬТАТ АНАЛИЗА (🟢): на уровне метаданных система НЕ экспонирует ни одного
+    HTTP/Web-сервиса. В `ПСН_РЕНОМЕ__АУДИТ/src/` отсутствуют папки `HTTPServices/` и `WebServices/`,
+    а в `Configuration.mdo` нет элементов `<httpServices>`/`<webServices>`.
+    Все HTTP-вызовы в коде — исходящие (система — КОНСЮМЕР). Подробности и список
+    потребляемых API — `_reversa_sdd/openapi/README.md` и `*/contracts.md` модулей.
+
+    Единственный «экспонируемый» контракт семейства «ОТЕЛЬ» — межбазовый HTTP-сервис
+    заселений/ежедневного отчёта, который наша база ВЫЗЫВАЕТ у соседних инсталляций,
+    и который та же конфигурация может ОТДАВАТЬ при peer-развёртывании. Он вынесен
+    в отдельный файл `peer-installations-http.yaml`.
+
+    Этот файл оставлен как агрегатор-указатель: в нём нет собственных путей (paths: {}),
+    потому что собственных входящих сервисов у системы нет.
+
+paths: {}
+
+components:
+  schemas:
+    ЭкспонируемыеСервисы:
+      type: object
+      description: |
+        Псевдо-схема для документации: перечень того, что система отдаёт наружу.
+        - Метаданные HTTPСервис/WebСервис: отсутствуют. 🟢
+        - Межбазовый контракт заселений: см. peer-installations-http.yaml. 🟡
+        - Прочие интеграции (исходящие): см. openapi/README.md раздел A. 🟢
+      properties:
+        httpServices:
+          type: array
+          items:
+            type: string
+          example: []
+          description: Пусто — зарегистрированных HTTPСервисов нет. 🟢
+        webServices:
+          type: array
+          items:
+            type: string
+          example: []
+          description: Пусто — зарегистрированных WebСервисов нет. 🟢
+        peerInstallationContract:
+          type: string
+          example: "openapi/peer-installations-http.yaml"
+          description: Межбазовый контракт заселений семейства «ОТЕЛЬ». 🟡

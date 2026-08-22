@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ac1f5ab-4a19-4bc7-afb0-207f2dd952cd">
+  <producedTypes>
+    <managerType typeId="02ce5c31-5fb3-45ca-a213-1aa9f4d759d4" valueTypeId="5c656f3c-8575-43f4-8b39-83ed12e72357"/>
+    <valueManagerType typeId="59d95e6a-61c5-42e8-9f6d-c722981b671c" valueTypeId="74047d8e-55a3-44e7-bc51-df5cd5994f37"/>
+    <valueKeyType typeId="9a64dfc3-6669-4c29-9196-1edb22d32654" valueTypeId="d423d1ea-c0d1-4a51-a1dc-065c264e622e"/>
+  </producedTypes>
+  <name>PassportBoxIP</name>
+  <synonym>
+    <key>ru</key>
+    <value>PassportBox: IP-адрес сканера</value>
+  </synonym>
+  <comment>IP-адрес или DNS-имя сканера паспортов PassportBox в локальной сети отеля.</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

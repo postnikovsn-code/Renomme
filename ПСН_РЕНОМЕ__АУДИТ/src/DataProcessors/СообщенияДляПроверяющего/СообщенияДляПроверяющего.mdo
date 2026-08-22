@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8e264c2-0b2b-40de-8194-0e76ac916e08">
+  <producedTypes>
+    <objectType typeId="14d3da3c-9811-47b4-b412-831bbcad61cc" valueTypeId="8469d75f-58c3-46a3-a663-681b74dde784"/>
+    <managerType typeId="57f76081-e64f-4f80-bdc8-ba01ec466eb3" valueTypeId="6cd38d28-a937-40a8-8709-4581838aef30"/>
+  </producedTypes>
+  <name>СообщенияДляПроверяющего</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения для проверяющего</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СообщенияДляПроверяющего.Form.Форма</defaultForm>
+  <forms uuid="08c08d4e-319d-46c4-9193-c7777a8a911e">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="851184cb-4bcb-45a5-a891-b71f1d437c7f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

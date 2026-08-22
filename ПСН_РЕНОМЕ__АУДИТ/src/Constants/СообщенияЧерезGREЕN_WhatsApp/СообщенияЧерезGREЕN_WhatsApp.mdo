@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdd17b2f-cfb1-402c-b640-d06a72fdc0a7">
+  <producedTypes>
+    <managerType typeId="14bc7b92-5871-4ade-a640-782572817682" valueTypeId="0a2f185e-38be-4387-bcf2-4cd6e77014a1"/>
+    <valueManagerType typeId="97ddb46e-abe2-46de-9bd8-2eb22769ca49" valueTypeId="ad5b6d14-0cfe-46e5-997c-5bb40ac425e4"/>
+    <valueKeyType typeId="31e61461-c1e5-471d-8154-e7fc89f8bf44" valueTypeId="f388e8b5-e967-4b8b-8abf-c67ef3eb0f90"/>
+  </producedTypes>
+  <name>СообщенияЧерезGREЕN_WhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения через GREЕN whats app</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

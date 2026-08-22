@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46077fa8-454d-44e6-83f1-773f6bb8a1e7">
+  <name>ЧекАвансПараметры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чек аванс параметры</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

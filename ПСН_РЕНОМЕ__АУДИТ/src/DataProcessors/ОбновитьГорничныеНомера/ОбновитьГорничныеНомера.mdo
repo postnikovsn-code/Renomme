@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06e3eebd-199d-406b-9f66-1eb22e6c250b">
+  <producedTypes>
+    <objectType typeId="9873510c-2642-407d-a570-7b8ac42cc271" valueTypeId="e3595390-6509-4465-8614-52d84eef451a"/>
+    <managerType typeId="c112f8f5-6936-4f2c-ba95-a756bf02202c" valueTypeId="8646d2d0-cb85-4bb4-b1c2-5000bf57e7e3"/>
+  </producedTypes>
+  <name>ОбновитьГорничныеНомера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить горничные номера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбновитьГорничныеНомера.Form.Форма</defaultForm>
+  <forms uuid="8f6fab21-2b13-4b4d-9ba6-90e42936e344">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

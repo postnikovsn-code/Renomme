@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="312d615f-c8ca-48f0-b3de-a824472fc85e">
+  <producedTypes>
+    <objectType typeId="1952b82e-b080-4a14-b42c-32d5eff1c3ba" valueTypeId="34249af4-5737-45b6-b025-608f4531b050"/>
+    <managerType typeId="64b31ac0-5038-431a-8de1-3bef432a43d0" valueTypeId="d58be226-dddb-47a7-9b2f-003a0e904e10"/>
+  </producedTypes>
+  <name>ОтчетПоПроверкамНомеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по проверкам номеров</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОтчетПоПроверкамНомеров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="0f51de57-d708-45a1-b0a2-04e523e786a4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

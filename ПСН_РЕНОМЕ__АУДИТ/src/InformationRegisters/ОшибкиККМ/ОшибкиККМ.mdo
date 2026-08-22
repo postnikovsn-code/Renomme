@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc7aeaac-bb58-44ea-a11a-608e55ed14eb">
+  <producedTypes>
+    <selectionType typeId="b8352879-c460-492e-9dda-23d4526e52bb" valueTypeId="e7f5302e-e435-4fa4-a78f-535998415f37"/>
+    <listType typeId="31c23024-e80b-4034-a6e2-c8ab825a1a67" valueTypeId="b1952e1f-e55f-47d9-a889-ed9b55916875"/>
+    <managerType typeId="1d4d0e5c-d210-4ac1-ae20-fe3d893bd0c0" valueTypeId="23d63012-de62-4313-b620-64106ed4122d"/>
+    <recordSetType typeId="630146a8-e7f7-417e-a919-d8c918120ae8" valueTypeId="0996281f-da7b-4fdc-b869-a502893d1dec"/>
+    <recordKeyType typeId="4b8bcc23-f115-446d-b5c4-3f4428e90af6" valueTypeId="bc21bedb-44e5-4c3a-8ae0-50141edfe25a"/>
+    <recordType typeId="c7f6eb2e-40b3-4ee2-964d-39363ea0d5b5" valueTypeId="c86df49b-3f5d-43db-8575-878ab418f45b"/>
+    <recordManagerType typeId="3eefabd3-3dba-4565-93e2-1e48a801a58a" valueTypeId="232694ed-7454-4254-8cbc-238a43b236e0"/>
+  </producedTypes>
+  <name>ОшибкиККМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибки ККМ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="a132f729-ff85-45e2-b7a7-adafe887b39e">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="d6e0a6ff-95eb-406b-aa62-6b7b744c6893">
+    <name>ДатаВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата время</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

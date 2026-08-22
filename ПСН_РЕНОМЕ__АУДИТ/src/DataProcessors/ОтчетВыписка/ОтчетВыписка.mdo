@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="117a60af-fbb5-4f70-9a7b-e03e641ac8de">
+  <producedTypes>
+    <objectType typeId="0f087414-feff-4657-b005-05f963f51f0c" valueTypeId="d2c6f54f-6d8e-4e82-8f27-81fd154fb73c"/>
+    <managerType typeId="e815455b-e072-4da2-8289-1cb0d94fd2fd" valueTypeId="f26e9faa-bd64-4dc0-bba0-4dcaac5c1203"/>
+  </producedTypes>
+  <name>ОтчетВыписка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет выписка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтчетВыписка.Form.Форма</defaultForm>
+  <forms uuid="9db6b2fe-c933-47a6-8eda-e03d4246d4a1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fa2a9196-33a8-48b8-90b6-a2864711b266">
+    <name>ОтчетВыписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет выписка</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

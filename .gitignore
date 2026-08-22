@@ -1,0 +1,30 @@
+# Сборочный вывод EDT (пересобирается из исходников)
+/bin/*
+.agents/
+.claude/
+.fff/
+.metadata/
+.reversa/
+.rtk/
+graphify-out/
+.mcp.json
+.kimi/
+# Подпроекты со своим git — только в корне (неякорный паттерн матчил бы
+# и kimi-plugin/skills/graphify/)
+/graphify/
+/graphity/
+/tree-sitter-bsl/
+/research-md/
+# Тестовые/примерные данные
+prompt-example-*.txt
+# Исходные PDF/DjVu — 192 МБ, пересобирать .md из них через pdf2md.py.
+# Исключение — результат распознавания: книга-скан собирается из .jsonl, а не из
+# PDF, и повторный прогон модели даёт другой текст. Без него .md не пересобрать
+# нигде, кроме машины, где он получен. Промежуточные .bak* остаются вне репозитория.
+/_source/*
+!/_source/ocr/
+/_source/ocr/*
+!/_source/ocr/*.jsonl
+# Отчёт о сведении свидетелей: гейт читает его и без него не проходит.
+!/_source/ocr/reconcile-blocks.json
+__pycache__/

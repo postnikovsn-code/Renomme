@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af704855-b961-4dbe-9bc4-275bed84900c">
+  <producedTypes>
+    <managerType typeId="349c8cb8-367d-4dae-95e8-d76b896c13bb" valueTypeId="ee631cca-def4-4305-9604-994ebfb9f953"/>
+    <valueManagerType typeId="07554725-d8b3-4f8d-b4d2-92175a85c4cd" valueTypeId="8d63c398-162b-47be-8f19-3fba8070cc6a"/>
+    <valueKeyType typeId="c4cf8ba6-3556-4477-ae0b-fe6ec916dafe" valueTypeId="178ed190-391c-4d44-b305-2bd0fed3393b"/>
+  </producedTypes>
+  <name>ПрефиксШтучногоТовара</name>
+  <synonym>
+    <key>ru</key>
+    <value>Префикс штучного товара</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>1</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

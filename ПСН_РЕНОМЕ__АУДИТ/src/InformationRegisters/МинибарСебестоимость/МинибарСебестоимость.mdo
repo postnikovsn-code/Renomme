@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fc26b94-d6d0-4eac-b4a2-3111809a49e0">
+  <producedTypes>
+    <selectionType typeId="36796073-0283-4b6e-9c01-eaa3454a1b64" valueTypeId="0c62c6a4-4849-49ee-a6a3-5c0c51ea73dd"/>
+    <listType typeId="a9401f67-afd8-411f-84b8-f447b3adff54" valueTypeId="3ceb8e8f-76f9-4b92-90a1-19e79a133a84"/>
+    <managerType typeId="b48b40e6-d04f-4d31-8305-2f53a5090a63" valueTypeId="66545e56-333d-42a9-8a84-c977354f5937"/>
+    <recordSetType typeId="c3efa3a2-ea18-4d48-8053-5e78cfc55ca9" valueTypeId="0415ea73-5b42-4979-8d8b-365c24ace033"/>
+    <recordKeyType typeId="a0b7d134-1e63-440a-88c3-93ef815c6f16" valueTypeId="fcc2b3b0-19c0-4d08-a3c7-286827573b52"/>
+    <recordType typeId="225c4eb6-2f4c-4bc2-8abc-e2fc9c5d344a" valueTypeId="0519ccb9-a70b-4e0c-beee-0710ca93f353"/>
+    <recordManagerType typeId="891905b7-53e0-4ff9-95f5-09e94e8215fe" valueTypeId="78570cfe-988c-401a-a268-2502704f48ac"/>
+  </producedTypes>
+  <name>МинибарСебестоимость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минибар себестоимость</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="95bb1797-bbd2-4b85-bdd1-92a528c78f09">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8a701b5f-5222-47fc-9fbc-1adfea8c915c">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fab86382-aedf-4eef-aa68-6c86f75a9573">
+    <name>НоменклатураМинибара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура минибара</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМиниБара</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

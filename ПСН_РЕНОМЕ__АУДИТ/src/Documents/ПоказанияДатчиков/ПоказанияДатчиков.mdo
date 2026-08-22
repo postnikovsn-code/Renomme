@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02516702-df69-4645-af88-026945f89167">
+  <producedTypes>
+    <objectType typeId="98b7fe25-61d0-4d5f-9926-1fe5ddc6dae9" valueTypeId="1a6e986b-2d6b-4b24-98e1-7c2893a4cf62"/>
+    <refType typeId="7db0350a-d867-4f02-9a1d-093069763e02" valueTypeId="a8c94359-3048-42b3-a143-959cce26f10c"/>
+    <selectionType typeId="05e07552-7f9e-4ae0-b1d4-eb3396433b1d" valueTypeId="73f8745d-325e-4aa4-a61a-596c623cdcb8"/>
+    <listType typeId="450755a5-f6da-46c0-9501-a7ec35f1417a" valueTypeId="ad34be90-40e1-4225-83ff-06c280d937ee"/>
+    <managerType typeId="91c77058-eabd-4027-bc2a-5fee506284ff" valueTypeId="1e60f892-deaa-4e52-b856-b22274f55b53"/>
+  </producedTypes>
+  <name>ПоказанияДатчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показания датчиков</value>
+  </synonym>
+  <inputByString>Document.ПоказанияДатчиков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>10</numberLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <registerRecords>InformationRegister.ПоказанияДатчиков</registerRecords>
+  <attributes uuid="b0aec9a4-cbf4-4e45-91da-f468e332086f">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd7dbce3-6668-444a-9cd6-a47789b31e43">
+    <name>НомерКадра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер кадра</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ae6c1492-fab6-455d-94e0-f6f33f5bf0b0">
+    <producedTypes>
+      <objectType typeId="7192faab-3931-480c-a502-10b126bc4c79" valueTypeId="7b855f85-2d70-44cd-a935-acd19609685d"/>
+      <rowType typeId="3515f304-67a7-48ec-b739-992644f190b9" valueTypeId="2c8ca02c-3980-488b-80dc-6884f27176df"/>
+    </producedTypes>
+    <name>Датчики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Датчики</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="af25b4bd-2d92-4c4c-8546-d26eefb32e04">
+      <name>Датчик</name>
+      <synonym>
+        <key>ru</key>
+        <value>Датчик</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Датчики</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f49679ab-13fd-43eb-9c32-f906ef5d1560">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

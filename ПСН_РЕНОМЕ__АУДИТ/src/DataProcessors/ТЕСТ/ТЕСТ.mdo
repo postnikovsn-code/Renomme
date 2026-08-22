@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2fc4330-bd94-491a-8551-55b27547aeb5">
+  <producedTypes>
+    <objectType typeId="dfd9d4bf-bead-4b43-8848-ab96a3212c25" valueTypeId="712af7da-0261-463f-a5d7-0f918cec2cc0"/>
+    <managerType typeId="fc3bf6a0-4d43-4258-a797-082cec61100e" valueTypeId="2cf3b23f-eb94-446f-86d7-0eef32a1c36a"/>
+  </producedTypes>
+  <name>ТЕСТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЕСТ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЕСТ.Form.Форма3</defaultForm>
+  <forms uuid="f7d7e5af-7c60-4c92-b910-12e5cedb6c8a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2605f0f6-2b5e-4ad4-b0a1-89810f8465aa">
+    <name>Форма2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма2</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="da638b58-1097-4a46-a5ef-1d3307fa52ed">
+    <name>Форма1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5ab9925e-dedc-4379-91ad-62c875f939f3">
+    <name>Форма3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма3</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c533396b-c657-4523-9961-93ca5b99ab14">
+    <name>ФормаСпискаКлиенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка клиенты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9218cb19-27fc-4a46-a4dc-79d7c5d0a72a">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="62f06f92-dfb4-450f-8636-38daeeaef4a4">
+    <name>Макет1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет1</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

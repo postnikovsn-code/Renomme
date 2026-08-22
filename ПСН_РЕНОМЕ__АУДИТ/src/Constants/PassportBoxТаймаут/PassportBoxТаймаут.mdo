@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd8370c7-8e0e-41dd-8d3a-9d31a72a1ecb">
+  <producedTypes>
+    <managerType typeId="53261699-5c69-4156-9495-612792308d0c" valueTypeId="f2014d74-d44e-492d-a3b0-6e1d69b48d5e"/>
+    <valueManagerType typeId="33100994-62e1-4059-807b-7e207ba8e147" valueTypeId="c842f32c-1b29-4c24-879b-4bbe33b6a5fa"/>
+    <valueKeyType typeId="51144a55-e6d9-4738-9c59-cb85438c8018" valueTypeId="948800eb-b0c5-490c-8873-150ce8330b65"/>
+  </producedTypes>
+  <name>PassportBoxТаймаут</name>
+  <synonym>
+    <key>ru</key>
+    <value>PassportBox: таймаут запроса (сек)</value>
+  </synonym>
+  <comment>Таймаут HTTP-запроса к сканеру паспортов PassportBox в секундах. По умолчанию 30.</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

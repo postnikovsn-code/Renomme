@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f253d0e-cfcc-4d52-949e-ff76891237f4">
+  <producedTypes>
+    <managerType typeId="ed45f024-5c44-4761-8f29-ff221decfc09" valueTypeId="2f654a4e-0099-4164-af3b-dd993ce14509"/>
+    <valueManagerType typeId="179c764a-4f04-4242-8b11-c0ef4092d989" valueTypeId="4b9282ce-a573-41c9-a4d8-55c8676a02d3"/>
+    <valueKeyType typeId="f30d5b94-c0ab-4932-8a72-571b26338570" valueTypeId="f91bb6d8-0b43-4aa6-a53b-1d1b7ea57917"/>
+  </producedTypes>
+  <name>ПередачаДанныхНаСайт_XXX</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передача данных на сайт XXX</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

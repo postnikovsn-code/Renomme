@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0316ec23-f2a6-4cea-826e-7d02d5957b06">
+  <name>СозданиеПодтвержденияEXCEL</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание подтверждения</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

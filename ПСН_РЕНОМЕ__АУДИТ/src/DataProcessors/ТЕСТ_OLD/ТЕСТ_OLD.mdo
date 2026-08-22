@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcf526ce-e5f7-410c-877a-abb1a6ced62f">
+  <producedTypes>
+    <objectType typeId="866054a3-7beb-4a6f-9a20-32e6a4f6843c" valueTypeId="d946a877-bdd7-4211-ad67-a07dcc002b82"/>
+    <managerType typeId="9f4b375e-e121-4668-bc89-213e664f9f90" valueTypeId="9dc4043f-d8a1-42ae-9f98-c3e327e82b1d"/>
+  </producedTypes>
+  <name>ТЕСТ_OLD</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЕСТ OLD</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЕСТ_OLD.Form.Форма2</defaultForm>
+  <forms uuid="47fb450a-4971-4f3e-adbc-4b3ca73693db">
+    <name>Форма1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="27793e4b-31a6-4aae-b50f-6c4e65dc3064">
+    <name>Форма2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма2</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

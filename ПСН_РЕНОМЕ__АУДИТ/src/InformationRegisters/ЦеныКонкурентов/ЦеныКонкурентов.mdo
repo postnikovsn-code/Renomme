@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a0190ee-7f48-4ac3-b622-c5abb6f866d9">
+  <producedTypes>
+    <selectionType typeId="f275a60d-268f-4451-812b-d0c4a77074a3" valueTypeId="ef3d8571-ef56-4fed-b0ef-0bc8c37bb10d"/>
+    <listType typeId="97525fb2-f281-49de-9c24-196403f46870" valueTypeId="603cc217-e97d-4535-9947-43ea552fe406"/>
+    <managerType typeId="00128d3a-c97a-4f96-8c9a-3f55fde92836" valueTypeId="e3bb70f0-c311-4cd3-994d-6050e7da8092"/>
+    <recordSetType typeId="15d130a5-501b-44b5-b01c-ececb3649d12" valueTypeId="ae285dd7-9b7c-4443-8a27-6aec1e0ebb6d"/>
+    <recordKeyType typeId="3eabb8ec-ee24-4885-a92b-8f8b2f206258" valueTypeId="d1481b49-4d2d-455f-a19a-afb2e88170c0"/>
+    <recordType typeId="9851daaa-deb9-4254-a522-d958bd54bee5" valueTypeId="fb419d4a-dcbc-4161-a225-7847cef6de7d"/>
+    <recordManagerType typeId="9068fd23-9946-46d6-b1ef-b20655f5b787" valueTypeId="7ca9e171-194f-406f-b1a9-d3356c4e28b2"/>
+  </producedTypes>
+  <name>ЦеныКонкурентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены конкурентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="46548e9b-59bd-4e4f-b361-dd7f7d368e0a">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="99f22cca-f14d-4dc7-bbc3-5137bff537d7">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a5e64d4e-237f-4fa5-8b2e-bd4a18dbeefa">
+    <name>НаименованиеОтеля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование отеля</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

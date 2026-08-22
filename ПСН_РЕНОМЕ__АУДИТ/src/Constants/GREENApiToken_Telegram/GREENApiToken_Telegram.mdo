@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="453a9ddd-11c4-46b8-b402-ee40809d29cc">
+  <producedTypes>
+    <managerType typeId="f3ae6223-b2c9-48aa-8982-24c55511d217" valueTypeId="8cfa9cbc-e3a2-4ac6-84c8-100d1769d3a2"/>
+    <valueManagerType typeId="14a80037-f339-459e-8df0-e03b181a3ad1" valueTypeId="286b12f2-816b-4458-93e6-d216d6820293"/>
+    <valueKeyType typeId="8d47b648-68a2-4312-ab88-2d5330e62833" valueTypeId="41e26d4b-78bf-4e97-81e8-6b11e3d1e015"/>
+  </producedTypes>
+  <name>GREENApiToken_Telegram</name>
+  <synonym>
+    <key>ru</key>
+    <value>GREENApi token telegram</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

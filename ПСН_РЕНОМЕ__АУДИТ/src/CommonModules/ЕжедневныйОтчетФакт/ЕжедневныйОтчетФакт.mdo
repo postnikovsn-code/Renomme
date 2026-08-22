@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95a7d326-9982-45cd-981d-7d11cbc01354">
+  <name>ЕжедневныйОтчетФакт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ежедневный отчет факт</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

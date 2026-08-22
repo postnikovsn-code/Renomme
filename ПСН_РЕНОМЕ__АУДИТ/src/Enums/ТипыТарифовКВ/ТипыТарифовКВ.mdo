@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f341c2be-29a9-4715-b5f3-399460bed5c6">
+  <producedTypes>
+    <refType typeId="fdedf7eb-0983-46cb-bdf1-7baf1570f4e1" valueTypeId="8c68d621-2a75-4c75-98da-057888a5cfc9"/>
+    <listType typeId="47a0dced-0de4-4805-a843-bfea5870ddf0" valueTypeId="e943b60f-6f77-43d9-a097-ca25a11cd4a1"/>
+    <managerType typeId="6bd25ef9-e624-4e77-b086-b326c8046d2e" valueTypeId="fd7b88ff-62c6-412b-9b06-eac083604907"/>
+  </producedTypes>
+  <name>ТипыТарифовКВ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы тарифов ко-воркинг</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9f5552b8-df09-4635-aab0-fdfbe7b57291">
+    <name>НаМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>На месяц</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0d319a2a-8607-472d-bb5e-3e7c300a9af8">
+    <name>НаДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>На день</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e9562950-f68b-4c05-af9e-fd1f8f17fcdf">
+    <name>КонференцЗал</name>
+    <synonym>
+      <key>ru</key>
+      <value>По часовой</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

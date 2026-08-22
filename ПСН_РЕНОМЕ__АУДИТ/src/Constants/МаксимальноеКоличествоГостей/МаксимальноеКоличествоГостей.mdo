@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d846cf92-fa8a-48c9-a0bf-0ea2ab2362c2">
+  <producedTypes>
+    <managerType typeId="e75311e7-34fc-4cbb-96d2-598e8d6080f3" valueTypeId="0ab54b36-7407-4b45-8b84-81f847b203a5"/>
+    <valueManagerType typeId="6941e9c1-98a0-4b28-94e2-78e33f4d4570" valueTypeId="98c83c01-c28f-43ee-af87-992e7524ea49"/>
+    <valueKeyType typeId="8d2b0d60-6831-4f94-be8a-c6411b235827" valueTypeId="b616feae-5808-42ef-991c-a549a474e6a6"/>
+  </producedTypes>
+  <name>МаксимальноеКоличествоГостей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальное количество гостей</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

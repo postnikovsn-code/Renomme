@@ -1,0 +1,153 @@
+openapi: 3.0.3
+info:
+  title: ОТЕЛЬ — межбазовый HTTP-контракт заселений (peer-installations)
+  version: "1.0.0-reconstructed"
+  description: |
+    Контракт HTTP-сервиса заселений и ежедневного отчёта семейства конфигураций «ОТЕЛЬ».
+
+    ВАЖНО (направление):
+      * Анализируемая база «ОТЕЛЬ» является КОНСЮМЕРОМ этих эндпоинтов:
+        она вызывает их у СОСЕДНИХ инсталляций (отелей сети) через
+        `CommonModules/HTTP_Модуль/Module.bsl`.
+      * Сам объект метаданных `HTTPСервис`/`HTTPService` в анализируемой базе
+        НЕ зарегистрирован (нет папки HTTPServices/, нет <httpServices> в Configuration.mdo).
+        Поэтому спецификация описывает контракт ПОТРЕБЛЯЕМОГО сервиса —
+        он же является контрактом, который та же конфигурация ОТДАЁТ при peer-развёртывании
+        (серверные данные готовят `ОбменHTTP.ВыгрузитьЗаселения` / `ВыгрузитьЕжедневныйОтчетФакт`).
+
+    Шкала доверия (в описаниях):
+      🟢 подтверждено в коде HTTP_Модуль; 🟡 выведено; 🔴 пробел (точная JSON-схема ответа неизвестна).
+
+    Источник путей (🟢): `CommonModules/HTTP_Модуль/Module.bsl`
+      - заселения:           `<base>hs/products/get_product/date_from/<dd.MM.yyyy>/date_to/<dd.MM.yyyy>`  (строки 71-90)
+      - ежедневный отчёт:    `<base>hs/products/get_Report_1/date_from/<dd.MM.yyyy>/date_to/<dd.MM.yyyy>`  (строки 169-188)
+    Таймаут соединения: 120 c (`Новый HTTPСоединение(Сервер,,,,,120)`), метод GET,
+    код состояния >= 300 трактуется как ошибка. 🟢
+
+servers:
+  - url: "http://{server}/LIVE_HTTP"
+    description: Отель LIVE (константа СерверЛайвHTTP). base path = /LIVE_HTTP/  🟢
+    variables:
+      server:
+        default: live.example.local
+        description: Хост из константы СерверЛайвHTTP (🔴 реальное значение в конфигурации БД)
+  - url: "http://{server}/CHEHOV_HTTP"
+    description: Отель Чехов (константа СерверЧеховHTTP). base path = /CHEHOV_HTTP/  🟢 (см. примечание о регистре)
+    variables:
+      server:
+        default: chehov.example.local
+        description: Хост из константы СерверЧеховHTTP
+  - url: "http://{server}/DomSovetov_HTTP"
+    description: Отель «Дом Советов» (константа СерверДомСоветовHTTP). base path = /DomSovetov_HTTP/  🟢
+    variables:
+      server:
+        default: domsovetov.example.local
+        description: Хост из константы СерверДомСоветовHTTP
+  - url: "http://{server}/StreetArt_HTTP"
+    description: Отель StreetArt (константа СерверСтритАртHTTP). base path = /StreetArt_HTTP/  🟢
+    variables:
+      server:
+        default: streetart.example.local
+        description: Хост из константы СерверСтритАртHTTP
+
+paths:
+  /hs/products/get_product/date_from/{date_from}/date_to/{date_to}:
+    get:
+      operationId: getInstallations
+      summary: Заселения за период (get_product)
+      description: |
+        Возвращает заселения (брони с точным временем заезда) за интервал дат. 🟢
+        Клиент сохраняет ответ в файл `<КаталогБД>HTTPЗаселения<ИмяСервера>.txt`,
+        затем читает через `ЧтениеJSON`. 🟢
+        Серверный аналог-источник в этой же конфигурации:
+        `ОбменHTTP.ВыгрузитьЗаселения(ДатаС, ДатаПо)` (ВЫБРАТЬ АвторЗаявки.Код, ВремяЗаездаТочное
+        из Документ.ЗаявкаНаБронирование за период; окно дня 09:00–21:00). 🟢
+      parameters:
+        - $ref: '#/components/parameters/DateFromPath'
+        - $ref: '#/components/parameters/DateToPath'
+      responses:
+        '200':
+          description: JSON со списком заселений. 🟡 (точная схема элемента — 🔴)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InstallationsResponse'
+        '3XX':
+          description: Любой код >= 300 трактуется клиентом как ошибка соединения. 🟢
+
+  /hs/products/get_Report_1/date_from/{date_from}/date_to/{date_to}:
+    get:
+      operationId: getDailyFactReport
+      summary: Ежедневный отчёт-факт за период (get_Report_1)
+      description: |
+        Возвращает ежедневный отчёт-факт (метрики продаж/загрузки) за интервал дат. 🟢
+        Клиент читает JSON с датами в формате ISO (`ФорматДатыJSON.ISO`, поле «Дата»). 🟢
+        Серверный аналог-источник: `ОбменHTTP.ВыгрузитьЕжедневныйОтчетФакт(ДатаС, ДатаПо)`
+        → `ЕжедневныйОтчетФакт.ТЗ_ОтчетДанные` + `РегистрЕжедневныйОтчетФактВыгрузить`. 🟢
+        Состав строки отчёта (метрики ADR/загрузка/эквайринг/В2В) построчно не разобран. 🔴
+      parameters:
+        - $ref: '#/components/parameters/DateFromPath'
+        - $ref: '#/components/parameters/DateToPath'
+      responses:
+        '200':
+          description: JSON ежедневного отчёта-факт (даты ISO). 🟡 (детальная схема — 🔴)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DailyFactReportResponse'
+        '3XX':
+          description: Любой код >= 300 трактуется клиентом как ошибка. 🟢
+
+components:
+  parameters:
+    DateFromPath:
+      name: date_from
+      in: path
+      required: true
+      description: Начало периода, формат `dd.MM.yyyy` (`Формат(ДатаС,"ДФ=dd.MM.yyyy")`). 🟢
+      schema:
+        type: string
+        pattern: '^\d{2}\.\d{2}\.\d{4}$'
+        example: "01.06.2026"
+    DateToPath:
+      name: date_to
+      in: path
+      required: true
+      description: Конец периода, формат `dd.MM.yyyy`. 🟢
+      schema:
+        type: string
+        pattern: '^\d{2}\.\d{2}\.\d{4}$'
+        example: "30.06.2026"
+
+  schemas:
+    InstallationsResponse:
+      type: array
+      description: |
+        Массив заселений. Точная форма элемента из ответа удалённой базы не верифицирована (🔴).
+        Поля ниже выведены из серверной выгрузки-источника `ОбменHTTP.ВыгрузитьЗаселения`. 🟡
+      items:
+        $ref: '#/components/schemas/InstallationItem'
+    InstallationItem:
+      type: object
+      description: Строка заселения. 🟡
+      properties:
+        АвторЗаявкиКод:
+          type: string
+          description: Код автора заявки (администратора). 🟡 (из источника ВыгрузитьЗаселения)
+        ВремяЗаезда:
+          type: string
+          description: Точное время заезда. 🟡
+      additionalProperties: true
+
+    DailyFactReportResponse:
+      type: array
+      description: |
+        Массив строк ежедневного отчёта-факт. Даты в ISO. Полная схема не разобрана (🔴).
+      items:
+        type: object
+        properties:
+          Дата:
+            type: string
+            format: date
+            description: Дата строки отчёта (ISO). 🟢
+        additionalProperties: true

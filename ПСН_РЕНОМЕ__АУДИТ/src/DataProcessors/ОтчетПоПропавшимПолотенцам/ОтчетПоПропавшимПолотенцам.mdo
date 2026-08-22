@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9de68436-be28-45ca-aca9-77815be39878">
+  <producedTypes>
+    <objectType typeId="9dc731d8-0c2e-400b-9b62-a4e275da1f5e" valueTypeId="7629ab70-5864-4644-8915-4f5b558d1c3c"/>
+    <managerType typeId="b6b202b5-d47f-44c6-8c07-f99489a36ec4" valueTypeId="e7435693-696f-4b4b-a772-2bfadc339c2e"/>
+  </producedTypes>
+  <name>ОтчетПоПропавшимПолотенцам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по пропавшим полотенцам</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОтчетПоПропавшимПолотенцам.Form.Форма</defaultForm>
+  <attributes uuid="71364d60-b566-4757-a6f5-bf0531fd4196">
+    <name>ПериодС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="17831b10-d2c6-452f-8c7e-cda57f7f160c">
+    <name>ПериодПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="465b5b01-2433-4d55-aafb-7cd7af7d6506">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="753aa5a2-5fde-488b-ae0c-d37636811857">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="953cbbe7-6589-4ece-832f-1c121113d164">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

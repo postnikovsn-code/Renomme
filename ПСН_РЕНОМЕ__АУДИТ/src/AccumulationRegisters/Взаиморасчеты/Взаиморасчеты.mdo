@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43e8a25d-96bd-4502-a933-56f55019f83e">
+  <producedTypes>
+    <selectionType typeId="f9963eff-15d7-429d-b005-9dd3c0f4bab3" valueTypeId="5a7a578a-4290-4c04-a2d6-c9844fca6a7d"/>
+    <listType typeId="33965d2f-8baf-4067-bf9e-ea64bf98a999" valueTypeId="ca319fde-2a36-4dfb-a9ec-c91baaf91636"/>
+    <managerType typeId="7509fea8-b872-4db7-a548-c73dfbcd128d" valueTypeId="7a23bc3a-d05e-4392-bf7e-f6b5b3da727e"/>
+    <recordSetType typeId="d075a8f0-5cce-4569-be27-ccea312a3d84" valueTypeId="f691f17f-00ac-47c4-af78-4f59a285c848"/>
+    <recordKeyType typeId="059e5488-7ea0-42f1-9657-d6b28693a830" valueTypeId="bf638d26-d46b-4723-bf6f-c7413986187c"/>
+    <recordType typeId="8533b3e7-4a19-4dd6-a9bd-5e6b45017ccb" valueTypeId="2ed28b9c-b8e1-4ecd-9951-8f14b20e70d1"/>
+  </producedTypes>
+  <name>Взаиморасчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="15b4e4cb-5ba0-4486-bd3f-26ffa7d8c5f0">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0fad44c9-b543-40f4-90de-9d7834b6ccd9">
+    <name>СуммаКомисииРасчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма комисии расчет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="79e2065c-91f9-4c42-8627-4d42a8b68f39">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

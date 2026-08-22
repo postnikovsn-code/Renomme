@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13e0aeb5-4fa2-4c65-a4a1-3712f7061196">
+  <producedTypes>
+    <managerType typeId="466298aa-2d81-4773-8177-eccfc25c751e" valueTypeId="a540758b-bba0-4755-9977-c049fe33251e"/>
+    <valueManagerType typeId="29d27757-cf0e-4e86-a3d0-b0ab1e9b1ae2" valueTypeId="478e69fb-c18f-4886-a26d-6d84f80d2084"/>
+    <valueKeyType typeId="93e84de5-b029-4221-a77f-4135ff5ee742" valueTypeId="67780c87-1608-4484-9f9d-dcd947cb35f6"/>
+  </producedTypes>
+  <name>БазовыйТарифБудниСтБ_XXX</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовый тариф будни ст б XXX</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>17</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

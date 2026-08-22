@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d713606-6cc7-4f2b-b30e-7a5d817f060c">
+  <producedTypes>
+    <managerType typeId="4a3a8b08-807e-491c-b1a4-0dee47ba228e" valueTypeId="1808d411-44f4-4ea1-af1b-8b7f4233135e"/>
+    <valueManagerType typeId="5b7cfdbf-fdeb-4511-96cc-8d52ba1362eb" valueTypeId="f1879b36-d9bf-4e18-93b0-589368841146"/>
+    <valueKeyType typeId="f22fe962-9a19-48e2-9f7a-57dc9f9551c5" valueTypeId="fb3058f9-4040-4d08-b78a-c40e297f6d6c"/>
+  </producedTypes>
+  <name>СообщенияЧерезGREЕN_MAX</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщения через GREЕN MAX</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

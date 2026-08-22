@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72a3309e-82cf-450e-b04a-ab987d805de8">
+  <producedTypes>
+    <objectType typeId="1ee4a7f4-320f-4e77-b8d8-05e55faff5e5" valueTypeId="dd7ea27f-d105-493a-a9ec-1aca5c33c42f"/>
+    <managerType typeId="32ece01a-4aa5-4015-a691-df5be791019e" valueTypeId="798c5e62-0f74-44b4-8178-0796d477a94a"/>
+  </producedTypes>
+  <name>PayKeeper_ТЕСТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Pay keeper ТЕСТ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.PayKeeper_ТЕСТ.Form.Форма</defaultForm>
+  <forms uuid="c7df4b44-a9ea-41e2-a36a-4f8ca83805f0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

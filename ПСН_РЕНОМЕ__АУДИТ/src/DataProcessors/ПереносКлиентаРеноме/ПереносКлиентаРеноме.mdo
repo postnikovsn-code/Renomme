@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8057176-47d1-4c11-b803-d7feb10180df">
+  <producedTypes>
+    <objectType typeId="74000ff4-cc38-46f3-895e-d6ae7d12da8d" valueTypeId="538a7b65-02f7-4038-88ba-b76f7c5aaade"/>
+    <managerType typeId="dcab1f44-c927-4d6f-8710-3dcd3608ca93" valueTypeId="963ca676-b59b-4731-b4be-7857a0857452"/>
+  </producedTypes>
+  <name>ПереносКлиентаРеноме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перенос клиента реноме</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПереносКлиентаРеноме.Form.Форма</defaultForm>
+  <forms uuid="916dde99-ed7e-4032-8ea9-c0eb3be04edd">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

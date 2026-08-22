@@ -1,0 +1,19 @@
+schema: spec-driven
+
+# Project context (shown to AI when creating artifacts).
+context: |
+  Язык: Русский
+  Все артефакты должны быть написаны на русском языке.
+  Технические термины (API, REST, GraphQL), примеры кода и пути к файлам оставляй на английском.
+  Структурные ключевые слова дельта-спецификаций оставляй на английском:
+  ADDED/MODIFIED/REMOVED Requirements, "Requirement:", "Scenario:", GIVEN/WHEN/THEN.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec096091-8817-4283-b197-a2b980c87590">
+  <name>СчетКоворкинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет коворкинг</value>
+  </synonym>
+</mdclass:CommonTemplate>

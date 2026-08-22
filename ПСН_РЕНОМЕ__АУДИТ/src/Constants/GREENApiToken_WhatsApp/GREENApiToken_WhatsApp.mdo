@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1d5cf15-48bb-4b3e-a655-9ee00792b2f8">
+  <producedTypes>
+    <managerType typeId="ff2b1553-f8f1-4fe8-9645-95711c7e9f0e" valueTypeId="cadc5813-6f38-4f38-b810-a5bcd30eb334"/>
+    <valueManagerType typeId="ef2fb809-4007-42aa-a725-156ba1eb22ab" valueTypeId="334a8958-ae71-4a12-a1d3-a85f6ffb76cc"/>
+    <valueKeyType typeId="9243e745-96da-4507-ae95-c74015da7d9b" valueTypeId="68883c8d-b63c-4c7a-b97e-46b73fc38670"/>
+  </producedTypes>
+  <name>GREENApiToken_WhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>GREENApi token whats app</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e9060f2-d4a8-44e2-a841-f4f365a802fa">
+  <producedTypes>
+    <managerType typeId="b99ab240-f94f-4527-b1c4-20bb13cb4107" valueTypeId="04fa1216-5b11-49d2-9e09-9b8cb2202dfd"/>
+    <valueManagerType typeId="13a5074e-242b-461b-8245-509785c91566" valueTypeId="dace51ac-9938-4958-9eb3-945324e1e50d"/>
+    <valueKeyType typeId="52dbf2b7-4e99-4830-8160-85c1491a81fa" valueTypeId="7a378cbc-de5f-4623-a178-4bcdd65c1e99"/>
+  </producedTypes>
+  <name>ТарифныеПланы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифные планы</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

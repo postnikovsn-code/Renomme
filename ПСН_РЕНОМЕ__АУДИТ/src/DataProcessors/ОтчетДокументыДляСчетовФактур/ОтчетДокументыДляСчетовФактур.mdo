@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec2bd953-5037-43a6-aba7-cec542af0bae">
+  <producedTypes>
+    <objectType typeId="22a2a5f6-ba57-46e8-8186-4ec8c398d1c0" valueTypeId="d1ea16ce-a422-490f-9032-78253560b433"/>
+    <managerType typeId="9407fb5c-c956-4693-b7f1-dcf94e24f456" valueTypeId="848c9811-752e-4d1a-be10-38eb32ba7c40"/>
+  </producedTypes>
+  <name>ОтчетДокументыДляСчетовФактур</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет документы для счетов фактур</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтчетДокументыДляСчетовФактур.Form.Форма</defaultForm>
+  <forms uuid="853cea2b-8988-433d-834e-878f583ddfcc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0a33f07c-0573-4a03-a39c-df2e755d4bc2">
+    <name>МакетСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет счета</value>
+    </synonym>
+  </templates>
+  <templates uuid="81e4a06c-d449-429a-ab44-7b4a589adb3a">
+    <name>МакетГрупповыеСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет групповые счета</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>
