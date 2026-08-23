@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метрики | ОТЕЛЬ</title>
+
+    <meta name="reversa-category" content="diagram">
+    <meta name="reversa-template" content="metricas">
+    <meta name="reversa-source-md" content="_reversa_sdd/confidence-report.md">
+    <meta name="reversa-producer-agent" content="reversa-docs-analyst">
+    <meta name="reversa-generated-at" content="2026-06-07T00:00:00Z">
+    <meta name="reversa-schema-version" content="1">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+:root{
+  --rv-bg:#101214; --rv-panel:#181b1f; --rv-panel2:#1f2329; --rv-line:#2c3138;
+  --rv-fg:#e6e9ec; --rv-fg-dim:#9aa3ab; --rv-accent:#c9ced4; --rv-hot:#d05a4f;
+  --rv-grid:#23272d; --rv-link:#cfd6dd;
+}
+html,body{margin:0;padding:0;background:var(--rv-bg);color:var(--rv-fg);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.5;}
+a{color:var(--rv-link);}
+.reversa-doc-header{display:flex;align-items:center;gap:18px;padding:10px 18px;
+  background:var(--rv-panel);border-bottom:1px solid var(--rv-line);position:sticky;top:0;z-index:30;}
+.reversa-doc-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--rv-fg);font-weight:600;}
+.reversa-doc-logo .seal svg,.reversa-doc-logo .seal{width:28px;height:28px;display:block;}
+.reversa-doc-nav{display:flex;gap:14px;flex-wrap:wrap;}
+.reversa-doc-nav a{color:var(--rv-fg-dim);text-decoration:none;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent;}
+.reversa-doc-nav a:hover{color:var(--rv-fg);}
+.reversa-doc-nav a[aria-current="page"]{color:var(--rv-fg);border-bottom-color:var(--rv-accent);}
+.reversa-doc-toolbar{margin-left:auto;}
+.theme-toggle{background:var(--rv-panel2);color:var(--rv-fg-dim);border:1px solid var(--rv-line);
+  border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;}
+.reversa-doc-payload{padding:18px 22px;}
+.reversa-doc-title{font-size:22px;font-weight:600;margin:0 0 6px;letter-spacing:.2px;}
+.rv-hint{color:var(--rv-fg-dim);font-size:13px;margin:0 0 14px;max-width:90ch;}
+.reversa-doc-footer{padding:12px 22px;color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);
+  background:var(--rv-panel);}
+.reversa-doc-footer a{color:var(--rv-fg-dim);}
+.rv-kpis{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 18px;}
+.rv-kpi{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:6px;
+  padding:12px 16px;min-width:140px;flex:1 1 140px;}
+.rv-kpi .v{font-size:24px;font-weight:600;color:var(--rv-fg);line-height:1.1;}
+.rv-kpi .l{font-size:12px;color:var(--rv-fg-dim);margin-top:4px;}
+.rv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.rv-card{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:6px;
+  padding:14px 14px 6px;box-sizing:border-box;}
+.rv-card h2{font-size:15px;font-weight:600;margin:0 0 2px;color:var(--rv-fg);}
+.rv-card p.sub{font-size:12px;color:var(--rv-fg-dim);margin:0 0 8px;}
+.rv-card.full{grid-column:1 / -1;}
+.rv-chart{width:100%;height:340px;}
+.rv-chart.tall{height:420px;}
+.rv-warn{background:#2a1c1a;border:1px solid var(--rv-hot);color:#e9c4bf;padding:14px;border-radius:6px;margin-top:8px;}
+@media (max-width:900px){
+  .rv-grid{grid-template-columns:1fr;}
+}
+</style>
+
+    <script src="assets/vendor/highcharts.js"></script>
+    <script src="assets/vendor/highcharts-accessibility.js"></script>
+    <script src="assets/vendor/highcharts-exporting.js"></script>
+    <script src="assets/vendor/highcharts-treemap.js"></script>
+    <script src="assets/vendor/highcharts-sankey.js"></script>
+</head>
+<body data-style="sober" data-page="metricas">
+
+    <header class="reversa-doc-header">
+        <a class="reversa-doc-logo" href="index.html" aria-label="Начало">
+            <span class="seal" aria-hidden="true"><svg class="seal-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Печать проекта ОТЕЛЬ"><title>ОТЕЛЬ · d4b20fd6</title><rect x="0" y="0" width="64" height="64" fill="none" rx="3.8"/><circle cx="32.0" cy="32.0" r="29.4" fill="none" stroke="#3a4047" stroke-width="0.60" opacity="0.59"/><circle cx="32.0" cy="32.0" r="24.1" fill="none" stroke="#3a4047" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.80"/><circle cx="32.0" cy="32.0" r="18.7" fill="none" stroke="#2c3138" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.69"/><circle cx="32.0" cy="32.0" r="13.4" fill="none" stroke="#4a525a" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.89"/><line x1="38.5" y1="32.1" x2="52.6" y2="32.4" stroke="#9aa6b0" stroke-width="0.50" opacity="0.7"/><line x1="35.2" y1="37.6" x2="42.1" y2="50.0" stroke="#4a525a" stroke-width="0.50" opacity="0.7"/><line x1="28.8" y1="37.6" x2="21.9" y2="50.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="25.5" y1="31.9" x2="11.4" y2="31.6" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><line x1="28.9" y1="26.3" x2="22.1" y2="14.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="35.5" y1="26.6" x2="43.1" y2="14.7" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><polygon points="38.5,38.0 26.0,38.5 25.5,26.0 38.0,25.5" fill="none" stroke="#c9d2da" stroke-width="0.60" opacity="0.85"/><polygon points="35.7,38.0 26.0,35.7 28.3,26.0 38.0,28.3" fill="none" stroke="#9aa6b0" stroke-width="0.60" opacity="0.85"/><circle cx="32.0" cy="32.0" r="3.2" fill="#c9d2da"/></svg></span>
+            <span class="project-name">ОТЕЛЬ</span>
+        </a>
+        <nav class="reversa-doc-nav" aria-label="Разделы документации">
+            <a href="index.html" data-page-id="index">Обзор</a>
+            <a href="arquitetura.html" data-page-id="arquitetura">Архитектура 3D</a>
+            <a href="modulos.html" data-page-id="modulos">Модули</a>
+            <a href="topologia.html" data-page-id="topologia">Топология</a>
+            <a href="metricas.html" data-page-id="metricas">Метрики</a>
+            <a href="glossario.html" data-page-id="glossario">Глоссарий</a>
+            <a href="deck.html" data-page-id="deck">Дек</a>
+            <a href="pereizvlechenie.html" data-page-id="pereizvlechenie">Переизвлечение</a>
+        </nav>
+        <div class="reversa-doc-toolbar">
+            <button type="button" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-toggle-label">Тема</span>
+            </button>
+        </div>
+    </header>
+
+<section class="rv-reext" role="note" aria-label="Происхождение документации">
+    <span class="rv-reext-h">Импорт из проекта Hotel · страница отражает состояние ДО переизвлечения</span>
+    <p>Мини-сайт построен по извлечению проекта <b>Hotel</b> (дерево <code>Hotel/ПСН_РЕНОМЕ__АУДИТ/src</code>) и импортирован сюда <b>2026-08-21</b>. Целевая конфигурация здесь — <b>ПСН_РЕНОМЕ__АУДИТ</b>, та же «ОТЕЛЬ» 3.2.7.38: из 2423 общих файлов 98.6 % совпадают побайтово.</p>
+    <p>По этой конфигурации проведено переизвлечение <code>2026-08-21-ПСН-РЕНОМЕ</code>. Актуальные отличия — в <a href="../../_reversa_sdd/re-extraction/2026-08-21-%D0%9F%D0%A1%D0%9D-%D0%A0%D0%95%D0%9D%D0%9E%D0%9C%D0%95/">_reversa_sdd/re-extraction/2026-08-21-ПСН-РЕНОМЕ/</a> и <a href="../../_reversa_sdd/IMPORT.md">_reversa_sdd/IMPORT.md</a>; сводка на сайте — <a href="pereizvlechenie.html">Переизвлечение</a>.</p>
+    <p><b>Содержимое страниц отражает состояние до переизвлечения.</b> Счётчики метаданных и объём BSL приведены к ПСН; описания модулей, правил, метрик и пробелов унаследованы от Hotel. При расхождении приоритет у дельты переизвлечения.</p>
+</section>
+
+    <main class="reversa-doc-main" role="main">
+        <div class="reversa-doc-payload">
+            <h1 class="reversa-doc-title">Метрики</h1>
+            <p class="rv-hint">Количественный обзор конфигурации «ОТЕЛЬ»: объём кода по 12 доменным
+            модулям, относительная сложность, граф зависимостей, распределение размеров и сущностей,
+            а также уверенность извлечения и пробелы анализа по тяжести. Все оценки выведены из
+            картографии Mapper (modules.json/deps.json) и отчётов ядра (confidence-report.md, gaps.md).
+            Наводите курсор на элементы графиков для деталей.</p>
+
+            <div class="rv-kpis" id="rv-kpis"></div>
+
+            <div id="rv-fallback"></div>
+
+            <div class="rv-grid">
+                <section class="rv-card full">
+                    <h2>Объём кода по модулям (LOC)</h2>
+                    <p class="sub">Treemap: площадь плитки пропорциональна оценке LOC. Всего в конфигурации ПСН ~249 114 строк BSL; сумма плиток (253 440) — оценка времён Hotel, помодульно она не пересчитывалась.</p>
+                    <div id="chart-treemap" class="rv-chart tall"></div>
+                </section>
+
+                <section class="rv-card">
+                    <h2>Относительная сложность модулей</h2>
+                    <p class="sub">Индекс = правила + функции + алгоритмы. Все модули отнесены к уровню «высокая».</p>
+                    <div id="chart-complexity" class="rv-chart"></div>
+                </section>
+
+                <section class="rv-card">
+                    <h2>Сущности по модулям</h2>
+                    <p class="sub">Число ключевых сущностей данных (справочники, документы, регистры) в каждом модуле.</p>
+                    <div id="chart-entities" class="rv-chart"></div>
+                </section>
+
+                <section class="rv-card">
+                    <h2>Распределение модулей по LOC</h2>
+                    <p class="sub">Гистограмма: сколько модулей попадает в каждый диапазон размера.</p>
+                    <div id="chart-histogram" class="rv-chart"></div>
+                </section>
+
+                <section class="rv-card">
+                    <h2>Уверенность извлечения по модулям</h2>
+                    <p class="sub">Доля надёжно извлечённого поведения. Цвет: 🟢 от 80%, 🟡 60–79%, 🔴 ниже 60%.</p>
+                    <div id="chart-confidence" class="rv-chart"></div>
+                </section>
+
+                <section class="rv-card full">
+                    <h2>Граф зависимостей между модулями (Sankey)</h2>
+                    <p class="sub">57 направленных рёбер «использует». 11 из 12 модулей входят в общий цикл взаимных зависимостей.</p>
+                    <div id="chart-sankey" class="rv-chart tall"></div>
+                </section>
+
+                <section class="rv-card">
+                    <h2>Пробелы анализа по тяжести</h2>
+                    <p class="sub">30 пробелов всего: 11 критичных, 15 умеренных, 4 косметических (gaps.md).</p>
+                    <div id="chart-gaps" class="rv-chart"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="reversa-doc-footer">
+        <span class="reversa-doc-footer-text">Сгенерировано Reversa, 2026-06-07T00:00:00Z</span>
+        <span class="reversa-doc-footer-sep" aria-hidden="true">·</span>
+        <a href="../../_reversa_sdd/confidence-report.md" class="reversa-doc-source-link">Источник markdown</a>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+    <script id="rv-inline-metrics" type="application/json">{"schemaVersion":1,"generatedAt":"2026-06-07T00:00:00Z","project":"ОТЕЛЬ","seed":"d4b20fd66574612949fdbcf11a62f7f4357cace00c74514877c2a28f91f8f8e8","totalLoc":249114,"moduleCount":12,"edgeCount":57,"cycleSize":11,"treemap_loc_by_module":[{"module":"Бронирование","loc":16995,"entities":6},{"module":"Размещение и номерной фонд","loc":17270,"entities":8},{"module":"Гости и регистрация","loc":23320,"entities":8},{"module":"Горничные (Housekeeping)","loc":24860,"entities":12},{"module":"Минибар","loc":20680,"entities":9},{"module":"Доп. услуги и коворкинг","loc":20350,"entities":8},{"module":"Ценообразование","loc":22715,"entities":9},{"module":"Финансы и касса","loc":22880,"entities":11},{"module":"Подключаемое оборудование (БПО)","loc":20405,"entities":13},{"module":"Аудит и отчётность","loc":15235,"entities":4},{"module":"Персонал и зарплата","loc":23210,"entities":7},{"module":"Интеграции и обмен","loc":25520,"entities":6}],"complexity_by_module":[{"module":"Интеграции и обмен","loc":25520,"rules":12,"functions":12,"algorithms":8,"weight":32},{"module":"Финансы и касса","loc":22880,"rules":10,"functions":8,"algorithms":6,"weight":24},{"module":"Персонал и зарплата","loc":23210,"rules":10,"functions":11,"algorithms":7,"weight":28},{"module":"Ценообразование","loc":22715,"rules":9,"functions":9,"algorithms":8,"weight":26},{"module":"Гости и регистрация","loc":23320,"rules":8,"functions":12,"algorithms":8,"weight":28},{"module":"Горничные (Housekeeping)","loc":24860,"rules":8,"functions":11,"algorithms":8,"weight":27},{"module":"Минибар","loc":20680,"rules":8,"functions":8,"algorithms":7,"weight":23},{"module":"Бронирование","loc":16995,"rules":7,"functions":7,"algorithms":6,"weight":20},{"module":"Аудит и отчётность","loc":15235,"rules":7,"functions":6,"algorithms":6,"weight":19},{"module":"Доп. услуги и коворкинг","loc":20350,"rules":6,"functions":10,"algorithms":8,"weight":24},{"module":"Размещение и номерной фонд","loc":17270,"rules":6,"functions":7,"algorithms":6,"weight":19},{"module":"Подключаемое оборудование (БПО)","loc":20405,"rules":5,"functions":8,"algorithms":7,"weight":20}],"dependency_sankey":{"links":[{"source":"Бронирование","target":"Размещение и номерной фонд","value":1},{"source":"Бронирование","target":"Финансы и касса","value":1},{"source":"Бронирование","target":"Ценообразование","value":1},{"source":"Бронирование","target":"Гости и регистрация","value":1},{"source":"Бронирование","target":"Интеграции и обмен","value":1},{"source":"Размещение и номерной фонд","target":"Бронирование","value":1},{"source":"Размещение и номерной фонд","target":"Ценообразование","value":1},{"source":"Размещение и номерной фонд","target":"Горничные (Housekeeping)","value":1},{"source":"Размещение и номерной фонд","target":"Интеграции и обмен","value":1},{"source":"Размещение и номерной фонд","target":"Гости и регистрация","value":1},{"source":"Гости и регистрация","target":"Бронирование","value":1},{"source":"Гости и регистрация","target":"Финансы и касса","value":1},{"source":"Гости и регистрация","target":"Ценообразование","value":1},{"source":"Гости и регистрация","target":"Интеграции и обмен","value":1},{"source":"Горничные (Housekeeping)","target":"Размещение и номерной фонд","value":1},{"source":"Горничные (Housekeeping)","target":"Бронирование","value":1},{"source":"Горничные (Housekeeping)","target":"Минибар","value":1},{"source":"Горничные (Housekeeping)","target":"Финансы и касса","value":1},{"source":"Горничные (Housekeeping)","target":"Персонал и зарплата","value":1},{"source":"Горничные (Housekeeping)","target":"Интеграции и обмен","value":1},{"source":"Минибар","target":"Горничные (Housekeeping)","value":1},{"source":"Минибар","target":"Доп. услуги и коворкинг","value":1},{"source":"Минибар","target":"Размещение и номерной фонд","value":1},{"source":"Минибар","target":"Финансы и касса","value":1},{"source":"Доп. услуги и коворкинг","target":"Минибар","value":1},{"source":"Доп. услуги и коворкинг","target":"Финансы и касса","value":1},{"source":"Доп. услуги и коворкинг","target":"Бронирование","value":1},{"source":"Доп. услуги и коворкинг","target":"Гости и регистрация","value":1},{"source":"Доп. услуги и коворкинг","target":"Размещение и номерной фонд","value":1},{"source":"Ценообразование","target":"Бронирование","value":1},{"source":"Ценообразование","target":"Размещение и номерной фонд","value":1},{"source":"Ценообразование","target":"Гости и регистрация","value":1},{"source":"Ценообразование","target":"Финансы и касса","value":1},{"source":"Ценообразование","target":"Интеграции и обмен","value":1},{"source":"Финансы и касса","target":"Бронирование","value":1},{"source":"Финансы и касса","target":"Доп. услуги и коворкинг","value":1},{"source":"Финансы и касса","target":"Гости и регистрация","value":1},{"source":"Финансы и касса","target":"Подключаемое оборудование (БПО)","value":1},{"source":"Финансы и касса","target":"Интеграции и обмен","value":1},{"source":"Подключаемое оборудование (БПО)","target":"Финансы и касса","value":1},{"source":"Подключаемое оборудование (БПО)","target":"Доп. услуги и коворкинг","value":1},{"source":"Подключаемое оборудование (БПО)","target":"Интеграции и обмен","value":1},{"source":"Аудит и отчётность","target":"Бронирование","value":1},{"source":"Аудит и отчётность","target":"Финансы и касса","value":1},{"source":"Аудит и отчётность","target":"Ценообразование","value":1},{"source":"Аудит и отчётность","target":"Размещение и номерной фонд","value":1},{"source":"Аудит и отчётность","target":"Минибар","value":1},{"source":"Аудит и отчётность","target":"Горничные (Housekeeping)","value":1},{"source":"Персонал и зарплата","target":"Бронирование","value":1},{"source":"Персонал и зарплата","target":"Ценообразование","value":1},{"source":"Персонал и зарплата","target":"Интеграции и обмен","value":1},{"source":"Персонал и зарплата","target":"Горничные (Housekeeping)","value":1},{"source":"Интеграции и обмен","target":"Бронирование","value":1},{"source":"Интеграции и обмен","target":"Финансы и касса","value":1},{"source":"Интеграции и обмен","target":"Гости и регистрация","value":1},{"source":"Интеграции и обмен","target":"Размещение и номерной фонд","value":1},{"source":"Интеграции и обмен","target":"Подключаемое оборудование (БПО)","value":1}]},"loc_histogram":{"categories":["15000-18000","18000-21000","21000-24000","24000-27000"],"counts":[3,3,4,2]},"entities_by_module":[{"module":"Подключаемое оборудование (БПО)","entities":13},{"module":"Горничные (Housekeeping)","entities":12},{"module":"Финансы и касса","entities":11},{"module":"Минибар","entities":9},{"module":"Ценообразование","entities":9},{"module":"Размещение и номерной фонд","entities":8},{"module":"Гости и регистрация","entities":8},{"module":"Доп. услуги и коворкинг","entities":8},{"module":"Персонал и зарплата","entities":7},{"module":"Бронирование","entities":6},{"module":"Интеграции и обмен","entities":6},{"module":"Аудит и отчётность","entities":4}],"confidence_by_module":[{"module":"Бронирование","confidence":88,"level":"green","criticalGaps":4},{"module":"Размещение и номерной фонд","confidence":85,"level":"green","criticalGaps":3},{"module":"Гости и регистрация","confidence":78,"level":"yellow","criticalGaps":4},{"module":"Горничные (Housekeeping)","confidence":82,"level":"green","criticalGaps":5},{"module":"Минибар","confidence":76,"level":"yellow","criticalGaps":3},{"module":"Доп. услуги и коворкинг","confidence":80,"level":"green","criticalGaps":5},{"module":"Ценообразование","confidence":74,"level":"yellow","criticalGaps":6},{"module":"Финансы и касса","confidence":75,"level":"yellow","criticalGaps":6},{"module":"Подключаемое оборудование (БПО)","confidence":60,"level":"red","criticalGaps":4},{"module":"Аудит и отчётность","confidence":68,"level":"yellow","criticalGaps":5},{"module":"Персонал и зарплата","confidence":74,"level":"yellow","criticalGaps":6},{"module":"Интеграции и обмен","confidence":70,"level":"yellow","criticalGaps":5}],"gaps_by_severity":[{"severity":"Критичные","count":11,"level":"red"},{"severity":"Умеренные","count":15,"level":"yellow"},{"severity":"Косметические","count":4,"level":"gray"}],"coreConfidence":76}</script>
+
+    <script>
+    (function(){
+      "use strict";
+      function inlineData(id){ try{ return JSON.parse(document.getElementById(id).textContent);}catch(e){return null;} }
+      var RV = window.RV_DATA || {};
+      var m = (RV.metrics && RV.metrics.treemap_loc_by_module) ? RV.metrics : inlineData('rv-inline-metrics');
+      var fb = document.getElementById('rv-fallback');
+
+      if(!window.Highcharts){
+        fb.innerHTML = '<div class="rv-warn">Библиотека Highcharts недоступна. Проверьте assets/vendor и перезапустите публикацию.</div>';
+        return;
+      }
+      if(!m){
+        fb.innerHTML = '<div class="rv-warn">Нет данных метрик.</div>';
+        return;
+      }
+
+      var fmt = function(n){ return Number(n).toLocaleString('ru-RU'); };
+      var GREEN='#7a9b6e', YELLOW='#c7a23a', RED='#d05a4f', GRAY='#6d7780';
+      var BASE='#6d7780', BASE2='#9aa6b0', ACCENT='#c9d2da';
+
+      Highcharts.setOptions({
+        lang:{ decimalPoint:',', thousandsSep:' ',
+          contextButtonTitle:'Меню', downloadPNG:'Скачать PNG', downloadSVG:'Скачать SVG',
+          printChart:'Печать', viewFullscreen:'На весь экран' },
+        chart:{ backgroundColor:'transparent', style:{ fontFamily:"'Segoe UI',system-ui,Arial,sans-serif" } },
+        title:{ text:null },
+        credits:{ enabled:false },
+        xAxis:{ lineColor:'#2c3138', tickColor:'#2c3138',
+          labels:{ style:{ color:'#9aa3ab', fontSize:'11px' } } },
+        yAxis:{ gridLineColor:'#23272d', lineColor:'#2c3138',
+          labels:{ style:{ color:'#9aa3ab', fontSize:'11px' } },
+          title:{ style:{ color:'#9aa3ab' } } },
+        legend:{ itemStyle:{ color:'#cfd6dd' }, itemHoverStyle:{ color:'#fff' } },
+        tooltip:{ backgroundColor:'#1f2329', borderColor:'#2c3138',
+          style:{ color:'#e6e9ec' } }
+      });
+
+      // KPI cards
+      var kpis = [
+        { v: fmt(m.totalLoc), l:'Строк кода (LOC)' },
+        { v: m.moduleCount, l:'Доменных модулей' },
+        { v: m.edgeCount, l:'Зависимостей' },
+        { v: m.cycleSize + ' / ' + m.moduleCount, l:'Модулей в цикле' },
+        { v: m.coreConfidence + '%', l:'Уверенность ядра' }
+      ];
+      document.getElementById('rv-kpis').innerHTML = kpis.map(function(k){
+        return '<div class="rv-kpi"><div class="v">'+k.v+'</div><div class="l">'+k.l+'</div></div>';
+      }).join('');
+
+      // 1. Treemap LOC
+      Highcharts.chart('chart-treemap', {
+        series:[{
+          type:'treemap', layoutAlgorithm:'squarified',
+          clip:false,
+          data: m.treemap_loc_by_module.map(function(d){
+            return { name:d.module, value:d.loc, colorValue:d.loc, entities:d.entities };
+          }),
+          dataLabels:{ enabled:true, style:{ color:'#e6e9ec', textOutline:'1px #101214', fontSize:'11px', fontWeight:'normal' } }
+        }],
+        colorAxis:{ minColor:'#3a4047', maxColor:'#c9d2da', labels:{ style:{ color:'#9aa3ab' } } },
+        tooltip:{ pointFormatter:function(){
+          return '<b>'+this.name+'</b><br>LOC: '+fmt(this.value)+'<br>Сущностей: '+this.entities;
+        } }
+      });
+
+      // 2. Complexity index column
+      var cx = m.complexity_by_module.slice().sort(function(a,b){ return b.weight-a.weight; });
+      Highcharts.chart('chart-complexity', {
+        chart:{ type:'bar' },
+        xAxis:{ categories: cx.map(function(d){return d.module;}) },
+        yAxis:{ title:{ text:'Индекс сложности' } },
+        plotOptions:{ bar:{ color:BASE2, borderWidth:0, pointPadding:0.08 } },
+        tooltip:{ pointFormatter:function(){
+          var d = cx[this.index];
+          return 'Индекс: <b>'+this.y+'</b><br>Правил: '+d.rules+' · Функций: '+d.functions+' · Алгоритмов: '+d.algorithms+'<br>LOC: '+fmt(d.loc);
+        } },
+        series:[{ name:'Индекс сложности', data: cx.map(function(d){return d.weight;}) }]
+      });
+
+      // 3. Entities by module column
+      var en = m.entities_by_module;
+      Highcharts.chart('chart-entities', {
+        chart:{ type:'bar' },
+        xAxis:{ categories: en.map(function(d){return d.module;}) },
+        yAxis:{ title:{ text:'Сущностей' } },
+        plotOptions:{ bar:{ color:BASE, borderWidth:0, pointPadding:0.08 } },
+        tooltip:{ pointFormat:'Сущностей: <b>{point.y}</b>' },
+        series:[{ name:'Сущности', data: en.map(function(d){return d.entities;}) }]
+      });
+
+      // 4. LOC histogram
+      Highcharts.chart('chart-histogram', {
+        chart:{ type:'column' },
+        xAxis:{ categories: m.loc_histogram.categories, title:{ text:'Диапазон LOC' } },
+        yAxis:{ title:{ text:'Число модулей' }, allowDecimals:false },
+        plotOptions:{ column:{ color:BASE2, borderWidth:0, groupPadding:0.06, pointPadding:0.02 } },
+        tooltip:{ pointFormat:'Модулей: <b>{point.y}</b>' },
+        series:[{ name:'Модули', data: m.loc_histogram.counts }]
+      });
+
+      // 5. Confidence by module
+      var levelColor = { green:GREEN, yellow:YELLOW, red:RED };
+      var cf = m.confidence_by_module.slice().sort(function(a,b){ return b.confidence-a.confidence; });
+      Highcharts.chart('chart-confidence', {
+        chart:{ type:'bar' },
+        xAxis:{ categories: cf.map(function(d){return d.module;}) },
+        yAxis:{ title:{ text:'% уверенности' }, max:100,
+          plotLines:[{ value:60, color:RED, dashStyle:'Dash', width:1 },
+                     { value:80, color:GREEN, dashStyle:'Dash', width:1 }] },
+        plotOptions:{ bar:{ borderWidth:0, pointPadding:0.08 } },
+        tooltip:{ pointFormatter:function(){
+          var d = cf[this.index];
+          var tag = d.level==='green'?'🟢':(d.level==='yellow'?'🟡':'🔴');
+          return tag+' Уверенность: <b>'+this.y+'%</b><br>Критичных пробелов: '+d.criticalGaps;
+        } },
+        series:[{ name:'Уверенность',
+          data: cf.map(function(d){ return { y:d.confidence, color: levelColor[d.level]||GRAY }; }) }]
+      });
+
+      // 6. Dependency Sankey
+      Highcharts.chart('chart-sankey', {
+        chart:{ type:'sankey' },
+        tooltip:{ nodeFormat:'{point.name}', pointFormat:'{point.fromNode.name} → {point.toNode.name}' },
+        series:[{
+          keys:['from','to','weight'],
+          data: m.dependency_sankey.links.map(function(l){ return [l.source, l.target, l.value]; }),
+          nodePadding:6,
+          colors:[BASE,BASE2,ACCENT,'#5b636b','#7d8790','#aab4bd'],
+          dataLabels:{ style:{ color:'#e6e9ec', textOutline:'1px #101214', fontSize:'10px', fontWeight:'normal' } }
+        }]
+      });
+
+      // 7. Gaps by severity
+      var gp = m.gaps_by_severity;
+      var gColor = { red:RED, yellow:YELLOW, gray:GRAY };
+      Highcharts.chart('chart-gaps', {
+        chart:{ type:'column' },
+        xAxis:{ categories: gp.map(function(d){return d.severity;}) },
+        yAxis:{ title:{ text:'Число пробелов' }, allowDecimals:false },
+        plotOptions:{ column:{ borderWidth:0, groupPadding:0.08,
+          dataLabels:{ enabled:true, style:{ color:'#e6e9ec', textOutline:'none' } } } },
+        tooltip:{ pointFormat:'Пробелов: <b>{point.y}</b>' },
+        series:[{ name:'Пробелы',
+          data: gp.map(function(d){ return { y:d.count, color: gColor[d.level]||GRAY }; }) }]
+      });
+
+    })();
+    </script>
+
+</body>
+</html>

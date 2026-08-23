@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "lastCheckpoint": "2026-08-22T00:00:00Z",
+  "completedAgents": [
+    "Mapper",
+    "Analyst",
+    "Storyteller",
+    "Publisher"
+  ],
+  "pendingAgents": [],
+  "pages": [
+    "arquitetura.html",
+    "modulos.html",
+    "topologia.html",
+    "metricas.html",
+    "glossario.html",
+    "deck.html",
+    "features/bronirovanie.html",
+    "features/razmeshchenie.html",
+    "features/gosti.html",
+    "features/gornichnye.html",
+    "features/minibar.html",
+    "features/dopuslugi-kovorking.html",
+    "features/cenoobrazovanie.html",
+    "features/finansy.html",
+    "features/oborudovanie.html",
+    "features/audit.html",
+    "features/personal.html",
+    "features/integracii.html",
+    "pereizvlechenie.html"
+  ],
+  "pagesGenerated": [
+    "index.html",
+    "arquitetura.html",
+    "modulos.html",
+    "topologia.html",
+    "metricas.html",
+    "glossario.html",
+    "deck.html",
+    "features/bronirovanie.html",
+    "features/razmeshchenie.html",
+    "features/gosti.html",
+    "features/gornichnye.html",
+    "features/minibar.html",
+    "features/dopuslugi-kovorking.html",
+    "features/cenoobrazovanie.html",
+    "features/finansy.html",
+    "features/oborudovanie.html",
+    "features/audit.html",
+    "features/personal.html",
+    "features/integracii.html",
+    "pereizvlechenie.html"
+  ],
+  "pagesOmitted": [
+    {
+      "page": "timeline.html",
+      "reason": "нет .reversa/chronicle.md"
+    }
+  ],
+  "auxiliaryHtmlsDiscovered": 0,
+  "cdnFallbackUsed": true,
+  "pipelineDurationMs": 41000,
+  "auxiliaryHtmls": [],
+  "auxiliaryDiscoveryAborted": false,
+  "cdnFallbackDetails": [
+    {
+      "lib": "highcharts",
+      "primary": "https://code.highcharts.com/11.4.8/highcharts.js",
+      "used": "https://cdn.jsdelivr.net/npm/highcharts@11.4.8/highcharts.js"
+    }
+  ],
+  "vendorMissing": [],
+  "smokeTestFailed": false,
+  "smokeTestErrors": [],
+  "brokenLinks": [],
+  "sealGenerated": [
+    "assets/img/seal.svg",
+    "assets/img/seal-mini.svg"
+  ],
+  "commonAssets": [
+    "assets/css/style.css",
+    "assets/js/data.js",
+    "assets/js/nav.js",
+    "assets/js/sidebar.js"
+  ],
+  "targetConfiguration": "ПСН_РЕНОМЕ__АУДИТ (ОТЕЛЬ 3.2.7.38)",
+  "reExtractionId": "2026-08-21-ПСН-РЕНОМЕ",
+  "updates": [
+    {
+      "task": "6.13",
+      "at": "2026-08-22T00:00:00Z",
+      "agent": "reversa-docs-publisher",
+      "summary": "Мини-сайт приведён в соответствие с ПСН: баннер переизвлечения на всех 19 унаследованных страницах, счётчики ПСН, новая страница pereizvlechenie.html, ссылка на неё в навигации и на индексе.",
+      "bannerAddedTo": 19,
+      "pageAdded": "pereizvlechenie.html",
+      "countersCorrected": [
+        {
+          "metric": "CommonModules",
+          "hotel": 183,
+          "psn": 184,
+          "where": [
+            "topologia.html"
+          ]
+        },
+        {
+          "metric": "total_bsl_lines",
+          "hotel": 253442,
+          "psn": 249114,
+          "where": [
+            "assets/data/modules.json",
+            "assets/data/metrics.json",
+            "assets/js/data.js",
+            "arquitetura.html",
+            "modulos.html",
+            "metricas.html",
+            "index.html",
+            "deck.html"
+          ]
+        },
+        {
+          "metric": "DataProcessors",
+          "hotel": 84,
+          "psn": 83,
+          "where": [],
+          "note": "на сайте не выводится — правка не потребовалась"
+        },
+        {
+          "metric": "Constants",
+          "hotel": 90,
+          "psn": 89,
+          "where": [],
+          "note": "на сайте не выводится — правка не потребовалась"
+        },
+        {
+          "metric": "total_files",
+          "hotel": 2468,
+          "psn": 2466,
+          "where": [],
+          "note": "на сайте не выводится — правка не потребовалась"
+        }
+      ],
+      "knownResiduals": [
+        "Помодульные LOC (сумма 253 440) — оценки времён Hotel, помодульно не пересчитывались; на metricas.html это оговорено.",
+        "assets/data/modules.json → primaryFiles хранит пути с префиксом ПСН_РЕНОМЕ__АУДИТ/src/ — дерево ПСН имеет ту же структуру под ПСН_РЕНОМЕ__АУДИТ/src/."
+      ]
+    }
+  ]
+}

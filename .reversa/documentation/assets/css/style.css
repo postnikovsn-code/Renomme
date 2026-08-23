@@ -1,0 +1,171 @@
+/* Reversa Docs — общая база, стиль sober (серый, высокий контраст, фокус на контенте).
+   Страницы несут собственный inline-CSS; этот файл задаёт reset и токены,
+   а также стили index.html и мини-печати. Подключается первым. */
+
+:root{
+  --rv-bg:#101214; --rv-panel:#181b1f; --rv-panel2:#1f2329; --rv-line:#2c3138;
+  --rv-fg:#e6e9ec; --rv-fg-dim:#9aa3ab; --rv-accent:#c9ced4; --rv-hot:#d05a4f;
+  --rv-grid:#23272d; --rv-link:#cfd6dd;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--rv-bg);color:var(--rv-fg);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.55;}
+img,svg{max-width:100%;}
+
+/* Мини-печать в шапке */
+.reversa-doc-logo .seal svg,.reversa-doc-logo .seal .seal-mini{width:28px;height:28px;display:block;}
+.seal-mini{display:block;}
+
+/* Светлая тема (toggle через nav.js добавляет .rv-theme-light на <html>) */
+html.rv-theme-light{
+  --rv-bg:#f4f5f7; --rv-panel:#ffffff; --rv-panel2:#eef0f3; --rv-line:#d4d8de;
+  --rv-fg:#1b1f24; --rv-fg-dim:#5b636b; --rv-accent:#3a4047;
+  --rv-grid:#e2e5ea; --rv-link:#2b3138;
+}
+
+/* Скелет index.html */
+.rv-index-main{max-width:1080px;margin:0 auto;padding:24px 22px 60px;}
+.rv-hero{display:flex;gap:30px;align-items:center;flex-wrap:wrap;
+  background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:12px;
+  padding:28px 30px;margin:8px 0 34px;}
+.rv-hero-seal{flex:0 0 auto;width:180px;height:180px;}
+.rv-hero-seal svg{width:180px;height:180px;display:block;border-radius:10px;}
+.rv-hero-text{flex:1 1 320px;min-width:280px;}
+.rv-hero-text h1{font-size:34px;margin:0 0 6px;letter-spacing:.5px;}
+.rv-hero-kicker{font-size:13px;text-transform:uppercase;letter-spacing:1.4px;color:var(--rv-fg-dim);margin:0 0 12px;}
+.rv-hero-tagline{font-size:16px;color:var(--rv-fg);margin:0 0 14px;max-width:62ch;}
+.rv-hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+.rv-chip{display:inline-block;font-size:12px;border:1px solid var(--rv-line);border-radius:12px;
+  padding:3px 11px;color:var(--rv-fg-dim);background:var(--rv-panel2);}
+.rv-chip b{color:var(--rv-fg);}
+
+.rv-section-h{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--rv-fg-dim);
+  margin:30px 0 14px;border-bottom:1px solid var(--rv-line);padding-bottom:7px;}
+
+.rv-start{background:var(--rv-panel);border:1px solid var(--rv-line);border-left:3px solid var(--rv-accent);
+  border-radius:10px;padding:18px 20px;margin:0 0 14px;}
+.rv-start h2{font-size:17px;margin:0 0 10px;}
+.rv-start ol{margin:0;padding-left:20px;}
+.rv-start li{margin:0 0 7px;font-size:14px;}
+.rv-start a{color:var(--rv-link);}
+
+.rv-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:14px;}
+.rv-card{display:block;text-decoration:none;color:inherit;
+  background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:10px;
+  padding:16px 17px;transition:border-color .15s,transform .15s;}
+.rv-card:hover{border-color:var(--rv-accent);transform:translateY(-2px);}
+.rv-card .rv-card-ico{font-size:20px;line-height:1;margin-bottom:8px;color:var(--rv-accent);}
+.rv-card h3{margin:0 0 5px;font-size:16px;}
+.rv-card p{margin:0;font-size:13px;color:var(--rv-fg-dim);}
+
+.rv-aux-empty{color:var(--rv-fg-dim);font-size:13px;}
+
+.rv-index-footer{max-width:1080px;margin:0 auto;padding:14px 22px 40px;
+  color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);}
+.rv-index-footer code{font-family:'Cascadia Code',Consolas,monospace;}
+
+@media (max-width:680px){
+  .rv-hero{padding:22px;}
+  .rv-hero-seal,.rv-hero-seal svg{width:130px;height:130px;}
+}
+
+/* ── Баннер переизвлечения (задача 6.13) ──────────────────────────────────────
+   Отображается на всех страницах мини-сайта сразу под шапкой, до <main>.
+   Сообщает, что содержимое сайта унаследовано от извлечения проекта Hotel
+   и отражает состояние ДО переизвлечения `2026-08-21-ПСН-РЕНОМЕ`.
+   Только локальные стили, без внешних ресурсов. */
+.rv-reext{
+  background:var(--rv-panel2);
+  border:1px solid var(--rv-line);
+  border-left:3px solid var(--rv-hot);
+  border-radius:8px;
+  margin:12px 18px 0;
+  padding:11px 15px;
+  font-size:13px;
+  line-height:1.5;
+  color:var(--rv-fg-dim);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;
+}
+.rv-reext-h{
+  display:block;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.1px;
+  font-weight:600;
+  color:var(--rv-hot);
+  margin:0 0 6px;
+}
+.rv-reext p{margin:0 0 4px;max-width:120ch;}
+.rv-reext p:last-child{margin-bottom:0;}
+.rv-reext b{color:var(--rv-fg);font-weight:600;}
+.rv-reext a{color:var(--rv-link);}
+.rv-reext a:hover{color:var(--rv-fg);}
+.rv-reext code{font-family:'Cascadia Code',Consolas,'Courier New',monospace;font-size:12px;color:var(--rv-fg);}
+
+@media (max-width:680px){
+  .rv-reext{margin:10px 12px 0;padding:10px 12px;font-size:12.5px;}
+}
+
+/* ── Страница переизвлечения (pereizvlechenie.html) ───────────────────────── */
+.rv-px-main{max-width:1080px;margin:0 auto;padding:20px 22px 60px;}
+.rv-px-main h1{font-size:28px;margin:14px 0 6px;letter-spacing:.3px;}
+.rv-px-lead{color:var(--rv-fg-dim);font-size:14px;margin:0 0 8px;max-width:96ch;}
+.rv-px-h{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--rv-fg-dim);
+  margin:32px 0 12px;border-bottom:1px solid var(--rv-line);padding-bottom:7px;}
+.rv-px-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 8px;}
+.rv-px-stat{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:9px;padding:13px 14px;}
+.rv-px-stat .n{display:block;font-size:24px;font-weight:600;color:var(--rv-fg);line-height:1.15;}
+.rv-px-stat .l{display:block;font-size:12px;color:var(--rv-fg-dim);margin-top:4px;}
+.rv-px-stat.hot{border-left:3px solid var(--rv-hot);}
+.rv-px-stat.hot .n{color:var(--rv-hot);}
+.rv-px-table-wrap{overflow-x:auto;border:1px solid var(--rv-line);border-radius:9px;background:var(--rv-panel);}
+.rv-px-table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px;}
+.rv-px-table th,.rv-px-table td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--rv-line);}
+.rv-px-table th{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--rv-fg-dim);
+  background:var(--rv-panel2);font-weight:600;}
+.rv-px-table tr:last-child td{border-bottom:none;}
+.rv-px-table td.u{white-space:nowrap;color:var(--rv-fg);font-weight:600;}
+.rv-px-table td.t{white-space:nowrap;color:var(--rv-fg-dim);font-size:12.5px;}
+.rv-px-list{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+.rv-px-item{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:9px;padding:14px 16px;}
+.rv-px-item.risk{border-left:3px solid var(--rv-hot);}
+.rv-px-item.gap{border-left:3px solid var(--rv-accent);}
+.rv-px-item h3{margin:0 0 6px;font-size:15px;color:var(--rv-fg);}
+.rv-px-item p{margin:0 0 5px;font-size:13.5px;color:var(--rv-fg-dim);}
+.rv-px-item p:last-child{margin-bottom:0;}
+.rv-px-item code{font-family:'Cascadia Code',Consolas,'Courier New',monospace;font-size:12.5px;color:var(--rv-fg);}
+.rv-px-badge{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;
+  border:1px solid var(--rv-line);border-radius:10px;padding:2px 9px;margin-left:8px;
+  color:var(--rv-fg-dim);background:var(--rv-panel2);vertical-align:middle;}
+.rv-px-links{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+.rv-px-links li{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:8px;padding:10px 14px;font-size:13.5px;}
+.rv-px-links a{color:var(--rv-link);font-family:'Cascadia Code',Consolas,'Courier New',monospace;font-size:12.5px;}
+.rv-px-links span{color:var(--rv-fg-dim);}
+.rv-px-note{color:var(--rv-fg-dim);font-size:12.5px;margin:10px 0 0;max-width:100ch;}
+.rv-px-footer{max-width:1080px;margin:0 auto;padding:14px 22px 40px;
+  color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);}
+
+/* Постраничные поправки вёрстки под баннер 6.13.
+   Три страницы держат фиксированную боковую панель (width 248px, right:0) —
+   баннер уводится из-под неё. Дек переводится в flex-колонку, чтобы сцена
+   слайдов заняла остаток высоты, а не вылезла за экран. */
+body[data-page="arquitetura"] .rv-reext,
+body[data-page="modulos"] .rv-reext,
+body[data-page="topologia"] .rv-reext{margin-right:266px;}
+
+body[data-page="deck"]{display:flex;flex-direction:column;min-height:100vh;}
+body[data-page="deck"] .dk-stage{height:auto;flex:1 1 auto;min-height:360px;}
+body[data-page="deck"] .rv-reext{flex:0 0 auto;}
+
+@media (max-width:900px){
+  body[data-page="arquitetura"] .rv-reext,
+  body[data-page="modulos"] .rv-reext,
+  body[data-page="topologia"] .rv-reext{margin-right:18px;}
+}
+@media (max-width:680px){
+  body[data-page="arquitetura"] .rv-reext,
+  body[data-page="modulos"] .rv-reext,
+  body[data-page="topologia"] .rv-reext{margin-right:12px;}
+}

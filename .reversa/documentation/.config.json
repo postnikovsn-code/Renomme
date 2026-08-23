@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-07T00:00:00Z",
+  "reversa": {
+    "version": "1.2.47"
+  },
+  "projectName": "ОТЕЛЬ",
+  "interview": {
+    "readerProfile": "novo_dev",
+    "depth": "full",
+    "visualStyle": "sober"
+  },
+  "seed": {
+    "hash": "sha256:d4b20fd66574612949fdbcf11a62f7f4357cace00c74514877c2a28f91f8f8e8",
+    "source": "project_name",
+    "explicitOverride": null
+  },
+  "knowledgeSources": {
+    "soul": false,
+    "chronicle": false,
+    "topology": true,
+    "sddSpecs": [
+      "Бронирование",
+      "Размещение",
+      "Гости",
+      "Горничные",
+      "Минибар",
+      "ДопУслугиКоворкинг",
+      "Ценообразование",
+      "Финансы",
+      "Оборудование",
+      "Аудит",
+      "Персонал",
+      "Интеграции"
+    ],
+    "sourceCode": true
+  },
+  "pagesPlanned": [
+    "index.html",
+    "arquitetura.html",
+    "modulos.html",
+    "topologia.html",
+    "metricas.html",
+    "glossario.html",
+    "deck.html",
+    "features/*.html (12)",
+    "pereizvlechenie.html"
+  ],
+  "pagesOmitted": [
+    {
+      "page": "timeline.html",
+      "reason": "нет .reversa/chronicle.md"
+    }
+  ],
+  "targetConfiguration": {
+    "name": "ОТЕЛЬ",
+    "version": "3.2.7.38",
+    "root": "ПСН_РЕНОМЕ__АУДИТ/src",
+    "note": "Мини-сайт сгенерирован по извлечению проекта Hotel (дерево Hotel/ПСН_РЕНОМЕ__АУДИТ/src) и импортирован сюда 2026-08-21. Целевая конфигурация здесь — ПСН_РЕНОМЕ__АУДИТ, та же «ОТЕЛЬ» 3.2.7.38: из 2423 общих файлов 2389 (98.6 %) совпадают побайтово."
+  },
+  "importedFrom": {
+    "project": "Hotel",
+    "sourceRoot": "C:/_dev/ANB/AI/Hotel/ПСН_РЕНОМЕ__АУДИТ/src",
+    "importedAt": "2026-08-21",
+    "reference": "_reversa_sdd/IMPORT.md"
+  },
+  "reExtraction": {
+    "id": "2026-08-21-ПСН-РЕНОМЕ",
+    "performedAt": "2026-08-21",
+    "artifacts": "_reversa_sdd/re-extraction/2026-08-21-ПСН-РЕНОМЕ/",
+    "pagesReflect": "состояние до переизвлечения",
+    "divergence": {
+      "commonFiles": 2423,
+      "identicalBytewise": 2389,
+      "contentDiffs": 33,
+      "onlyInHotel": 48,
+      "onlyInPsn": 43,
+      "note": "Первичный обход дал 34 различия; Configuration/Configuration.distr переклассифицирован задачей 6.11 в ложное расхождение."
+    }
+  }
+}

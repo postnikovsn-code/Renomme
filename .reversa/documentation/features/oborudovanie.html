@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подключаемое оборудование (БПО) | ОТЕЛЬ</title>
+
+    <meta name="reversa-category" content="feature">
+    <meta name="reversa-template" content="feature">
+    <meta name="reversa-source-md" content="_reversa_sdd/Оборудование/requirements.md">
+    <meta name="reversa-producer-agent" content="reversa-docs-storyteller">
+    <meta name="reversa-generated-at" content="2026-06-09T00:00:00Z">
+    <meta name="reversa-schema-version" content="1">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+<style>
+:root{
+  --rv-bg:#101214; --rv-panel:#181b1f; --rv-panel2:#1f2329; --rv-line:#2c3138;
+  --rv-fg:#e6e9ec; --rv-fg-dim:#9aa3ab; --rv-accent:#c9ced4; --rv-hot:#d05a4f; --rv-link:#cfd6dd;
+}
+html,body{margin:0;padding:0;background:var(--rv-bg);color:var(--rv-fg);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.55;}
+a{color:var(--rv-link);}
+.reversa-doc-header{display:flex;align-items:center;gap:18px;padding:10px 18px;
+  background:var(--rv-panel);border-bottom:1px solid var(--rv-line);position:sticky;top:0;z-index:30;}
+.reversa-doc-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--rv-fg);font-weight:600;}
+.reversa-doc-logo .seal svg,.reversa-doc-logo .seal{width:28px;height:28px;display:block;}
+.reversa-doc-nav{display:flex;gap:14px;flex-wrap:wrap;}
+.reversa-doc-nav a{color:var(--rv-fg-dim);text-decoration:none;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent;}
+.reversa-doc-nav a:hover{color:var(--rv-fg);}
+.reversa-doc-nav a[aria-current="page"]{color:var(--rv-fg);border-bottom-color:var(--rv-accent);}
+.reversa-doc-toolbar{margin-left:auto;}
+.theme-toggle{background:var(--rv-panel2);color:var(--rv-fg-dim);border:1px solid var(--rv-line);
+  border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;}
+.reversa-doc-payload{padding:20px 22px;max-width:1000px;margin:0 auto;}
+.ft-breadcrumb{font-size:13px;color:var(--rv-fg-dim);margin-bottom:8px;}
+.ft-breadcrumb a{color:var(--rv-fg-dim);}
+.reversa-doc-title{font-size:26px;font-weight:600;margin:0 0 6px;letter-spacing:.2px;}
+.ft-sub{color:var(--rv-fg-dim);font-size:14px;margin:0 0 18px;}
+.ft-tldr{background:var(--rv-panel);border:1px solid var(--rv-line);border-left:3px solid var(--rv-accent);
+  border-radius:6px;padding:14px 16px;margin:0 0 22px;font-size:15px;}
+.ft-section{margin:0 0 22px;}
+.ft-section > h2{font-size:17px;text-transform:uppercase;letter-spacing:.7px;color:var(--rv-fg-dim);
+  margin:0 0 12px;border-bottom:1px solid var(--rv-line);padding-bottom:6px;}
+.ft-cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;}
+.ft-cell{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:8px;padding:12px 14px;}
+.ft-cell h4{margin:0 0 5px;font-size:14px;color:var(--rv-fg);}
+.ft-cell p{margin:0;font-size:13px;color:var(--rv-fg-dim);}
+.ft-cell code{font-family:'Cascadia Code',Consolas,monospace;font-size:.85em;color:#cdd6df;}
+.ft-rules{list-style:none;margin:0;padding:0;}
+.ft-rules li{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:7px;
+  padding:11px 13px;margin:0 0 9px;font-size:14px;display:flex;gap:10px;align-items:flex-start;}
+.ft-rid{font-family:'Cascadia Code',Consolas,monospace;font-size:12px;color:var(--rv-accent);
+  white-space:nowrap;padding-top:1px;min-width:54px;}
+.ft-edge{list-style:none;margin:0;padding:0;}
+.ft-edge li{padding:9px 0;border-bottom:1px solid var(--rv-line);font-size:14px;}
+.ft-edge li:last-child{border-bottom:none;}
+.ft-q{list-style:none;margin:0;padding:0;}
+.ft-q li{background:#1b1718;border:1px solid #3a2a28;border-radius:7px;padding:11px 13px;margin:0 0 9px;font-size:14px;}
+.ft-q .ft-qid{font-family:'Cascadia Code',Consolas,monospace;font-size:12px;color:#e0a59d;margin-right:8px;}
+.ft-q.amber li, li.amber{background:#1c1a14;border-color:#3a3522;}
+.ft-q.amber .ft-qid{color:#d7c98a;}
+code,.mono{font-family:'Cascadia Code',Consolas,monospace;}
+.ft-obj-list code{color:#cdd6df;}
+.ft-links a{display:inline-block;margin-right:16px;font-size:14px;}
+.reversa-doc-footer{padding:12px 22px;color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);
+  background:var(--rv-panel);}
+.reversa-doc-footer a{color:var(--rv-fg-dim);}
+.ft-tag{display:inline-block;font-size:11px;border:1px solid var(--rv-line);border-radius:10px;
+  padding:1px 8px;color:var(--rv-fg-dim);margin-left:8px;vertical-align:middle;}
+@media (max-width:680px){ .ft-cols{grid-template-columns:1fr;} }
+</style>
+</head>
+<body data-style="sober" data-page="feature-oborudovanie">
+
+    <header class="reversa-doc-header">
+        <a class="reversa-doc-logo" href="../index.html" aria-label="Начало">
+            <span class="seal" aria-hidden="true"><svg class="seal-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Печать проекта ОТЕЛЬ"><title>ОТЕЛЬ · d4b20fd6</title><rect x="0" y="0" width="64" height="64" fill="none" rx="3.8"/><circle cx="32.0" cy="32.0" r="29.4" fill="none" stroke="#3a4047" stroke-width="0.60" opacity="0.59"/><circle cx="32.0" cy="32.0" r="24.1" fill="none" stroke="#3a4047" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.80"/><circle cx="32.0" cy="32.0" r="18.7" fill="none" stroke="#2c3138" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.69"/><circle cx="32.0" cy="32.0" r="13.4" fill="none" stroke="#4a525a" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.89"/><line x1="38.5" y1="32.1" x2="52.6" y2="32.4" stroke="#9aa6b0" stroke-width="0.50" opacity="0.7"/><line x1="35.2" y1="37.6" x2="42.1" y2="50.0" stroke="#4a525a" stroke-width="0.50" opacity="0.7"/><line x1="28.8" y1="37.6" x2="21.9" y2="50.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="25.5" y1="31.9" x2="11.4" y2="31.6" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><line x1="28.9" y1="26.3" x2="22.1" y2="14.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="35.5" y1="26.6" x2="43.1" y2="14.7" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><polygon points="38.5,38.0 26.0,38.5 25.5,26.0 38.0,25.5" fill="none" stroke="#c9d2da" stroke-width="0.60" opacity="0.85"/><polygon points="35.7,38.0 26.0,35.7 28.3,26.0 38.0,28.3" fill="none" stroke="#9aa6b0" stroke-width="0.60" opacity="0.85"/><circle cx="32.0" cy="32.0" r="3.2" fill="#c9d2da"/></svg></span>
+            <span class="project-name">ОТЕЛЬ</span>
+        </a>
+        <nav class="reversa-doc-nav" aria-label="Разделы документации">
+            <a href="../index.html" data-page-id="index">Обзор</a>
+            <a href="../arquitetura.html" data-page-id="arquitetura">Архитектура 3D</a>
+            <a href="../modulos.html" data-page-id="modulos">Модули</a>
+            <a href="../topologia.html" data-page-id="topologia">Топология</a>
+            <a href="../metricas.html" data-page-id="metricas">Метрики</a>
+            <a href="../glossario.html" data-page-id="glossario">Глоссарий</a>
+            <a href="../deck.html" data-page-id="deck">Дек</a>
+            <a href="../pereizvlechenie.html" data-page-id="pereizvlechenie">Переизвлечение</a>
+        </nav>
+        <div class="reversa-doc-toolbar">
+            <button type="button" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-toggle-label">Тема</span>
+            </button>
+        </div>
+    </header>
+
+<section class="rv-reext" role="note" aria-label="Происхождение документации">
+    <span class="rv-reext-h">Импорт из проекта Hotel · страница отражает состояние ДО переизвлечения</span>
+    <p>Мини-сайт построен по извлечению проекта <b>Hotel</b> (дерево <code>Hotel/ПСН_РЕНОМЕ__АУДИТ/src</code>) и импортирован сюда <b>2026-08-21</b>. Целевая конфигурация здесь — <b>ПСН_РЕНОМЕ__АУДИТ</b>, та же «ОТЕЛЬ» 3.2.7.38: из 2423 общих файлов 98.6 % совпадают побайтово.</p>
+    <p>По этой конфигурации проведено переизвлечение <code>2026-08-21-ПСН-РЕНОМЕ</code>. Актуальные отличия — в <a href="../../../_reversa_sdd/re-extraction/2026-08-21-%D0%9F%D0%A1%D0%9D-%D0%A0%D0%95%D0%9D%D0%9E%D0%9C%D0%95/">_reversa_sdd/re-extraction/2026-08-21-ПСН-РЕНОМЕ/</a> и <a href="../../../_reversa_sdd/IMPORT.md">_reversa_sdd/IMPORT.md</a>; сводка на сайте — <a href="../pereizvlechenie.html">Переизвлечение</a>.</p>
+    <p><b>Содержимое страниц отражает состояние до переизвлечения.</b> Счётчики метаданных и объём BSL приведены к ПСН; описания модулей, правил, метрик и пробелов унаследованы от Hotel. При расхождении приоритет у дельты переизвлечения.</p>
+</section>
+
+    <main class="reversa-doc-main" role="main">
+        <div class="reversa-doc-payload">
+            <div class="ft-breadcrumb"><a href="../modulos.html">Модули</a> / Подключаемое оборудование (БПО)</div>
+            <h1 class="reversa-doc-title">Подключаемое оборудование (БПО)</h1>
+            <p class="ft-sub">Как устроена фича · модуль «Подключаемое оборудование (БПО)» <span class="ft-tag">20 405 строк</span> <span class="ft-tag">сложность: высокая</span></p>
+
+            <div class="ft-tldr">Модуль опирается на встроенную типовую Библиотеку подключаемого оборудования (БПО ред. 3.2): фискальные регистраторы/ККТ, эквайринг, маркировка и ФЛК, устройства распознавания, внешние компоненты-драйверы, логирование и регламентная очистка истории. Домен «ОТЕЛЬ» использует библиотеку через тонкий слой обёрток для фискализации смены и чеков. Включено доменное расширение телеметрии датчиков.</div>
+            <div class="ft-section">
+                <h2>Назначение</h2>
+                <p>Делегирует всю фискальную и торговую периферию типовой библиотеке БПО, переиспользуемой как стабильная зависимость.</p>
+                <p>Предоставляет тонкий слой обёрток (<code>ФУ_Клиент</code>, <code>ФУ_Сервер</code>, <code>СерверККМ</code>) для открытия/закрытия кассовой смены и пробития чеков.</p>
+                <p>Содержит доменное расширение телеметрии: показания физических датчиков по комнатам.</p>
+            </div>
+            <div class="ft-section">
+                <h2>Ключевые объекты и потоки</h2>
+                <div class="ft-cols">
+                    <div class="ft-cell"><h4>Subsystem.ПоддержкаОборудования</h4><p>Типовая библиотека БПО ред. 3.2 (255 объектов метаданных).</p></div>
+                    <div class="ft-cell"><h4>CommonModule.ФУ_Клиент / ФУ_Сервер</h4><p>Обёртки открытия/закрытия смены и фискализации.</p></div>
+                    <div class="ft-cell"><h4>CommonModule.СерверККМ</h4><p>Внешний контракт «Сервер ККМ» (HTTP).</p></div>
+                    <div class="ft-cell"><h4>CommonModule.ОборудованиеЧекопечатающиеУстройстваКлиент</h4><p>Пробитие чека (4 способа).</p></div>
+                    <div class="ft-cell"><h4>Catalog.Датчики</h4><p>Привязка датчик — комната.</p></div>
+                    <div class="ft-cell"><h4>Document.ПоказанияДатчиков</h4><p>Запись показаний в РС по строкам ТЧ.</p></div>
+                </div>
+            </div>
+            <div class="ft-section">
+                <h2>Бизнес-правила</h2>
+                <ul class="ft-rules">
+                    <li><span class="ft-rid">EQ-01</span><span>Устройство привязано к рабочему месту через <code>Catalog.РабочиеМеста</code> и <code>SessionParameter.РабочееМестоКлиента</code>.</span></li>
+                    <li><span class="ft-rid">EQ-02</span><span>Пробитие чека возможно 4 способами: локальная ККТ, Сервер ККМ, облачная, распределённая очередь.</span></li>
+                    <li><span class="ft-rid">EQ-03</span><span>Журналы операций чистятся регламентными заданиями по константам срока хранения.</span></li>
+                    <li><span class="ft-rid">EQ-04</span><span>Отправка электронных чеков управляется константой и регламентным заданием рассылки.</span></li>
+                    <li><span class="ft-rid">EQ-05</span><span>Показания датчиков пишутся в РС по строкам ТЧ документа (доменное расширение БПО).</span></li>
+                </ul>
+            </div>
+            <div class="ft-section">
+                <h2>Крайние случаи</h2>
+                <ul class="ft-edge">
+                    <li>Оффлайн-режим: чек уходит в распределённую очередь <code>ОчередьЧековККТ</code> вместо немедленной фискализации.</li>
+                    <li>Проведение пустой/неполной ТЧ показаний датчиков — поведение движений РС требует проверки.</li>
+                    <li>Повторный запуск пробития чека (двойное нажатие до async-callback) — явный идемпотентный замок не обнаружен 🔴.</li>
+                    <li>Дефолтные креды <code>Admin/Admin</code> в <code>СерверККМ.СоздатьСоединение</code> — риск, если достигают живого сервиса.</li>
+                </ul>
+            </div>
+            <div class="ft-section">
+                <h2>Открытые вопросы</h2>
+                <ul class="ft-q">
+                    <li><span class="ft-qid">🔴 Q-01</span>Хардкод <code>Admin/Admin</code> в <code>СерверККМ.СоздатьСоединение</code> — реальный источник кредов.</li>
+                    <li><span class="ft-qid">🔴 Q-02</span>Источник наполнения ТЧ <code>Document.ПоказанияДатчиков</code> (опрос датчика, импорт, ручной ввод) не найден.</li>
+                    <li><span class="ft-qid">🔴 Q-04</span>Внутренности БПО (драйверы/ФН/ФЛК) осознанно не разбирались — подтвердить границу: библиотека не переписывается.</li>
+                    <li><span class="ft-qid">🔴 Q-06</span>Идемпотентность повторного пробития чека — защита от дубля фискального документа.</li>
+                    <li class="amber"><span class="ft-qid">🟡 Q-03</span>Статус <code>DataProcessor.ПечатьУведомления_OLD</code> — техдолг или живой код.</li>
+                    <li class="amber"><span class="ft-qid">🟡 Q-05</span>Какой из 4 способов фискализации активен в проде и условия переключения.</li>
+                </ul>
+            </div>
+
+            <div class="ft-section ft-links">
+                <h2>Ссылки</h2>
+                <a href="../glossario.html">Глоссарий домена</a>
+                <a href="../modulos.html">Карта модулей</a>
+                <a href="../arquitetura.html">3D-архитектура</a>
+                <a href="../deck.html">Обзорный дек</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="reversa-doc-footer">
+        <span class="reversa-doc-footer-text">Сгенерировано Reversa, 2026-06-09T00:00:00Z</span>
+        <span class="reversa-doc-footer-sep" aria-hidden="true">·</span>
+        <a href="../../../_reversa_sdd/Оборудование/requirements.md" class="reversa-doc-source-link">Источник markdown</a>
+    </footer>
+
+    <script src="../assets/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топология | ОТЕЛЬ</title>
+
+    <meta name="reversa-category" content="diagram">
+    <meta name="reversa-template" content="topologia">
+    <meta name="reversa-source-md" content="_reversa_sdd/architecture.md">
+    <meta name="reversa-producer-agent" content="reversa-docs-mapper">
+    <meta name="reversa-generated-at" content="2026-06-07T00:00:00Z">
+    <meta name="reversa-schema-version" content="1">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+:root{
+  --rv-bg:#101214; --rv-panel:#181b1f; --rv-panel2:#1f2329; --rv-line:#2c3138;
+  --rv-fg:#e6e9ec; --rv-fg-dim:#9aa3ab; --rv-accent:#c9ced4; --rv-hot:#d05a4f;
+  --rv-grid:#23272d; --rv-link:#cfd6dd;
+}
+html,body{margin:0;padding:0;background:var(--rv-bg);color:var(--rv-fg);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.5;}
+a{color:var(--rv-link);}
+.reversa-doc-header{display:flex;align-items:center;gap:18px;padding:10px 18px;
+  background:var(--rv-panel);border-bottom:1px solid var(--rv-line);position:sticky;top:0;z-index:30;}
+.reversa-doc-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--rv-fg);font-weight:600;}
+.reversa-doc-logo .seal svg,.reversa-doc-logo .seal{width:28px;height:28px;display:block;}
+.reversa-doc-nav{display:flex;gap:14px;flex-wrap:wrap;}
+.reversa-doc-nav a{color:var(--rv-fg-dim);text-decoration:none;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent;}
+.reversa-doc-nav a:hover{color:var(--rv-fg);}
+.reversa-doc-nav a[aria-current="page"]{color:var(--rv-fg);border-bottom-color:var(--rv-accent);}
+.reversa-doc-toolbar{margin-left:auto;}
+.theme-toggle{background:var(--rv-panel2);color:var(--rv-fg-dim);border:1px solid var(--rv-line);
+  border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;}
+.reversa-doc-payload{padding:18px 22px;margin-right:248px;}
+.reversa-doc-title{font-size:22px;font-weight:600;margin:0 0 14px;letter-spacing:.2px;}
+.reversa-doc-sidebar{position:fixed;top:55px;right:0;width:248px;height:calc(100vh - 55px);
+  background:var(--rv-panel);border-left:1px solid var(--rv-line);padding:16px;overflow:auto;box-sizing:border-box;z-index:20;}
+.reversa-doc-sidebar h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--rv-fg-dim);margin:0 0 10px;}
+.rv-ctl{margin-bottom:16px;}
+.rv-ctl label{display:block;font-size:13px;color:var(--rv-fg-dim);margin-bottom:5px;}
+.rv-ctl input[type=range]{width:100%;}
+.rv-ctl select,.rv-ctl input[type=number]{width:100%;background:var(--rv-panel2);color:var(--rv-fg);
+  border:1px solid var(--rv-line);border-radius:4px;padding:5px;box-sizing:border-box;}
+.rv-ctl-inline{display:flex;align-items:center;gap:8px;}
+.rv-ctl-inline input[type=checkbox]{accent-color:var(--rv-accent);}
+.rv-btn{display:block;width:100%;background:var(--rv-panel2);color:var(--rv-fg);
+  border:1px solid var(--rv-line);border-radius:4px;padding:7px;cursor:pointer;font-size:13px;margin-top:8px;}
+.rv-btn:hover{background:#262b31;}
+.reversa-doc-footer{padding:12px 22px;color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);
+  background:var(--rv-panel);margin-right:248px;}
+.reversa-doc-footer a{color:var(--rv-fg-dim);}
+@media (max-width:900px){
+  .reversa-doc-sidebar{position:static;width:auto;height:auto;border-left:none;border-top:1px solid var(--rv-line);}
+  .reversa-doc-footer,.reversa-doc-payload{margin-right:0;}
+}
+details.reversa-doc-3d-legend,details.reversa-doc-graph-legend{margin-top:12px;color:var(--rv-fg-dim);font-size:13px;}
+details summary{cursor:pointer;color:var(--rv-fg);}
+.rv-hint{color:var(--rv-fg-dim);font-size:13px;margin:0 0 12px;max-width:78ch;}
+.rv-tooltip{position:fixed;pointer-events:none;background:var(--rv-panel2);border:1px solid var(--rv-line);
+  color:var(--rv-fg);font-size:12px;padding:7px 9px;border-radius:4px;max-width:340px;z-index:50;
+  box-shadow:0 4px 14px rgba(0,0,0,.4);display:none;line-height:1.4;}
+.rv-tooltip b{color:#fff;}
+.rv-warn{background:#2a1c1a;border:1px solid var(--rv-hot);color:#e9c4bf;padding:14px;border-radius:6px;}
+</style>
+
+    <style>
+    .reversa-doc-topology{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;}
+    @media (max-width:980px){.reversa-doc-topology{grid-template-columns:1fr;}}
+    .reversa-doc-topology-col{background:var(--rv-panel);border:1px solid var(--rv-line);border-radius:8px;padding:16px;}
+    .reversa-doc-topology-col[data-variant="modern"]{border-color:#3a4a52;}
+    .reversa-doc-topology-col h2{font-size:17px;margin:0 0 4px;}
+    .topo-sub{color:var(--rv-fg-dim);font-size:13px;margin:0 0 14px;}
+    .topo-layer{border:1px solid var(--rv-line);border-radius:6px;padding:10px 12px;margin-bottom:10px;background:var(--rv-panel2);}
+    .topo-layer h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--rv-accent);}
+    .topo-layer.client h3{color:#bcd0d6;}
+    .topo-layer.server h3{color:#c7c0a8;}
+    .topo-layer.db h3{color:#a8b8c7;}
+    .topo-layer.integ h3{color:#c9a8b0;}
+    .topo-nodes{display:flex;flex-wrap:wrap;gap:6px;}
+    .topo-node{background:#13161a;border:1px solid var(--rv-line);border-radius:4px;padding:4px 8px;font-size:12px;color:var(--rv-fg);}
+    .topo-node.dom{border-color:#586975;}
+    .topo-node.bpo{border-color:#6b6450;color:#d8cfb6;}
+    .topo-node.warn{border-color:var(--rv-hot);color:#e9c4bf;}
+    .topo-flow{text-align:center;color:var(--rv-fg-dim);font-size:18px;line-height:1;margin:2px 0;}
+    .topo-ext{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+    @media (max-width:520px){.topo-ext{grid-template-columns:1fr;}}
+    .topo-note{font-size:12px;color:var(--rv-fg-dim);margin-top:6px;line-height:1.45;}
+    .topo-tag{display:inline-block;font-size:11px;border-radius:3px;padding:1px 6px;margin-left:6px;vertical-align:middle;}
+    .tag-com{background:#3a2b2b;color:#e0b9b4;}
+    .tag-http{background:#23323a;color:#a9cdd9;}
+    .tag-ftp{background:#2e2a36;color:#c2b3d6;}
+    .tag-rest{background:#28342a;color:#aed4b7;}
+    .topo-legend{margin-top:16px;font-size:13px;color:var(--rv-fg-dim);}
+    .topo-legend span{display:inline-block;margin-right:14px;}
+    .swatch{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:middle;margin-right:4px;border:1px solid #444;}
+    </style>
+</head>
+<body data-style="sober" data-page="topologia">
+
+    <header class="reversa-doc-header">
+        <a class="reversa-doc-logo" href="index.html" aria-label="Начало">
+            <span class="seal" aria-hidden="true"><svg class="seal-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Печать проекта ОТЕЛЬ"><title>ОТЕЛЬ · d4b20fd6</title><rect x="0" y="0" width="64" height="64" fill="none" rx="3.8"/><circle cx="32.0" cy="32.0" r="29.4" fill="none" stroke="#3a4047" stroke-width="0.60" opacity="0.59"/><circle cx="32.0" cy="32.0" r="24.1" fill="none" stroke="#3a4047" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.80"/><circle cx="32.0" cy="32.0" r="18.7" fill="none" stroke="#2c3138" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.69"/><circle cx="32.0" cy="32.0" r="13.4" fill="none" stroke="#4a525a" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.89"/><line x1="38.5" y1="32.1" x2="52.6" y2="32.4" stroke="#9aa6b0" stroke-width="0.50" opacity="0.7"/><line x1="35.2" y1="37.6" x2="42.1" y2="50.0" stroke="#4a525a" stroke-width="0.50" opacity="0.7"/><line x1="28.8" y1="37.6" x2="21.9" y2="50.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="25.5" y1="31.9" x2="11.4" y2="31.6" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><line x1="28.9" y1="26.3" x2="22.1" y2="14.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="35.5" y1="26.6" x2="43.1" y2="14.7" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><polygon points="38.5,38.0 26.0,38.5 25.5,26.0 38.0,25.5" fill="none" stroke="#c9d2da" stroke-width="0.60" opacity="0.85"/><polygon points="35.7,38.0 26.0,35.7 28.3,26.0 38.0,28.3" fill="none" stroke="#9aa6b0" stroke-width="0.60" opacity="0.85"/><circle cx="32.0" cy="32.0" r="3.2" fill="#c9d2da"/></svg></span>
+            <span class="project-name">ОТЕЛЬ</span>
+        </a>
+        <nav class="reversa-doc-nav" aria-label="Разделы документации">
+            <a href="index.html" data-page-id="index">Обзор</a>
+            <a href="arquitetura.html" data-page-id="arquitetura">Архитектура 3D</a>
+            <a href="modulos.html" data-page-id="modulos">Модули</a>
+            <a href="topologia.html" data-page-id="topologia">Топология</a>
+            <a href="metricas.html" data-page-id="metricas">Метрики</a>
+            <a href="glossario.html" data-page-id="glossario">Глоссарий</a>
+            <a href="deck.html" data-page-id="deck">Дек</a>
+            <a href="pereizvlechenie.html" data-page-id="pereizvlechenie">Переизвлечение</a>
+        </nav>
+        <div class="reversa-doc-toolbar">
+            <button type="button" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-toggle-label">Тема</span>
+            </button>
+        </div>
+    </header>
+
+<section class="rv-reext" role="note" aria-label="Происхождение документации">
+    <span class="rv-reext-h">Импорт из проекта Hotel · страница отражает состояние ДО переизвлечения</span>
+    <p>Мини-сайт построен по извлечению проекта <b>Hotel</b> (дерево <code>Hotel/ПСН_РЕНОМЕ__АУДИТ/src</code>) и импортирован сюда <b>2026-08-21</b>. Целевая конфигурация здесь — <b>ПСН_РЕНОМЕ__АУДИТ</b>, та же «ОТЕЛЬ» 3.2.7.38: из 2423 общих файлов 98.6 % совпадают побайтово.</p>
+    <p>По этой конфигурации проведено переизвлечение <code>2026-08-21-ПСН-РЕНОМЕ</code>. Актуальные отличия — в <a href="../../_reversa_sdd/re-extraction/2026-08-21-%D0%9F%D0%A1%D0%9D-%D0%A0%D0%95%D0%9D%D0%9E%D0%9C%D0%95/">_reversa_sdd/re-extraction/2026-08-21-ПСН-РЕНОМЕ/</a> и <a href="../../_reversa_sdd/IMPORT.md">_reversa_sdd/IMPORT.md</a>; сводка на сайте — <a href="pereizvlechenie.html">Переизвлечение</a>.</p>
+    <p><b>Содержимое страниц отражает состояние до переизвлечения.</b> Счётчики метаданных и объём BSL приведены к ПСН; описания модулей, правил, метрик и пробелов унаследованы от Hotel. При расхождении приоритет у дельты переизвлечения.</p>
+</section>
+
+    <main class="reversa-doc-main" role="main">
+        <div class="reversa-doc-payload">
+            <h1 class="reversa-doc-title">Топология</h1>
+    <p class="rv-hint">Топология системы ОТЕЛЬ выведена из architecture.md. Слева текущая
+    топология легаси (монолит 1С:Предприятие 8 поверх БПО ред. 3.2), справа возможная
+    современная альтернатива. Слои: клиент 1С, сервер 1С (бизнес логика и фасады),
+    СУБД, и внешний контур интеграций (HTTP сервисы, планы обмена и FTP, внешние REST,
+    внешние базы по COM).</p>
+
+    <section class="reversa-doc-topology" data-layout="side-by-side">
+        <article class="reversa-doc-topology-col" data-variant="legacy">
+            <h2>Текущая топология (легаси)</h2>
+            <p class="topo-sub">Монолит, клиент сервер трёхзвенка, домен поверх БПО 3.2. Windows и COM привязка.</p>
+
+            <div class="topo-layer client">
+                <h3>Клиент 1С (представление)</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node">Тонкий и толстый клиент</span>
+                    <span class="topo-node">401 управляемая форма</span>
+                    <span class="topo-node">Шахматка размещения и коворкинга</span>
+                    <span class="topo-node">Кассовые операции</span>
+                    <span class="topo-node">Сканер PassportBox</span>
+                </div>
+            </div>
+            <div class="topo-flow">&#8597;</div>
+
+            <div class="topo-layer server">
+                <h3>Сервер 1С (бизнес логика)</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node dom">12 доменных модулей</span>
+                    <span class="topo-node">184 общих модуля</span>
+                    <span class="topo-node">Фасады: ДокументыСервер</span>
+                    <span class="topo-node">ЗаявкаСервер · НастройкиСервер</span>
+                    <span class="topo-node">Проведение, цены, долги, занятость</span>
+                    <span class="topo-node bpo">Подсистема ПоддержкаОборудования (БПО)</span>
+                </div>
+                <p class="topo-note">Мультиотельность зашита в код (НастройкиСервер.Это*()), а не конфигурацией.</p>
+            </div>
+            <div class="topo-flow">&#8597;</div>
+
+            <div class="topo-layer db">
+                <h3>СУБД (учётное ядро)</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node">74 справочника</span>
+                    <span class="topo-node">41 документ</span>
+                    <span class="topo-node">53 РС + 7 РН</span>
+                    <span class="topo-node">PK = Ссылка, FK = ссылочные реквизиты</span>
+                    <span class="topo-node warn">Регистры Деньги/Долги недостоверны</span>
+                </div>
+                <p class="topo-note">Движок СУБД и ОС сервера в исходниках не зафиксированы.</p>
+            </div>
+
+            <div class="topo-layer integ">
+                <h3>Внешний контур интеграций</h3>
+                <div class="topo-ext">
+                    <span class="topo-node">HTTP сервисы заселений и сводный отчёт <span class="topo-tag tag-http">HTTP</span></span>
+                    <span class="topo-node">Сайт и каналы TravelLine <span class="topo-tag tag-http">HTTPS JSON</span></span>
+                    <span class="topo-node">Green API WhatsApp/Telegram/MAX <span class="topo-tag tag-rest">REST</span></span>
+                    <span class="topo-node">PayKeeper / СБП <span class="topo-tag tag-rest">REST</span></span>
+                    <span class="topo-node">PassportBox OCR <span class="topo-tag tag-http">HTTP</span></span>
+                    <span class="topo-node">ФМС / МВД <span class="topo-tag tag-http">CSV</span></span>
+                    <span class="topo-node">Бухгалтерия НДС <span class="topo-tag tag-ftp">XML обмен</span></span>
+                    <span class="topo-node">Банк выписки <span class="topo-tag tag-ftp">XML + FTP</span></span>
+                    <span class="topo-node">Межотельный обмен ОбменГостиницы <span class="topo-tag tag-ftp">XML + FTP :21</span></span>
+                    <span class="topo-node warn">Внешние базы 1С (Горничные/Картинки/BONUS) <span class="topo-tag tag-com">COM RPC</span></span>
+                    <span class="topo-node bpo">ОФД и фискальное оборудование <span class="topo-tag tag-com">.addin</span></span>
+                </div>
+                <p class="topo-note">Планы обмена: ОбменГостиницы, ВГ_ВыпискаГостиницы, ОбменТест. COM соединения кэшируются в параметре сеанса (до 3 попыток). Хардкод учётных данных COM (ADR 0005).</p>
+            </div>
+        </article>
+
+        <article class="reversa-doc-topology-col" data-variant="modern">
+            <h2>Альтернатива (модерн)</h2>
+            <p class="topo-sub">Сохранение ядра 1С, вынос интеграций в шину и API, устранение COM и хардкода секретов. Эскиз, не обязательство.</p>
+
+            <div class="topo-layer client">
+                <h3>Клиент (представление)</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node">Веб клиент 1С</span>
+                    <span class="topo-node">Тонкий клиент для стойки</span>
+                    <span class="topo-node">Шахматка как отдельный модуль UI</span>
+                </div>
+            </div>
+            <div class="topo-flow">&#8597;</div>
+
+            <div class="topo-layer server">
+                <h3>Сервер 1С + слой API</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node dom">12 доменных модулей (как есть)</span>
+                    <span class="topo-node">Явные фасады доменов</span>
+                    <span class="topo-node">HTTP сервисы 1С как единая точка входа</span>
+                    <span class="topo-node bpo">БПО изолирована за адаптером</span>
+                    <span class="topo-node">Мультиотельность как параметр конфигурации</span>
+                </div>
+            </div>
+            <div class="topo-flow">&#8597;</div>
+
+            <div class="topo-layer db">
+                <h3>СУБД + достоверный учёт</h3>
+                <div class="topo-nodes">
+                    <span class="topo-node">Справочники/документы/регистры</span>
+                    <span class="topo-node">Восстановленные регистры Деньги/Долги</span>
+                    <span class="topo-node">Балансовый отчёт стандартными средствами</span>
+                </div>
+            </div>
+
+            <div class="topo-layer integ">
+                <h3>Интеграционная шина</h3>
+                <div class="topo-ext">
+                    <span class="topo-node">Шлюз интеграций (очередь/брокер)</span>
+                    <span class="topo-node">REST адаптеры мессенджеров и эквайринга <span class="topo-tag tag-rest">REST</span></span>
+                    <span class="topo-node">Приём заявок сайта через webhook <span class="topo-tag tag-http">HTTPS</span></span>
+                    <span class="topo-node">Файловый обмен через S3/SFTP вместо FTP :21 <span class="topo-tag tag-ftp">SFTP</span></span>
+                    <span class="topo-node">Замена COM RPC на HTTP API внешних баз <span class="topo-tag tag-http">HTTP</span></span>
+                    <span class="topo-node">Секреты в хранилище (vault), без хардкода</span>
+                </div>
+                <p class="topo-note">Снимает риски R2 (утечка секретов), R6 (привязка к Windows/COM), R7 (мультиотельность в коде). Домен 1С остаётся, меняется транспортный слой.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="reversa-doc-topology-hybrid" hidden>
+        <h2>Гибридный путь</h2>
+    </section>
+
+    <div class="topo-legend">
+        <span><span class="swatch" style="background:#586975;"></span>Доменный слой</span>
+        <span><span class="swatch" style="background:#6b6450;"></span>БПО (инфраструктура оборудования)</span>
+        <span><span class="swatch" style="background:#d05a4f;"></span>Зона риска / недостоверные данные</span>
+        <span><span class="topo-tag tag-com">COM</span><span class="topo-tag tag-http">HTTP</span><span class="topo-tag tag-ftp">FTP/XML</span><span class="topo-tag tag-rest">REST</span> протоколы</span>
+    </div>
+
+        </div>
+    </main>
+
+    <aside class="reversa-doc-sidebar" aria-label="Управление" data-page="topologia">
+        <h3>О странице</h3>
+        <div class="rv-ctl">
+            <p style="font-size:13px;color:var(--rv-fg-dim);line-height:1.5;margin:0;">
+            Топология выведена из <code>_reversa_sdd/architecture.md</code>
+            (разделы Архитектурный стиль, Слои, Внешние интеграции, Ключевые риски).
+            Современная колонка это эскиз направления, а не утверждённое решение.</p>
+        </div>
+        <div class="rv-ctl">
+            <p style="font-size:13px;color:var(--rv-fg-dim);margin:0;">
+            Связанные страницы:</p>
+            <p style="font-size:13px;margin:6px 0 0;">
+            <a href="arquitetura.html">Архитектура 3D</a><br>
+            <a href="modulos.html">Карта модулей</a></p>
+        </div>
+
+    </aside>
+
+    <footer class="reversa-doc-footer">
+        <span class="reversa-doc-footer-text">Сгенерировано Reversa, 2026-06-07T00:00:00Z</span>
+        <span class="reversa-doc-footer-sep" aria-hidden="true">·</span>
+        <a href="../../_reversa_sdd/architecture.md" class="reversa-doc-source-link">Источник markdown</a>
+    </footer>
+
+    <div class="rv-tooltip" id="rv-tooltip" role="status"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+</body>
+</html>

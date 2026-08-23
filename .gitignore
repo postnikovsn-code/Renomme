@@ -4,7 +4,12 @@
 .claude/
 .fff/
 .metadata/
-.reversa/
+# .reversa: служебное состояние прогона не версионируем, но план и визуальную
+# документацию — да. Паттерн со звёздочкой (не «.reversa/»), иначе git не входит
+# в исключённый каталог и правила-исключения «!» внутри него не срабатывают.
+.reversa/*
+!.reversa/plan.md
+!.reversa/documentation/
 .rtk/
 graphify-out/
 .mcp.json

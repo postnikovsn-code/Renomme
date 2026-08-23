@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модули | ОТЕЛЬ</title>
+
+    <meta name="reversa-category" content="diagram">
+    <meta name="reversa-template" content="modulos">
+    <meta name="reversa-source-md" content="_reversa_sdd/architecture.md">
+    <meta name="reversa-producer-agent" content="reversa-docs-mapper">
+    <meta name="reversa-generated-at" content="2026-06-07T00:00:00Z">
+    <meta name="reversa-schema-version" content="1">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+:root{
+  --rv-bg:#101214; --rv-panel:#181b1f; --rv-panel2:#1f2329; --rv-line:#2c3138;
+  --rv-fg:#e6e9ec; --rv-fg-dim:#9aa3ab; --rv-accent:#c9ced4; --rv-hot:#d05a4f;
+  --rv-grid:#23272d; --rv-link:#cfd6dd;
+}
+html,body{margin:0;padding:0;background:var(--rv-bg);color:var(--rv-fg);
+  font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;font-size:15px;line-height:1.5;}
+a{color:var(--rv-link);}
+.reversa-doc-header{display:flex;align-items:center;gap:18px;padding:10px 18px;
+  background:var(--rv-panel);border-bottom:1px solid var(--rv-line);position:sticky;top:0;z-index:30;}
+.reversa-doc-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--rv-fg);font-weight:600;}
+.reversa-doc-logo .seal svg,.reversa-doc-logo .seal{width:28px;height:28px;display:block;}
+.reversa-doc-nav{display:flex;gap:14px;flex-wrap:wrap;}
+.reversa-doc-nav a{color:var(--rv-fg-dim);text-decoration:none;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent;}
+.reversa-doc-nav a:hover{color:var(--rv-fg);}
+.reversa-doc-nav a[aria-current="page"]{color:var(--rv-fg);border-bottom-color:var(--rv-accent);}
+.reversa-doc-toolbar{margin-left:auto;}
+.theme-toggle{background:var(--rv-panel2);color:var(--rv-fg-dim);border:1px solid var(--rv-line);
+  border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;}
+.reversa-doc-payload{padding:18px 22px;margin-right:248px;}
+.reversa-doc-title{font-size:22px;font-weight:600;margin:0 0 14px;letter-spacing:.2px;}
+.reversa-doc-sidebar{position:fixed;top:55px;right:0;width:248px;height:calc(100vh - 55px);
+  background:var(--rv-panel);border-left:1px solid var(--rv-line);padding:16px;overflow:auto;box-sizing:border-box;z-index:20;}
+.reversa-doc-sidebar h3{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--rv-fg-dim);margin:0 0 10px;}
+.rv-ctl{margin-bottom:16px;}
+.rv-ctl label{display:block;font-size:13px;color:var(--rv-fg-dim);margin-bottom:5px;}
+.rv-ctl input[type=range]{width:100%;}
+.rv-ctl select,.rv-ctl input[type=number]{width:100%;background:var(--rv-panel2);color:var(--rv-fg);
+  border:1px solid var(--rv-line);border-radius:4px;padding:5px;box-sizing:border-box;}
+.rv-ctl-inline{display:flex;align-items:center;gap:8px;}
+.rv-ctl-inline input[type=checkbox]{accent-color:var(--rv-accent);}
+.rv-btn{display:block;width:100%;background:var(--rv-panel2);color:var(--rv-fg);
+  border:1px solid var(--rv-line);border-radius:4px;padding:7px;cursor:pointer;font-size:13px;margin-top:8px;}
+.rv-btn:hover{background:#262b31;}
+.reversa-doc-footer{padding:12px 22px;color:var(--rv-fg-dim);font-size:12px;border-top:1px solid var(--rv-line);
+  background:var(--rv-panel);margin-right:248px;}
+.reversa-doc-footer a{color:var(--rv-fg-dim);}
+@media (max-width:900px){
+  .reversa-doc-sidebar{position:static;width:auto;height:auto;border-left:none;border-top:1px solid var(--rv-line);}
+  .reversa-doc-footer,.reversa-doc-payload{margin-right:0;}
+}
+details.reversa-doc-3d-legend,details.reversa-doc-graph-legend{margin-top:12px;color:var(--rv-fg-dim);font-size:13px;}
+details summary{cursor:pointer;color:var(--rv-fg);}
+.rv-hint{color:var(--rv-fg-dim);font-size:13px;margin:0 0 12px;max-width:78ch;}
+.rv-tooltip{position:fixed;pointer-events:none;background:var(--rv-panel2);border:1px solid var(--rv-line);
+  color:var(--rv-fg);font-size:12px;padding:7px 9px;border-radius:4px;max-width:340px;z-index:50;
+  box-shadow:0 4px 14px rgba(0,0,0,.4);display:none;line-height:1.4;}
+.rv-tooltip b{color:#fff;}
+.rv-warn{background:#2a1c1a;border:1px solid var(--rv-hot);color:#e9c4bf;padding:14px;border-radius:6px;}
+</style>
+
+    <script src="assets/vendor/d3.v7.min.js"></script>
+</head>
+<body data-style="sober" data-page="modulos">
+
+    <header class="reversa-doc-header">
+        <a class="reversa-doc-logo" href="index.html" aria-label="Начало">
+            <span class="seal" aria-hidden="true"><svg class="seal-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Печать проекта ОТЕЛЬ"><title>ОТЕЛЬ · d4b20fd6</title><rect x="0" y="0" width="64" height="64" fill="none" rx="3.8"/><circle cx="32.0" cy="32.0" r="29.4" fill="none" stroke="#3a4047" stroke-width="0.60" opacity="0.59"/><circle cx="32.0" cy="32.0" r="24.1" fill="none" stroke="#3a4047" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.80"/><circle cx="32.0" cy="32.0" r="18.7" fill="none" stroke="#2c3138" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.69"/><circle cx="32.0" cy="32.0" r="13.4" fill="none" stroke="#4a525a" stroke-width="0.60" stroke-dasharray="1.9 1.3" opacity="0.89"/><line x1="38.5" y1="32.1" x2="52.6" y2="32.4" stroke="#9aa6b0" stroke-width="0.50" opacity="0.7"/><line x1="35.2" y1="37.6" x2="42.1" y2="50.0" stroke="#4a525a" stroke-width="0.50" opacity="0.7"/><line x1="28.8" y1="37.6" x2="21.9" y2="50.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="25.5" y1="31.9" x2="11.4" y2="31.6" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><line x1="28.9" y1="26.3" x2="22.1" y2="14.0" stroke="#6d7780" stroke-width="0.50" opacity="0.7"/><line x1="35.5" y1="26.6" x2="43.1" y2="14.7" stroke="#c9d2da" stroke-width="0.50" opacity="0.7"/><polygon points="38.5,38.0 26.0,38.5 25.5,26.0 38.0,25.5" fill="none" stroke="#c9d2da" stroke-width="0.60" opacity="0.85"/><polygon points="35.7,38.0 26.0,35.7 28.3,26.0 38.0,28.3" fill="none" stroke="#9aa6b0" stroke-width="0.60" opacity="0.85"/><circle cx="32.0" cy="32.0" r="3.2" fill="#c9d2da"/></svg></span>
+            <span class="project-name">ОТЕЛЬ</span>
+        </a>
+        <nav class="reversa-doc-nav" aria-label="Разделы документации">
+            <a href="index.html" data-page-id="index">Обзор</a>
+            <a href="arquitetura.html" data-page-id="arquitetura">Архитектура 3D</a>
+            <a href="modulos.html" data-page-id="modulos">Модули</a>
+            <a href="topologia.html" data-page-id="topologia">Топология</a>
+            <a href="metricas.html" data-page-id="metricas">Метрики</a>
+            <a href="glossario.html" data-page-id="glossario">Глоссарий</a>
+            <a href="deck.html" data-page-id="deck">Дек</a>
+            <a href="pereizvlechenie.html" data-page-id="pereizvlechenie">Переизвлечение</a>
+        </nav>
+        <div class="reversa-doc-toolbar">
+            <button type="button" class="theme-toggle" aria-label="Переключить тему">
+                <span class="theme-toggle-label">Тема</span>
+            </button>
+        </div>
+    </header>
+
+<section class="rv-reext" role="note" aria-label="Происхождение документации">
+    <span class="rv-reext-h">Импорт из проекта Hotel · страница отражает состояние ДО переизвлечения</span>
+    <p>Мини-сайт построен по извлечению проекта <b>Hotel</b> (дерево <code>Hotel/ПСН_РЕНОМЕ__АУДИТ/src</code>) и импортирован сюда <b>2026-08-21</b>. Целевая конфигурация здесь — <b>ПСН_РЕНОМЕ__АУДИТ</b>, та же «ОТЕЛЬ» 3.2.7.38: из 2423 общих файлов 98.6 % совпадают побайтово.</p>
+    <p>По этой конфигурации проведено переизвлечение <code>2026-08-21-ПСН-РЕНОМЕ</code>. Актуальные отличия — в <a href="../../_reversa_sdd/re-extraction/2026-08-21-%D0%9F%D0%A1%D0%9D-%D0%A0%D0%95%D0%9D%D0%9E%D0%9C%D0%95/">_reversa_sdd/re-extraction/2026-08-21-ПСН-РЕНОМЕ/</a> и <a href="../../_reversa_sdd/IMPORT.md">_reversa_sdd/IMPORT.md</a>; сводка на сайте — <a href="pereizvlechenie.html">Переизвлечение</a>.</p>
+    <p><b>Содержимое страниц отражает состояние до переизвлечения.</b> Счётчики метаданных и объём BSL приведены к ПСН; описания модулей, правил, метрик и пробелов унаследованы от Hotel. При расхождении приоритет у дельты переизвлечения.</p>
+</section>
+
+    <main class="reversa-doc-main" role="main">
+        <div class="reversa-doc-payload">
+            <h1 class="reversa-doc-title">Модули</h1>
+    <p class="rv-hint">Карта модулей: узлы это 12 доменных модулей, рёбра направленные
+    зависимости между ними (граф dependencies). Размер узла пропорционален оценке LOC,
+    цвет уровню сложности. Красным выделены узлы, входящие в цикл взаимных зависимостей.
+    Перетаскивайте узлы, наводите курсор для деталей.</p>
+    <section class="reversa-doc-graph-stage" data-mode="force-directed">
+        <svg id="d3-canvas" class="reversa-doc-d3-canvas" aria-label="Карта модулей"
+             style="width:100%;height:72vh;min-height:480px;background:#0c0e10;border:1px solid var(--rv-line);border-radius:6px;display:block;"></svg>
+        <div id="mod-loader" style="color:var(--rv-fg-dim);font-size:13px;margin-top:8px;"></div>
+    </section>
+    <details class="reversa-doc-graph-legend" open>
+        <summary>Легенда</summary>
+        <ul>
+            <li>Узел: модуль. Размер пропорционален оценке LOC.</li>
+            <li>Стрелка: направление зависимости (модуль зависит от цели).</li>
+            <li>Красный узел: участвует в обнаруженном цикле.</li>
+            <li>Толщина и яркость ребра: при наведении на узел подсвечиваются связи.</li>
+        </ul>
+    </details>
+
+        </div>
+    </main>
+
+    <aside class="reversa-doc-sidebar" aria-label="Управление" data-page="modulos">
+        <h3>Фильтры графа</h3>
+        <div class="rv-ctl">
+            <label for="charge">Сила отталкивания</label>
+            <input type="range" id="charge" data-param="charge" data-default="-520" min="-1200" max="-120" step="20" value="-520">
+        </div>
+        <div class="rv-ctl">
+            <label for="distance">Минимальное расстояние</label>
+            <input type="range" id="distance" data-param="distance" data-default="120" min="50" max="320" step="10" value="120">
+        </div>
+        <div class="rv-ctl">
+            <label for="cxfilter">Минимальная сложность</label>
+            <select id="cxfilter" data-param="cxfilter" data-default="1">
+                <option value="1">Все</option>
+                <option value="2">от средней</option>
+                <option value="3">от высокой</option>
+                <option value="4">только очень высокая</option>
+            </select>
+        </div>
+        <div class="rv-ctl rv-ctl-inline">
+            <input type="checkbox" id="onlycycle" data-param="onlycycle" data-default="false">
+            <label for="onlycycle" style="margin:0;">Только узлы в циклах</label>
+        </div>
+        <button type="button" class="rv-btn" data-action="reset" id="reset">Сбросить</button>
+
+    </aside>
+
+    <footer class="reversa-doc-footer">
+        <span class="reversa-doc-footer-text">Сгенерировано Reversa, 2026-06-07T00:00:00Z</span>
+        <span class="reversa-doc-footer-sep" aria-hidden="true">·</span>
+        <a href="../../_reversa_sdd/architecture.md" class="reversa-doc-source-link">Источник markdown</a>
+    </footer>
+
+    <div class="rv-tooltip" id="rv-tooltip" role="status"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script id="rv-inline-modules" type="application/json">{"generatedAt":"2026-06-07T00:00:00Z","project":"ОТЕЛЬ","seed":"d4b20fd66574612949fdbcf11a62f7f4357cace00c74514877c2a28f91f8f8e8","totalLoc":249114,"count":12,"nodes":[{"id":"Бронирование","name":"Бронирование","purpose":"Жизненный цикл брони номера: приём заявок (стойка, сайт, мессенджеры, лист ожидания), проверка занятости номерного фонда по почасовой сетке, резервирование, расчёт проживания/допуслуг, счета и долги, подтверждения гостю, аналитика глубины бронирования.","loc":16995,"complexity":"high","complexityScore":3,"entities":6,"functions":7,"rules":7,"algorithms":6,"dependencies":["Размещение и номерной фонд","Финансы и касса","Ценообразование","Гости и регистрация","Интеграции и обмен"],"gaps":4,"seed":0.405911,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЗаявкаНаБронирование/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЗаявкаНаБронирование/ЗаявкаНаБронирование.mdo","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ЗаявкаСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ДокументыСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЗаявкаСайт/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ГлубинаБронирования/Forms/Форма/Module.bsl"]},{"id":"Размещение и номерной фонд","name":"Размещение и номерной фонд","purpose":"Номерной фонд (комнаты), категории/типы номеров, этажи и иерархия зданий, шахматка размещения, осмотр номеров и регистрация замечаний, замена номеров в заявках, загрузка номеров из внешних баз (Лайв/Реноме/Чехов), синхронизация номеров с горничными. Регистр ЗанятостьНомеров описан как структура данных номерного фонда (логика записи/проверки занятости — в модуле Бронирование).","loc":17270,"complexity":"high","complexityScore":3,"entities":8,"functions":7,"rules":6,"algorithms":6,"dependencies":["Бронирование","Ценообразование","Горничные (Housekeeping)","Интеграции и обмен","Гости и регистрация"],"gaps":5,"seed":0.039487,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/НомернойФонд/НомернойФонд.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/НомернойФонд/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/КатегорииНомеров/КатегорииНомеров.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ОсмотрНомера/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/Интерфейс/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗагрузкаНомеровЛайв/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗаменаНомеровВЗаявках/Forms/Форма/Module.bsl"]},{"id":"Гости и регистрация","name":"Гости и регистрация","purpose":"Ведение карточки гостя/клиента (физ/юр лица), виды и категории клиентов, контактная информация и адреса, анкеты, миграционный учёт ФМС (выгрузка CSV), распознавание паспортов через HTTP-сканер PassportBox, загрузка сканов документов, дедупликация и объединение клиентов, поиск дней рождения проживающих.","loc":23320,"complexity":"high","complexityScore":3,"entities":8,"functions":12,"rules":8,"algorithms":8,"dependencies":["Бронирование","Финансы и касса","Ценообразование","Интеграции и обмен"],"gaps":7,"seed":0.622296,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Клиенты/Клиенты.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Клиенты/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Клиенты/Forms/ФормаЭлемента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/PassportBoxВызовСервера/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/PassportBoxВызовСервера_Переопределяемый/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/КлиентыСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ВыгрузкаДляФМС/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КлиентыОбъединиение/Forms/ФормаОбъединениеКонтрагентов/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КлиентыДвойныеИНН/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗагрузкаСканов/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ДниРождения/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/НастройкиPassportBox/Forms/Форма/Module.bsl"]},{"id":"Горничные (Housekeeping)","name":"Горничные (Housekeeping)","purpose":"Учёт работы горничных: уборка номеров и помещений, смены, прачечная, прайс стоимости уборок, расчёт сдельной зарплаты с надбавками (стаж/стандарты) и отпускными, сводный квиток. Регистрация уборок ведётся в отдельной базе 1С 'Горничные' (планшеты), данные загружаются в 'ОТЕЛЬ' через COM-обмен; справочники горничных/помещений/минибара синхронизируются двусторонне.","loc":24860,"complexity":"high","complexityScore":3,"entities":12,"functions":11,"rules":8,"algorithms":8,"dependencies":["Размещение и номерной фонд","Бронирование","Минибар","Финансы и касса","Персонал и зарплата","Интеграции и обмен"],"gaps":7,"seed":0.419774,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОбменГорничныеСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ГорничныеЗарплата/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ГорничныеОбслуживаниеНомераСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ГорничныеЗарплата/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ГорничныеОбслуживаниеНомера/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ГорничныеПрачечная/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Горничные/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/ГорничныеСтоимостьУборок/ГорничныеСтоимостьУборок.mdo","ПСН_РЕНОМЕ__АУДИТ/src/InformationRegisters/УборкиНомеров/УборкиНомеров.mdo"]},{"id":"Минибар","name":"Минибар","purpose":"Товарный учёт минибара: приход, расход (продажа гостю/списание), партионный учёт FIFO, средневзвешенная себестоимость с помесячным переносом остатков, отчёты движения и прибыли. Расход формируется из фактов потребления в ТЧ Минибар документа ГорничныеОбслуживаниеНомера. Содержит также смежный контур 'Бар' (Catalog.Товары, ОстаткиПродукции) с документом инвентаризации ИнвентарицацияБара.","loc":20680,"complexity":"high","complexityScore":3,"entities":9,"functions":8,"rules":8,"algorithms":7,"dependencies":["Горничные (Housekeeping)","Доп. услуги и коворкинг","Размещение и номерной фонд","Финансы и касса"],"gaps":8,"seed":0.027736,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Documents/МинибарПриход/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/МинибарРасход/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ИнвентарицацияБара/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ИнвентарицацияБара/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/Минибар/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/НоменклатураМиниБара/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/AccumulationRegisters/МинибарОстатки/МинибарОстатки.mdo","ПСН_РЕНОМЕ__АУДИТ/src/AccumulationRegisters/МинибарПартии/МинибарПартии.mdo","ПСН_РЕНОМЕ__АУДИТ/src/InformationRegisters/МинибарСебестоимость/МинибарСебестоимость.mdo"]},{"id":"Доп. услуги и коворкинг","name":"Доп. услуги и коворкинг","purpose":"Дополнительные платные услуги гостю (справочник-прайс ДопУслуги, классификатор ПрограммныйКодУслуги, документ-реестр СписаниеДопУслуг для массового закрытия долга за допуслуги) и аренда коворкинга: заявки (КоворкингЗаявка), счета по заявкам с собственным мини-контуром взаиморасчётов (КоворкингСчета: ТЧ ДопУслугиКоворкинг/ДокументыОплаты/РаспределениеОплатКоворкинг), почасовое/посуточное резервирование рабочих мест (РС ЗанятостьНомеровКоворкинг), рабочее место оператора (КоворкингЗаявкаОбработка), визуальная шахматка (КоворкингШахматка), печать счетов/актов (КоворкингПечатьСервер).","loc":20350,"complexity":"high","complexityScore":3,"entities":8,"functions":10,"rules":6,"algorithms":8,"dependencies":["Минибар","Финансы и касса","Бронирование","Гости и регистрация","Размещение и номерной фонд"],"gaps":8,"seed":0.445036,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/КоворкингСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/КоворкингКлиент/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/КоворкингПечатьСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/КоворкингЗаявка/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/КоворкингСчета/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/СписаниеДопУслуг/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/СписаниеДопУслуг/ManagerModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КоворкингЗаявкаОбработка/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КоворкингШахматка/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/ДопУслуги/ДопУслуги.mdo"]},{"id":"Ценообразование","name":"Ценообразование","purpose":"Базовые/долгосрочные цены, тарифные планы, динамический календарь цен по датам (каскад База→Долгосрочная→Текущая), расчёт стоимости проживания брони (по дням с коэффициентами частичных суток), скидки/комиссия турагентств/B2B-наценка, горящие цены (БонШанс), аналитика конкурентов (TravelLine) и задание цен по корзинам загрузки. Ядро расчёта проживания лежит в ОбщийМодуль.ДокументыСервер, вызывается из модуля Бронирование.","loc":22715,"complexity":"high","complexityScore":3,"entities":9,"functions":9,"rules":9,"algorithms":8,"dependencies":["Бронирование","Размещение и номерной фонд","Гости и регистрация","Финансы и касса","Интеграции и обмен"],"gaps":8,"seed":0.106481,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ДокументыСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/КалендарьЦен/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/БазовыеЦены/БазовыеЦены.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/ТарифныеПланы/ТарифныеПланы.mdo","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КалендарьЦен/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/РасчетПроживания/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/КалендарьЦенЗаданиеНаЦены/Forms/Форма/Module.bsl"]},{"id":"Финансы и касса","name":"Финансы и касса","purpose":"Учёт денежных средств, долгов гостей/контрагентов и взаиморасчётов: приём оплат (касса, банк, прочие/взаимозачёт/списание), банковские выписки, групповые счета (один плательщик на несколько заявок), комиссия турагента, гашение долгов (FIFO по строкам счёта заявки), закрытие финансового периода/месяца и кассовой смены. Долги фактически ведутся в ТЧ документа ЗаявкаНаБронирование (СчетаДетальноДолги/РаспределениеОплатДолги); из регистров-ядра по факту наполняется только Взаиморасчеты.","loc":22880,"complexity":"high","complexityScore":3,"entities":11,"functions":8,"rules":10,"algorithms":6,"dependencies":["Бронирование","Доп. услуги и коворкинг","Гости и регистрация","Подключаемое оборудование (БПО)","Интеграции и обмен"],"gaps":7,"seed":0.42898,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/AccumulationRegisters/Взаиморасчеты/Взаиморасчеты.mdo","ПСН_РЕНОМЕ__АУДИТ/src/AccumulationRegisters/Долги/Долги.mdo","ПСН_РЕНОМЕ__АУДИТ/src/AccumulationRegisters/Деньги/Деньги.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Documents/КассовыйДокумент/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ВыпискаБанка/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ПрочиеОплаты/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ВзаиморасчетыКоректировка/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ГрупповыеСчета/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ГрупповойСчетСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ЗаявкаОбщееКлиентСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗакрытиеФинансовогоПериода/ManagerModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗакрытиеФинансовогоПериода/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗакрытиеДокументов/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЗакрытьСмену/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/ВидыОпераций/ВидыОпераций.mdo"]},{"id":"Подключаемое оборудование (БПО)","name":"Подключаемое оборудование (БПО)","purpose":"Встроенная типовая Библиотека подключаемого оборудования (БПО ред. 3.2), подсистема ПоддержкаОборудования: фискальные регистраторы/ККТ (локальные, облачные, автономные, распределённые), эквайринг/платёжные системы, маркировка и форматно-логический контроль (ФЛК), устройства распознавания, электронные сертификаты, внешние компоненты-драйверы, логирование операций и регламентная очистка истории. Домен ОТЕЛЬ использует библиотеку через тонкий слой обёрток (ФУ_Клиент, ФУ_Сервер, ОплатыЧекКлиент, СерверККМ) для фискализации кассовой смены и чеков. Включено доменное расширение телеметрии датчиков (Catalog.Датчики, Document.ПоказанияДатчиков).","loc":20405,"complexity":"high","complexityScore":3,"entities":13,"functions":8,"rules":5,"algorithms":7,"dependencies":["Финансы и касса","Доп. услуги и коворкинг","Интеграции и обмен"],"gaps":5,"seed":0.246073,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Subsystems/ПоддержкаОборудования/ПоддержкаОборудования.mdo","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ФУ_Клиент/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ФУ_Сервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОплатыЧекКлиент/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/СерверККМ/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/МенеджерОборудования/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОборудованиеЧекопечатающиеУстройстваКлиент/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/АТОЛ10106/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ПоказанияДатчиков/ObjectModule.bsl"]},{"id":"Аудит и отчётность","name":"Аудит и отчётность","purpose":"Ежедневный аудит гостиницы (night audit — закрытие операционного дня: сверка фактических заездов/выездов/оплат с планом брони, фиксация отклонений тарификации полусуток), ежедневные управленческие отчёты факт/сводный (загрузка, выручка, ADR, агентское, B2B, эквайринг) и подсистема отчётов (39 шт.: финансы, загрузка, продажи, спрос, качество, минибар).","loc":15235,"complexity":"high","complexityScore":3,"entities":4,"functions":6,"rules":7,"algorithms":6,"dependencies":["Бронирование","Финансы и касса","Ценообразование","Размещение и номерной фонд","Минибар","Горничные (Housekeeping)"],"gaps":6,"seed":0.959143,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЕжедневныйАудит/ObjectModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЕжедневныйАудит/ЕжедневныйАудит.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Documents/ЕжедневныйАудит/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЕжедневныйОтчетФакт/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ЕжедневныйОтчетФакт/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/ЕжедневныйОтчетФактСводный/Forms/Форма/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/DataProcessors/АктивностиКалендарь/Forms/Форма/Module.bsl"]},{"id":"Персонал и зарплата","name":"Персонал и зарплата","purpose":"Кадровый учёт администраторов стойки (ресепшн): карточка администратора, должности, история ставок/окладов. Расчёт зарплаты администраторов за период: сдельные ставки по сменам (12/24ч), оклад постоянных пропорц. расчётным дням, надбавки за стаж/стандарты/иностранные языки, переработки, доплаты за проживающих и за заселения/завтраки по внешним базам сети, премии/больничные/отпускные, авансы, итог к выплате. Зарплата горничных — отдельный модуль.","loc":23210,"complexity":"high","complexityScore":3,"entities":7,"functions":11,"rules":10,"algorithms":7,"dependencies":["Бронирование","Ценообразование","Интеграции и обмен","Горничные (Housekeeping)"],"gaps":7,"seed":0.252309,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/Documents/АдминистраторыЗарплата/Forms/ФормаДокумента/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/АдминистраторыЗарплата/ManagerModule.bsl","ПСН_РЕНОМЕ__АУДИТ/src/Documents/АдминистраторыЗарплата/АдминистраторыЗарплата.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Администраторы/Администраторы.mdo","ПСН_РЕНОМЕ__АУДИТ/src/Catalogs/Должности/Должности.mdo","ПСН_РЕНОМЕ__АУДИТ/src/InformationRegisters/АдминистраторыНадбавкаЗаСтаж/АдминистраторыНадбавкаЗаСтаж.mdo","ПСН_РЕНОМЕ__АУДИТ/src/InformationRegisters/АдминистраторыСуммаЗаПроживающих/АдминистраторыСуммаЗаПроживающих.mdo","ПСН_РЕНОМЕ__АУДИТ/src/InformationRegisters/АдминистраторыТабель/АдминистраторыТабель.mdo"]},{"id":"Интеграции и обмен","name":"Интеграции и обмен","purpose":"Транспортный и протокольный слой внешних интеграций и синхронизации данных: планы обмена между базами сети (XML+FTP), обмен с сайтом бронирования (HTTPS JSON), HTTP-сервисы заселений и ежедневного отчёта, выгрузка в Бухгалтерию/НДС, мессенджеры WhatsApp/Telegram через Green API (диспетчер МесенджерСервер), эквайринг PayKeeper (REST, token-сессия), COM-обмен картинками с планшетом. Транспорт FTP вынесен в общий ФТПСервер.","loc":25520,"complexity":"high","complexityScore":3,"entities":6,"functions":12,"rules":12,"algorithms":8,"dependencies":["Бронирование","Финансы и касса","Гости и регистрация","Размещение и номерной фонд","Подключаемое оборудование (БПО)"],"gaps":8,"seed":0.737072,"primaryFiles":["ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОбменГостиницы/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОбменСайт/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/HTTP_Модуль/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/МесенджерСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/GREEN_WhatsApp/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/TelegramСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/PayKeeper/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/PayKeeperСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ФТПСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/РассылкаWhatsApp/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/CommonModules/ОбменКартинкаСервер/Module.bsl","ПСН_РЕНОМЕ__АУДИТ/src/ExchangePlans/ОбменГостиницы/ОбменГостиницы.mdo"]}]}</script>
+    <script id="rv-inline-deps" type="application/json">{"generatedAt":"2026-06-07T00:00:00Z","seed":"d4b20fd66574612949fdbcf11a62f7f4357cace00c74514877c2a28f91f8f8e8","directed":true,"nodeCount":12,"edgeCount":57,"nodes":[{"id":"Бронирование","complexity":"high","complexityScore":3,"loc":16995,"entities":6},{"id":"Размещение и номерной фонд","complexity":"high","complexityScore":3,"loc":17270,"entities":8},{"id":"Гости и регистрация","complexity":"high","complexityScore":3,"loc":23320,"entities":8},{"id":"Горничные (Housekeeping)","complexity":"high","complexityScore":3,"loc":24860,"entities":12},{"id":"Минибар","complexity":"high","complexityScore":3,"loc":20680,"entities":9},{"id":"Доп. услуги и коворкинг","complexity":"high","complexityScore":3,"loc":20350,"entities":8},{"id":"Ценообразование","complexity":"high","complexityScore":3,"loc":22715,"entities":9},{"id":"Финансы и касса","complexity":"high","complexityScore":3,"loc":22880,"entities":11},{"id":"Подключаемое оборудование (БПО)","complexity":"high","complexityScore":3,"loc":20405,"entities":13},{"id":"Аудит и отчётность","complexity":"high","complexityScore":3,"loc":15235,"entities":4},{"id":"Персонал и зарплата","complexity":"high","complexityScore":3,"loc":23210,"entities":7},{"id":"Интеграции и обмен","complexity":"high","complexityScore":3,"loc":25520,"entities":6}],"edges":[{"source":"Бронирование","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Бронирование","target":"Финансы и касса","kind":"uses"},{"source":"Бронирование","target":"Ценообразование","kind":"uses"},{"source":"Бронирование","target":"Гости и регистрация","kind":"uses"},{"source":"Бронирование","target":"Интеграции и обмен","kind":"uses"},{"source":"Размещение и номерной фонд","target":"Бронирование","kind":"uses"},{"source":"Размещение и номерной фонд","target":"Ценообразование","kind":"uses"},{"source":"Размещение и номерной фонд","target":"Горничные (Housekeeping)","kind":"uses"},{"source":"Размещение и номерной фонд","target":"Интеграции и обмен","kind":"uses"},{"source":"Размещение и номерной фонд","target":"Гости и регистрация","kind":"uses"},{"source":"Гости и регистрация","target":"Бронирование","kind":"uses"},{"source":"Гости и регистрация","target":"Финансы и касса","kind":"uses"},{"source":"Гости и регистрация","target":"Ценообразование","kind":"uses"},{"source":"Гости и регистрация","target":"Интеграции и обмен","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Бронирование","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Минибар","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Финансы и касса","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Персонал и зарплата","kind":"uses"},{"source":"Горничные (Housekeeping)","target":"Интеграции и обмен","kind":"uses"},{"source":"Минибар","target":"Горничные (Housekeeping)","kind":"uses"},{"source":"Минибар","target":"Доп. услуги и коворкинг","kind":"uses"},{"source":"Минибар","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Минибар","target":"Финансы и касса","kind":"uses"},{"source":"Доп. услуги и коворкинг","target":"Минибар","kind":"uses"},{"source":"Доп. услуги и коворкинг","target":"Финансы и касса","kind":"uses"},{"source":"Доп. услуги и коворкинг","target":"Бронирование","kind":"uses"},{"source":"Доп. услуги и коворкинг","target":"Гости и регистрация","kind":"uses"},{"source":"Доп. услуги и коворкинг","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Ценообразование","target":"Бронирование","kind":"uses"},{"source":"Ценообразование","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Ценообразование","target":"Гости и регистрация","kind":"uses"},{"source":"Ценообразование","target":"Финансы и касса","kind":"uses"},{"source":"Ценообразование","target":"Интеграции и обмен","kind":"uses"},{"source":"Финансы и касса","target":"Бронирование","kind":"uses"},{"source":"Финансы и касса","target":"Доп. услуги и коворкинг","kind":"uses"},{"source":"Финансы и касса","target":"Гости и регистрация","kind":"uses"},{"source":"Финансы и касса","target":"Подключаемое оборудование (БПО)","kind":"uses"},{"source":"Финансы и касса","target":"Интеграции и обмен","kind":"uses"},{"source":"Подключаемое оборудование (БПО)","target":"Финансы и касса","kind":"uses"},{"source":"Подключаемое оборудование (БПО)","target":"Доп. услуги и коворкинг","kind":"uses"},{"source":"Подключаемое оборудование (БПО)","target":"Интеграции и обмен","kind":"uses"},{"source":"Аудит и отчётность","target":"Бронирование","kind":"uses"},{"source":"Аудит и отчётность","target":"Финансы и касса","kind":"uses"},{"source":"Аудит и отчётность","target":"Ценообразование","kind":"uses"},{"source":"Аудит и отчётность","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Аудит и отчётность","target":"Минибар","kind":"uses"},{"source":"Аудит и отчётность","target":"Горничные (Housekeeping)","kind":"uses"},{"source":"Персонал и зарплата","target":"Бронирование","kind":"uses"},{"source":"Персонал и зарплата","target":"Ценообразование","kind":"uses"},{"source":"Персонал и зарплата","target":"Интеграции и обмен","kind":"uses"},{"source":"Персонал и зарплата","target":"Горничные (Housekeeping)","kind":"uses"},{"source":"Интеграции и обмен","target":"Бронирование","kind":"uses"},{"source":"Интеграции и обмен","target":"Финансы и касса","kind":"uses"},{"source":"Интеграции и обмен","target":"Гости и регистрация","kind":"uses"},{"source":"Интеграции и обмен","target":"Размещение и номерной фонд","kind":"uses"},{"source":"Интеграции и обмен","target":"Подключаемое оборудование (БПО)","kind":"uses"}],"cycles":[["Подключаемое оборудование (БПО)","Интеграции и обмен","Персонал и зарплата","Горничные (Housekeeping)","Минибар","Доп. услуги и коворкинг","Финансы и касса","Гости и регистрация","Ценообразование","Размещение и номерной фонд","Бронирование"]],"cycleNodes":["Бронирование","Горничные (Housekeeping)","Гости и регистрация","Доп. услуги и коворкинг","Интеграции и обмен","Минибар","Персонал и зарплата","Подключаемое оборудование (БПО)","Размещение и номерной фонд","Финансы и касса","Ценообразование"],"unresolved":[]}</script>
+    <script>
+    (function(){
+      "use strict";
+      function inlineData(id){ try{ return JSON.parse(document.getElementById(id).textContent);}catch(e){return null;} }
+      var RV = window.RV_DATA || {};
+      var modules = (RV.modules && RV.modules.nodes) ? RV.modules : inlineData('rv-inline-modules');
+      var deps = (RV.deps && RV.deps.edges) ? RV.deps : inlineData('rv-inline-deps');
+      var loader = document.getElementById('mod-loader');
+      if(!window.d3){ loader.innerHTML = '<div class="rv-warn">Библиотека D3 недоступна. Подключитесь к интернету и перезапустите публикацию.</div>'; return; }
+      if(!modules || !modules.nodes){ loader.textContent='Нет данных модулей.'; return; }
+
+      var cycleSet={}; ((deps && deps.cycleNodes)||[]).forEach(function(n){cycleSet[n]=true;});
+      var byId={}; modules.nodes.forEach(function(n){byId[n.id]=n;});
+
+      var allNodes = modules.nodes.map(function(n){ return {
+        id:n.id, name:n.name, loc:n.loc, complexity:n.complexity, cx:n.complexityScore||2,
+        entities:n.entities, functions:n.functions, rules:n.rules, purpose:n.purpose||'',
+        inCycle:!!cycleSet[n.id]
+      };});
+      var allLinks = (deps.edges||[]).filter(function(e){return byId[e.source]&&byId[e.target];})
+        .map(function(e){return {source:e.source, target:e.target};});
+
+      var svg = d3.select('#d3-canvas');
+      var bb = svg.node().getBoundingClientRect();
+      var width = bb.width, height = bb.height;
+      svg.attr('viewBox','0 0 '+width+' '+height);
+
+      svg.append('defs').append('marker')
+        .attr('id','arrow').attr('viewBox','0 -5 10 10').attr('refX',22).attr('refY',0)
+        .attr('markerWidth',7).attr('markerHeight',7).attr('orient','auto')
+        .append('path').attr('d','M0,-5L10,0L0,5').attr('fill','#5b636b');
+
+      var palette={1:'#4a525a',2:'#6d7780',3:'#9aa6b0',4:'#c9d2da'};
+      var maxLoc=d3.max(allNodes,function(d){return d.loc;});
+      var minLoc=d3.min(allNodes,function(d){return d.loc;});
+      var rscale=d3.scaleSqrt().domain([minLoc,maxLoc]).range([10,30]);
+
+      var container=svg.append('g');
+      var zoom=d3.zoom().scaleExtent([0.3,4]).on('zoom',function(ev){container.attr('transform',ev.transform);});
+      svg.call(zoom);
+
+      var linkSel=container.append('g').attr('class','links');
+      var nodeSel=container.append('g').attr('class','nodes');
+      var labelSel=container.append('g').attr('class','labels');
+
+      var sim=d3.forceSimulation()
+        .force('charge',d3.forceManyBody().strength(-520))
+        .force('link',d3.forceLink().id(function(d){return d.id;}).distance(120))
+        .force('center',d3.forceCenter(width/2,height/2))
+        .force('collide',d3.forceCollide().radius(function(d){return rscale(d.loc)+8;}));
+
+      var tip=document.getElementById('rv-tooltip');
+      var state={charge:-520,distance:120,cxfilter:1,onlycycle:false};
+      var linkEls,nodeEls,labelEls,nodes,links;
+      var adj={};
+
+      function buildAdj(ls){ adj={}; ls.forEach(function(l){
+        var s=typeof l.source==='object'?l.source.id:l.source;
+        var t=typeof l.target==='object'?l.target.id:l.target;
+        (adj[s]=adj[s]||{})[t]=1; (adj[t]=adj[t]||{})[s]=1; });
+      }
+
+      function render(){
+        nodes=allNodes.filter(function(d){
+          if(d.cx<state.cxfilter)return false;
+          if(state.onlycycle&&!d.inCycle)return false; return true; });
+        var ids={}; nodes.forEach(function(d){ids[d.id]=1;});
+        links=allLinks.filter(function(l){return ids[l.source.id||l.source]&&ids[l.target.id||l.target];})
+          .map(function(l){return {source:(l.source.id||l.source),target:(l.target.id||l.target)};});
+        buildAdj(links);
+
+        linkEls=linkSel.selectAll('line').data(links,function(d){return d.source+'>'+d.target;});
+        linkEls.exit().remove();
+        linkEls=linkEls.enter().append('line')
+          .attr('stroke','#3a4047').attr('stroke-width',1.4).attr('marker-end','url(#arrow)').merge(linkEls);
+
+        nodeEls=nodeSel.selectAll('circle').data(nodes,function(d){return d.id;});
+        nodeEls.exit().remove();
+        var nEnter=nodeEls.enter().append('circle')
+          .attr('r',function(d){return rscale(d.loc);})
+          .attr('fill',function(d){return palette[d.cx]||'#6d7780';})
+          .attr('stroke',function(d){return d.inCycle?'#d05a4f':'#0c0e10';})
+          .attr('stroke-width',function(d){return d.inCycle?2.4:1.2;})
+          .style('cursor','grab')
+          .call(d3.drag()
+            .on('start',function(ev,d){if(!ev.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+            .on('drag',function(ev,d){d.fx=ev.x;d.fy=ev.y;})
+            .on('end',function(ev,d){if(!ev.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+        nEnter.on('mousemove',function(ev,d){
+            tip.style.display='block';tip.style.left=(ev.clientX+14)+'px';tip.style.top=(ev.clientY+12)+'px';
+            tip.innerHTML='<b>'+d.name+'</b><br>LOC ~'+d.loc.toLocaleString('ru-RU')+
+              '<br>Сущностей: '+d.entities+' · Функций: '+d.functions+' · Правил: '+d.rules+
+              '<br>Сложность: '+d.complexity+(d.inCycle?'<br><span style="color:#d99">в цикле</span>':'')+
+              (d.purpose?'<br><span style="color:#9aa3ab">'+d.purpose.slice(0,140)+(d.purpose.length>140?'…':'')+'</span>':'');
+            highlight(d.id,true);
+          })
+          .on('mouseleave',function(ev,d){tip.style.display='none';highlight(d.id,false);});
+        nodeEls=nEnter.merge(nodeEls);
+
+        labelEls=labelSel.selectAll('text').data(nodes,function(d){return d.id;});
+        labelEls.exit().remove();
+        labelEls=labelEls.enter().append('text')
+          .attr('font-size','11px').attr('fill','#cfd6dd').attr('text-anchor','middle')
+          .attr('paint-order','stroke').attr('stroke','#0c0e10').attr('stroke-width','3px')
+          .style('pointer-events','none')
+          .text(function(d){return d.name.length>22?d.name.slice(0,21)+'…':d.name;}).merge(labelEls);
+
+        sim.nodes(nodes).on('tick',ticked);
+        sim.force('link').links(links);
+        sim.alpha(0.9).restart();
+        loader.textContent=nodes.length+' узлов, '+links.length+' рёбер'+
+          (deps.cycleNodes?(', '+deps.cycleNodes.length+' узлов в цикле'):'');
+      }
+
+      function highlight(id,on){
+        nodeEls.attr('opacity',function(d){ if(!on)return 1; return (d.id===id||(adj[id]&&adj[id][d.id]))?1:0.18; });
+        labelEls.attr('opacity',function(d){ if(!on)return 1; return (d.id===id||(adj[id]&&adj[id][d.id]))?1:0.18; });
+        linkEls.attr('stroke',function(l){ if(!on)return '#3a4047';
+            return (l.source.id===id||l.target.id===id)?'#c9d2da':'#23272d'; })
+          .attr('stroke-width',function(l){ if(!on)return 1.4; return (l.source.id===id||l.target.id===id)?2.2:1; });
+      }
+
+      function ticked(){
+        linkEls.attr('x1',function(d){return d.source.x;}).attr('y1',function(d){return d.source.y;})
+               .attr('x2',function(d){return d.target.x;}).attr('y2',function(d){return d.target.y;});
+        nodeEls.attr('cx',function(d){return d.x;}).attr('cy',function(d){return d.y;});
+        labelEls.attr('x',function(d){return d.x;}).attr('y',function(d){return d.y-rscale(d.loc)-4;});
+      }
+
+      document.addEventListener('reversa:param-change',function(e){
+        var d=e.detail; if(!(d.param in state))return;
+        if(d.param==='cxfilter')state.cxfilter=parseInt(d.value,10)||1; else state[d.param]=d.value;
+        if(d.param==='charge'){sim.force('charge').strength(state.charge);sim.alpha(0.6).restart();}
+        else if(d.param==='distance'){sim.force('link').distance(state.distance);sim.alpha(0.6).restart();}
+        else render();
+      });
+
+      window.addEventListener('resize',function(){ var b=svg.node().getBoundingClientRect();
+        width=b.width;height=b.height; svg.attr('viewBox','0 0 '+width+' '+height);
+        sim.force('center',d3.forceCenter(width/2,height/2)).alpha(0.4).restart(); });
+
+      render();
+    })();
+    </script>
+
+</body>
+</html>
