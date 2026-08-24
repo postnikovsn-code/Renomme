@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f7d1c2e-8a4b-4e6c-9d1a-5c8b3e7f2a01">
+	<name>Номенклатура</name>
+	<synonym>
+		<key>ru</key>
+		<value>Номенклатура</value>
+	</synonym>
+	<useStandardCommands>true</useStandardCommands>
+	<inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+	<inputByString>Catalog.Номенклатура.Attribute.Артикул</inputByString>
+	<searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+	<createOnInput>Use</createOnInput>
+	<attributes>
+		<name>Артикул</name>
+		<synonym>
+			<key>ru</key>
+			<value>Артикул</value>
+		</synonym>
+		<type>
+			<types>String</types>
+			<stringQualifiers>
+				<length>20</length>
+			</stringQualifiers>
+		</type>
+		<minValue xsi:type="core:UndefinedValue"/>
+		<maxValue xsi:type="core:UndefinedValue"/>
+		<fillChecking>ShowError</fillChecking>
+	</attributes>
+	<attributes>
+		<name>ЕдиницаИзмерения</name>
+		<synonym>
+			<key>ru</key>
+			<value>Единица измерения</value>
+		</synonym>
+		<type>
+			<types>String</types>
+			<stringQualifiers>
+				<length>10</length>
+			</stringQualifiers>
+		</type>
+		<minValue xsi:type="core:UndefinedValue"/>
+		<maxValue xsi:type="core:UndefinedValue"/>
+	</attributes>
+	<attributes>
+		<name>БазоваяЦена</name>
+		<synonym>
+			<key>ru</key>
+			<value>Базовая цена</value>
+		</synonym>
+		<type>
+			<types>Number</types>
+			<numberQualifiers>
+				<precision>15</precision>
+				<scale>2</scale>
+			</numberQualifiers>
+		</type>
+		<minValue xsi:type="core:UndefinedValue"/>
+		<maxValue xsi:type="core:UndefinedValue"/>
+	</attributes>
+</mdclass:Catalog>

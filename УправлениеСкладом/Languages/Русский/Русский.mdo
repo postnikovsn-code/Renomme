@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a9b3d1e-4c27-4a81-9d5e-1f3b8c7a2d10">
+	<name>Русский</name>
+	<synonym>
+		<key>ru</key>
+		<value>Русский</value>
+	</synonym>
+	<languageCode>ru</languageCode>
+</mdclass:Language>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ИИ_Склад</name>
-	<comment></comment>
-	<projects>
-	</projects>
+	<name>УправлениеСкладом</name>
+	<comment>Демонстрационная система управления складом (1C:EDT)</comment>
+	<projects></projects>
 	<buildSpec>
 		<buildCommand>
 			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
-			<arguments>
-			</arguments>
+			<arguments></arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f3d7c8e-4a0b-4e2c-f37a-1c4b9d3e8a67">
+  <name>СкладСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад: серверная логика</value>
+  </synonym>
+  <comment>Проведение документов, контроль остатков, демо-данные</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

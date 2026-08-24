@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b15f9e0a-6c2d-4a4e-b59c-3e6d1f5a0c89">
+	<name>ОстаткиТоваров</name>
+	<synonym>
+		<key>ru</key>
+		<value>Остатки товаров</value>
+	</synonym>
+	<comment>Остатки количества и сумм в разрезе складов и номенклатуры</comment>
+	<useStandardCommands>true</useStandardCommands>
+	<mainDataCompositionSchema>Report.ОстаткиТоваров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+</mdclass:Report>
