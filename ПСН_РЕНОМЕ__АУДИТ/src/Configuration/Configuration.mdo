@@ -356,6 +356,7 @@
   <commonModules>CommonModule.PassportBox_Настройки</commonModules>
   <commonModules>CommonModule.PassportBoxВызовСервера</commonModules>
   <commonModules>CommonModule.PassportBoxВызовСервера_Переопределяемый</commonModules>
+  <commonModules>CommonModule.А_Модуль</commonModules>
   <exchangePlans>ExchangePlan.ВГ_ВыпискаГостиницы</exchangePlans>
   <exchangePlans>ExchangePlan.ОбменТест</exchangePlans>
   <exchangePlans>ExchangePlan.ОбменГостиницы</exchangePlans>
