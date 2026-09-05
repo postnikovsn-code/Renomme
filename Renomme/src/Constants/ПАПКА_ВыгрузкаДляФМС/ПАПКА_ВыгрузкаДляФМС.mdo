@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d32c5f3f-640b-4b96-ab6f-0852aa34f0f5">
+  <producedTypes>
+    <managerType typeId="60d0b5a2-538a-48ec-a790-ea1ebcd14ee9" valueTypeId="d42009fc-69cb-4447-b467-94157dfd97e9"/>
+    <valueManagerType typeId="3d5661e2-af9a-4cd6-a33a-a7e5336ecf5e" valueTypeId="f8f37de2-5c50-44c5-9f0e-17b6d7e8b005"/>
+    <valueKeyType typeId="3760c554-a6ef-46d9-9437-8e8a2da5c59b" valueTypeId="12fda086-25f8-4484-a6dc-5c6644b4c59c"/>
+  </producedTypes>
+  <name>ПАПКА_ВыгрузкаДляФМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПАПКА выгрузка для ФМС</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

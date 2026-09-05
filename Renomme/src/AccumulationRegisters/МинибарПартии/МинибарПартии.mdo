@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a138ff1-2a7e-4172-9d78-8113e9dc29e3">
+  <producedTypes>
+    <selectionType typeId="efcb1ebe-48dc-4928-992c-3df70bd01709" valueTypeId="f8c667a0-3dcd-4910-92a3-04f0d750b637"/>
+    <listType typeId="45ad4a25-f1e9-4a18-891b-f70baccdeb53" valueTypeId="ff6a2d6b-b6cf-41ae-b70d-470d572fc49b"/>
+    <managerType typeId="64d2749d-b7b6-4278-8791-efa986b53c60" valueTypeId="a4d42351-7a2c-49eb-8421-15c0c98f5123"/>
+    <recordSetType typeId="ebcd79aa-74cf-4bf3-ae2b-8abab6ba813f" valueTypeId="290076fe-698b-4f85-a537-c8014d7d91d2"/>
+    <recordKeyType typeId="fccac643-1525-4106-9ecf-f061a0cb251e" valueTypeId="2419c11c-3322-4bb2-a7ff-b5bc4832076d"/>
+    <recordType typeId="c3be8457-3ee3-48bd-80e6-cd04d26dac02" valueTypeId="d849be2d-3349-463b-891a-92763f5722fa"/>
+  </producedTypes>
+  <name>МинибарПартии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минибар партии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="4c4f5186-9791-42b3-b5a8-0b2b0f1ccfa6">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="dddf2ad1-062d-456f-b410-5456be9113cf">
+    <name>ЦенаРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена расход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="cd190768-a7f2-445e-8bc5-51d7dce0df92">
+    <name>ДокументПрихода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ прихода</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.МинибарПриход</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="08ce6f4b-e99f-4fb9-8249-a51716880af5">
+    <name>НоменклатураМинибара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура минибара</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМиниБара</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3a421d40-ddf5-4685-9884-6781445fd89f">
+    <name>ЦенаПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена приход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

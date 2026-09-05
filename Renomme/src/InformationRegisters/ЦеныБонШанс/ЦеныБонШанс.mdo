@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8efebee2-0030-4a44-87f4-7d291edaac7b">
+  <producedTypes>
+    <selectionType typeId="4c8959cc-ce62-4c45-8da9-dab3a3676cd3" valueTypeId="13569465-cf97-4c83-bac1-73f8cfc6ae85"/>
+    <listType typeId="9abf9538-3336-4845-b5da-a4b87d49f442" valueTypeId="f514b180-6a6e-417f-b6d7-1fb4ccbb760a"/>
+    <managerType typeId="7636bbd4-190a-40c4-b893-166c5a37b494" valueTypeId="da9006f1-0755-481f-8a11-b6f3dde0f28a"/>
+    <recordSetType typeId="93568b1c-43fc-469d-a87c-13f5245ee859" valueTypeId="177937dd-691a-48da-a7ad-e430cac8f0d4"/>
+    <recordKeyType typeId="c0b3fec0-ea65-420e-8358-5daff80a4f82" valueTypeId="1c02b2aa-b886-4cfb-9a4d-e83d213efff6"/>
+    <recordType typeId="5166e42b-fc5f-474f-b775-07e5d53ff01c" valueTypeId="086fd487-7787-4aa5-a290-a40086964c6f"/>
+    <recordManagerType typeId="65542ba7-939c-434c-bf5a-8c393eccbef6" valueTypeId="5f76ef24-1ee1-4461-8017-731ed954dbb7"/>
+  </producedTypes>
+  <name>ЦеныБонШанс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены бон шанс</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4581f085-bd0f-4cb4-b7c0-d0ab6ea1f15a">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="268e4507-7abd-4a1a-8995-50fd51ad7d0d">
+    <name>ДатаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата цены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

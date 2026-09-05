@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d307641-4350-4ae3-969d-490066758d0b">
+  <producedTypes>
+    <refType typeId="f5c48069-8d11-45c9-bda1-b96133f83a2d" valueTypeId="4a161d84-63d0-46e4-be6d-28e9a9ffcd6f"/>
+    <listType typeId="a52e9198-ddf2-4440-931e-67e5deec10cf" valueTypeId="ba82c372-d685-42bd-ab82-076711d52df2"/>
+    <managerType typeId="f10d4736-a589-4cee-8493-ced2ff9e305a" valueTypeId="962f763d-f593-4864-b133-83259b47c83a"/>
+  </producedTypes>
+  <name>ТипыГрупповогоСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы группового счета</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b9a91b46-29d4-4dcb-9e2b-12d3ecbc310c">
+    <name>ГруппаЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа заявок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3dc85cec-7820-479e-a7f1-c15d80c6e551">
+    <name>ТурагентствоДолги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Турагентство Долги/Оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54e32aa6-8e72-4e75-9af1-6201110df7bb">
+    <name>ТурагентствоВзаимозачет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Турагентство взаимозачет</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

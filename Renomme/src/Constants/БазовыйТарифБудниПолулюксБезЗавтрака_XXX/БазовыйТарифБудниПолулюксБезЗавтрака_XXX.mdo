@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03a89d56-43a1-46a2-965c-d3aa05e4faf5">
+  <producedTypes>
+    <managerType typeId="7ddf1b76-617c-4a18-8e33-9e7334d4e70b" valueTypeId="0bebcbd0-8e70-4d5e-930b-de85fb1fc07a"/>
+    <valueManagerType typeId="fc77e11f-94eb-4815-be61-290f3268c967" valueTypeId="85ea257a-f0f8-4a24-9179-7f60984bf9e4"/>
+    <valueKeyType typeId="6bdc25e2-0293-41cf-bbf1-34887f4b66e4" valueTypeId="4a723e06-febc-4ed4-8724-1f0e893bc3ed"/>
+  </producedTypes>
+  <name>БазовыйТарифБудниПолулюксБезЗавтрака_XXX</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовый тариф будни полулюкс без завтрака XXX</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>17</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

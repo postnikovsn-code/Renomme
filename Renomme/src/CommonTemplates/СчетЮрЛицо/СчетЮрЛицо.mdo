@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f821b6a1-7406-4e47-bdca-6f3ff1e0c77b">
+  <name>СчетЮрЛицо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет юр лицо</value>
+  </synonym>
+</mdclass:CommonTemplate>

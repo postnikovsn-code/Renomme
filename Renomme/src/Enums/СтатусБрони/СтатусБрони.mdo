@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87ba9603-1753-499b-a739-89c76d6a13f8">
+  <producedTypes>
+    <refType typeId="797cccdb-fa4c-4cc9-88d3-39de343fded0" valueTypeId="de4c0245-3447-47f4-a6f9-1f22ba58857d"/>
+    <listType typeId="37412f9d-81c8-48c4-9f4b-31bad07a8cb6" valueTypeId="c128df96-c059-4eac-962e-220e2614d05c"/>
+    <managerType typeId="6cf645fd-49a1-4bcc-9eb5-337464b67c98" valueTypeId="edad7cd2-9dc8-4950-9dbc-fb3bd5aa33d0"/>
+  </producedTypes>
+  <name>СтатусБрони</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус брони</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2d77b7b0-bc1d-4e34-9363-21dca19a9f3d">
+    <name>Бронь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бронь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="18996717-32b9-4569-9771-13c0cda5d546">
+    <name>Проживает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проживает</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="284d5e53-5607-4c49-94fa-4bda3b35bda5">
+    <name>Выехал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выехал</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25138aa0-99bc-433c-b6d4-539fe55f9d70">
+    <name>ОтменаБронирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отмена бронирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="16887d5f-7db4-4390-8008-78b73d240b10">
+    <name>ОтказОтБронирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ от бронирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="616f119e-89db-4c21-ac8c-6ee9b390dda1">
+    <name>Неустойка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неустойка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

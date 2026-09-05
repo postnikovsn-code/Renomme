@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="177dd01e-48a7-4042-8c4c-1ed7d12624cd">
+  <producedTypes>
+    <objectType typeId="c52e448b-850e-4270-86b1-067dceff2aff" valueTypeId="40e322ee-022a-42f4-99d4-75447564d888"/>
+    <managerType typeId="2ea412a1-7a25-4f38-8daa-a45978e53329" valueTypeId="6ba9c499-8282-4c33-99f9-3399adf84f17"/>
+  </producedTypes>
+  <name>ФиксацияПоказанийМиниБара_OLD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксация показаний мини бара OLD</value>
+  </synonym>
+  <defaultForm>DataProcessor.ФиксацияПоказанийМиниБара_OLD.Form.Форма</defaultForm>
+  <attributes uuid="f1e60153-99f8-4998-8764-5949c08e3427">
+    <name>ДатаУборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата уборки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="d9ea184f-3526-4e90-bcec-149ef82bf247">
+    <producedTypes>
+      <objectType typeId="5b1220c7-6ea2-4aac-9a1c-cebc3890c609" valueTypeId="5dc5c3a5-0e2d-4ece-97d4-e4cb82f0dccb"/>
+      <rowType typeId="3393c4db-9ce8-4930-b6b5-d3a5aee61ef1" valueTypeId="795a49d8-100e-4260-b913-1cdf7e156bd6"/>
+    </producedTypes>
+    <name>ДанныеПоМинибару</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные по минибару</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="11ae48e7-f9f4-428a-8db2-3a8571d34583">
+      <name>ВремяУборки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время уборки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4461292c-a9d3-4c3e-ba49-c0dd8addbe49">
+      <name>НомерКомнаты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер комнаты</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НомернойФонд</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0695a0db-4c2c-47e9-82b9-8678a7980b9e">
+      <name>Горничная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Горничная</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Горничные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8323166b-51b3-4b5a-8fb8-56da56838e1b">
+      <name>МиниБарОтГорничной</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мини бар от горничной</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>350</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e84ccd74-1e3f-4dcc-8337-e6f412d22892">
+      <name>Гость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Гость</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="afd0cde7-0e11-4f3b-a242-d3c7fecded98">
+      <name>Бронь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Бронь</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаНаБронирование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="89253791-898a-4900-b00e-640bfede3d46">
+      <name>Принять</name>
+      <synonym>
+        <key>ru</key>
+        <value>Принять?</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2ab38f3b-74bc-4415-831c-5b49b1f2b368">
+      <name>Цвет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цвет</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ec38f4fe-13b1-4ee8-9e1a-fa7c51879b94">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4318d54e-d42b-4467-9610-d463044ff554">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

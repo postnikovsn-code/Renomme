@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccbe24bf-6207-42cf-9aac-70f6a9228252">
+  <producedTypes>
+    <objectType typeId="6a981da5-63b7-4e5b-92e2-9b4ec5a8c805" valueTypeId="281359cd-1d6e-4dc8-a935-dd75fa8949cc"/>
+    <managerType typeId="785a1d54-8f0d-4c19-96ab-25e0c3373b86" valueTypeId="0a6cabe5-0424-4342-9b1e-15b4736389e3"/>
+  </producedTypes>
+  <name>КалендарьЦенЗаданиеНаЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь цен задание на цены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КалендарьЦенЗаданиеНаЦены.Form.Форма</defaultForm>
+  <forms uuid="49ba056e-78c4-477f-a33e-d8c52fd26e74">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

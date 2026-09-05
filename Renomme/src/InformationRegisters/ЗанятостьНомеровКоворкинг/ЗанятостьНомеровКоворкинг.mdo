@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24278746-ba39-4552-963a-dfc8829df0b8">
+  <producedTypes>
+    <selectionType typeId="0890d252-ca82-403a-a390-4227a964f059" valueTypeId="7b6adb05-e6a3-43fd-af2d-eb4bd73c791c"/>
+    <listType typeId="224a9da3-305c-4e12-9659-add0c92057c8" valueTypeId="40109e4a-c288-426e-ab8f-84169fd3d338"/>
+    <managerType typeId="6307e66c-48eb-4f3d-a516-f0cbeef1d147" valueTypeId="4d1d716c-04a9-4c98-bd49-807821a27ef0"/>
+    <recordSetType typeId="6adedfc2-501d-4279-b7e1-db35436f5433" valueTypeId="ce7fcff1-e1db-4a05-ab99-ead656a7f3a2"/>
+    <recordKeyType typeId="772c1791-5729-43ad-a9e3-2c6441063d2e" valueTypeId="203c0a92-9ad0-4879-813d-c348c2b22fdc"/>
+    <recordType typeId="60f5b67f-ac3f-49d3-9e80-1e73409724d3" valueTypeId="8ba0099a-a723-4ec0-9563-85e2b405c915"/>
+    <recordManagerType typeId="64ea8a98-17f5-47f7-9b3f-bf347dbead5b" valueTypeId="9fe51a5e-f7bf-470c-a2bc-ddd6308a87c7"/>
+  </producedTypes>
+  <name>ЗанятостьНомеровКоворкинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Занятость номеров коворкинг</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="51400c29-8dc4-4f28-9dc0-55b4d1843acc">
+    <name>Зарезервирован</name>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d1d6e0d-7170-42b8-8151-b5195e5aae22">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8e7754e8-8a1d-4872-b4e9-663c67d94e8c">
+    <name>КоворкингНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коворкинг номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КоворкингНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="242c5658-7bfc-44f4-b896-608b218c053f">
+    <name>ПериодРезерва</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период резерва (Час)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f72f1fbb-e145-49df-b348-d3bbd3a80bf9">
+    <name>ДокументРегистратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ регистратор</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КоворкингЗаявка</types>
+      <types>DocumentRef.КоворкингСчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

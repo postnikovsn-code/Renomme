@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc70d354-ed4d-43bc-bc29-d0af86451552">
+  <producedTypes>
+    <objectType typeId="ceb01c4c-c3b8-4498-a018-ba98f3eee0d4" valueTypeId="9a80aca5-6853-4c94-b531-da0bb9d54b5f"/>
+    <managerType typeId="33aea753-fc5f-45b8-ba2a-0a4da66a3618" valueTypeId="977951ea-ad50-4330-bf60-98a63bcad385"/>
+  </producedTypes>
+  <name>НастройкиPassportBox</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки сканера PassportBox</value>
+  </synonym>
+  <comment>Форма администратора для настройки IP, порта, таймаута и активности сканера паспортов PassportBox.</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НастройкиPassportBox.Form.Форма</defaultForm>
+  <forms uuid="15982e48-e91a-46c0-82b6-011debe51bc9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки сканера паспортов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

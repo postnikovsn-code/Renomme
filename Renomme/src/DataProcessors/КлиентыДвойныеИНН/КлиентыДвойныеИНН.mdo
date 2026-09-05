@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba352fc3-8de3-4dcf-98ce-23d6a7c0739a">
+  <producedTypes>
+    <objectType typeId="aae5fdd2-07af-4979-97e0-30967dc80788" valueTypeId="f7f80563-6fb2-4c27-89d2-e9039987c0fc"/>
+    <managerType typeId="512c9ba9-cc8f-4567-a56b-64445a5ca8fa" valueTypeId="c724a89d-ed9c-4d09-bae2-27321709795f"/>
+  </producedTypes>
+  <name>КлиентыДвойныеИНН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клиенты двойные ИНН</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КлиентыДвойныеИНН.Form.Форма</defaultForm>
+  <forms uuid="e083f9a9-4156-4ecf-a7e9-cb972ec735b0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3a20b5bf-07d9-4b58-b3cc-8d3276525d49">
+    <name>ДвойныеИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Двойные ИНН</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

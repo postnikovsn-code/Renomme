@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44fd61fb-e64b-4ed5-8982-68dce9561269">
+  <producedTypes>
+    <objectType typeId="e488ed5c-1cff-4448-9d68-f7f816da6ccd" valueTypeId="2c6cdcb9-0ac1-4358-a86f-65d451a83032"/>
+    <managerType typeId="888d32ab-e07a-4b29-860d-d6aaa4419ca6" valueTypeId="abb0ecf8-b07a-41b2-822e-b0e9fc68f1c6"/>
+  </producedTypes>
+  <name>ФинансовыйРезультатКоворкинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовый результат коворкинг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФинансовыйРезультатКоворкинг.Form.Форма</defaultForm>
+  <forms uuid="32a99714-cb64-4ada-be74-608c6f37a28f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3dd6e066-b0be-4b8c-8036-31276120e8ee">
+    <name>ФинансовыйРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

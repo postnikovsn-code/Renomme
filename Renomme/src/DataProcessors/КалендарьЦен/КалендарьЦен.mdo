@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88516528-385c-456e-90d2-b92195a5f6f1">
+  <producedTypes>
+    <objectType typeId="48c92aaf-6f89-4542-a848-0e3cf751ced9" valueTypeId="7dddc6ab-16d6-4f07-a8f1-e72a235ffab7"/>
+    <managerType typeId="0c2b4874-4847-4466-bccd-38b3c6a8fa4b" valueTypeId="66f049d2-1149-4a6f-82f7-61763168a9df"/>
+  </producedTypes>
+  <name>КалендарьЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь цен</value>
+  </synonym>
+  <defaultForm>DataProcessor.КалендарьЦен.Form.Форма</defaultForm>
+  <attributes uuid="13f1a50a-00f2-4cae-8fe9-366b7ebb37bc">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=4; ЧРГ=; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=4; ЧРГ=; ЧГ=</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="34e08d1c-61e6-4390-98b0-dd1cbc947447">
+    <name>КатегорияНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНомеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="06c30082-ce14-451a-b992-37c2f79db9a0">
+    <name>ПоказатьПрошлыеДаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показать прошлые даты</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9b1e4d9-86e5-461b-8a32-6b0ce7164b0f">
+    <name>БезЗавтрака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без завтрака</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="42d1dd2c-22b5-4d28-9753-3f422b953a90">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c301e692-feab-452e-9ce2-24172daefea0">
+    <name>УстановитьЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить цены</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5c42d3ca-8f17-4b55-85e8-71e648d75653">
+    <name>УстановитьДолгосрочныеЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установить долгосрочные цены</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64919452-0b96-4aeb-a274-9d6d0b68f4e4">
+    <name>ФормаОтчетПоИзменениям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчет по изменениям</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8283f3f6-38d3-413e-ac39-f235d3c73005">
+    <name>СообщениеЗагрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение загрузка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1f78f7ea-e585-4c45-a1dd-36e1cf7e3a4b">
+    <name>МакетОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет основной</value>
+    </synonym>
+  </templates>
+  <templates uuid="fed918f9-acb2-4330-9a5f-08830a44c5be">
+    <name>РасшифровкаСтоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка стоимости</value>
+    </synonym>
+  </templates>
+  <templates uuid="591f4180-0e09-4695-86ee-12e97c984963">
+    <name>ОтчетПоИзменениюЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по изменению цен</value>
+    </synonym>
+  </templates>
+  <templates uuid="83cbf082-5550-4483-9744-53d52c1eb8e3">
+    <name>РасшифровкаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка цены</value>
+    </synonym>
+  </templates>
+  <templates uuid="50275c39-7324-41e3-a310-13991b0a27d7">
+    <name>РасшифровкаЦеныИтоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка цены итоги</value>
+    </synonym>
+  </templates>
+  <templates uuid="c6f74a21-46c8-4a37-bdd4-892b7ce44f40">
+    <name>РасшифровкаКонкуренты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка конкуренты</value>
+    </synonym>
+  </templates>
+  <templates uuid="01a689b2-aa25-4bfe-8443-f3be20e93c37">
+    <name>РасшифровкаКонкурентыАналитика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка конкуренты аналитика</value>
+    </synonym>
+  </templates>
+  <templates uuid="aa192e28-7481-4fdb-be38-03ac8b2faaf8">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="c7343b89-79c0-4ebd-843c-47bc746c47bd">
+    <name>Макет_НеИспользуется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет не используется</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

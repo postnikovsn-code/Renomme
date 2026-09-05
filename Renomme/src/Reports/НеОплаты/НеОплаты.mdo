@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc131439-a77c-4047-b71b-7917d22d7b91">
+  <producedTypes>
+    <objectType typeId="237c4394-08ea-4029-ab0c-19c7e94b6647" valueTypeId="c49929e5-0791-4abb-bf44-0c26fa7b3dce"/>
+    <managerType typeId="07fc3c4b-d075-42a7-89ef-a10a14bfedc6" valueTypeId="e377e973-dd52-43f6-8b1a-073394057b20"/>
+  </producedTypes>
+  <name>НеОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не оплаты</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.НеОплаты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="0ba4ba03-8653-452a-b792-680807f0543d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

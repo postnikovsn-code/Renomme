@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f34f7473-1812-47d3-a405-c87bf9d4612f">
+  <producedTypes>
+    <refType typeId="56e8df6d-9af4-4095-9ee0-d706d63355af" valueTypeId="b0116585-458d-45f2-b5ec-6a260fc1717c"/>
+    <listType typeId="5f1d3d22-2ae1-4cf2-a489-15ce23aab775" valueTypeId="6cfce635-2b45-4570-9c91-d244cb38bfa6"/>
+    <managerType typeId="41583b3b-c37d-4382-83f0-34d0521636c4" valueTypeId="04c49195-cb85-4df2-8c14-f0817531fa66"/>
+  </producedTypes>
+  <name>ВремяЗаезда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время заезда</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5ff82c8c-01cc-4749-ad4c-c9178187b3c6">
+    <name>Вр0</name>
+    <synonym>
+      <key>ru</key>
+      <value>00:00</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="29adf3a4-9779-48e7-bbfb-4a839cead890">
+    <name>Вр6</name>
+    <synonym>
+      <key>ru</key>
+      <value>06:00</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="33a8042b-0e2d-45bc-bc50-68f951b17538">
+    <name>Вр14</name>
+    <synonym>
+      <key>ru</key>
+      <value>14:00</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad3c8f01-48dc-4e3a-84cc-8741e8a17a9c">
+    <name>Вр18</name>
+    <synonym>
+      <key>ru</key>
+      <value>18:00</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

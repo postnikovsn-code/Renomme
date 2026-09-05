@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6367ae78-cbe8-490d-97b1-01575b6663ac">
+  <producedTypes>
+    <objectType typeId="96dfaafa-f1d7-4684-8e6b-da5d4feeaebc" valueTypeId="8391a4a5-721d-4e33-8b9a-72bd94aa7280"/>
+    <managerType typeId="3e4fb083-0021-44ba-9388-412587e737ea" valueTypeId="2377cbe5-4014-48c9-9766-4a9e87e8950a"/>
+  </producedTypes>
+  <name>ФинансовыйРезультатОтель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовый результат отель</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФинансовыйРезультатОтель.Form.Форма</defaultForm>
+  <forms uuid="7fdde4bf-6a4f-4eef-9c35-cc2b4af77666">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="75479e26-7e16-4feb-a671-07cb8fc1fbf6">
+    <name>ФинансовыйРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат</value>
+    </synonym>
+  </templates>
+  <templates uuid="45e9fd7e-34e1-4497-a86f-6bba45fb983a">
+    <name>РаспределениеОплат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределение оплат</value>
+    </synonym>
+  </templates>
+  <templates uuid="d6c997bf-2b5a-4bd3-a70f-3eb4de9f4260">
+    <name>ФинансовыйРезультатНераспределенныеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат нераспределенные оплаты</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

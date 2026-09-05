@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="decae147-90f9-463b-94fd-ef02846734a9">
+  <name>ГорничныеЗарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Горничные зарплата</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

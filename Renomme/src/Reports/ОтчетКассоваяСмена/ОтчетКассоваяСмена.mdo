@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab5adbf3-8b95-4fd0-b769-b56983d26aae">
+  <producedTypes>
+    <objectType typeId="fb444b91-23e0-44ec-980a-252e7d779f7d" valueTypeId="cee762d5-b57a-4deb-a8e4-2dbb5afffa17"/>
+    <managerType typeId="856ef96a-70ba-4ab7-9079-92efeabbf4a3" valueTypeId="d8f605d5-2a1f-46c7-94ff-6ea1be523cb0"/>
+  </producedTypes>
+  <name>ОтчетКассоваяСмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет кассовая смена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетКассоваяСмена.Form.ФормаОтчета</defaultForm>
+  <forms uuid="1a6dcfef-c66e-4755-94c7-4ab3e239f3e3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="01820469-8e5b-41f9-bd4a-2af55093c687">
+    <name>ФормаВыбораСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора смены</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="68058e61-0286-4f0a-bd93-3f801c981f05">
+    <name>ФормаВыбораСмены1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора смены1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cf406d54-7089-48fc-a3ad-ece89065cd21">
+    <name>МакетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет касса</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

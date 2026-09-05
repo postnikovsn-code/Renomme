@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd176131-9ca7-494d-ab12-324f9587e2b5">
+  <producedTypes>
+    <objectType typeId="9a948376-e2d4-4221-9c82-37d74a411bf4" valueTypeId="9aea3d4c-7d4d-4837-92d3-6e6413a30f02"/>
+    <refType typeId="208b4c67-e675-4c44-9f12-7b7a7131f749" valueTypeId="e9526fa3-aa27-4f57-97eb-755bb085f3c3"/>
+    <selectionType typeId="a9b33482-1228-4b37-b104-cec3c07b0cf6" valueTypeId="7a4c9575-1b82-4603-86c6-fab51248d891"/>
+    <listType typeId="c22f8fd7-b46a-467a-a595-8dbe5daac23d" valueTypeId="55183505-1b8b-46dd-9767-03fbf3ae7bab"/>
+    <managerType typeId="a88e05c1-65e1-4b54-a685-b0cdca5ff621" valueTypeId="b7b354df-5f64-4f32-8577-edb9b84d7ab1"/>
+  </producedTypes>
+  <name>ПодтверждениеБронирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтверждение бронирования</value>
+  </synonym>
+  <inputByString>Document.ПодтверждениеБронирования.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberLength>9</numberLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПодтверждениеБронирования.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПодтверждениеБронирования.Form.ФормаСписка</defaultListForm>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <attributes uuid="00c3cebc-44a7-4542-9e65-48f976e5c86e">
+    <name>Кому</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кому</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="83e96999-5e47-4198-b31a-5b9c6f68d750">
+    <name>Факс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c436737-d029-4475-9ba1-de62b0d491e3">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10ff179c-1f93-4287-a84f-9e76e78509f8">
+    <name>Аннулированно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннулированно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2c0fd5b1-fbd6-49a7-b951-ebb9d6712758">
+    <name>ФормаСписка_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bcdef878-8164-4506-85fc-ff4e103b7ba2">
+    <name>ФормаДокумента_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f93eb364-a5ef-4488-86a3-566823a27a59">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4f62813-deff-4fa4-b0b1-0c342fcf6c3b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="d97d99e2-fdc2-46e1-98a2-69dafb7c1486">
+    <producedTypes>
+      <objectType typeId="cd8e26b0-bee2-4f90-9eb3-d274cca6f6b1" valueTypeId="c8bb272c-6070-4dac-bcb0-5c314a794b83"/>
+      <rowType typeId="675a940f-8068-42c0-a27d-cffccacebd35" valueTypeId="c72a3e6f-6b97-4f94-a0c4-9f95cc733e8c"/>
+    </producedTypes>
+    <name>Номера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номера</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f7d071fa-d1ed-48f8-885a-9f02d0caac51">
+      <name>Бронь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Бронь</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаНаБронирование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="92b2165e-fe2a-42cf-b017-f3df5e338d3f">
+      <name>ФИО</name>
+      <synonym>
+        <key>ru</key>
+        <value>ФИО</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="a9f7dd35-2d91-4bad-bfd3-61cebb5fd925">
+    <name>Подтверждение_Реноме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение реноме</value>
+    </synonym>
+  </templates>
+  <templates uuid="e4a6c4e1-d36b-4452-a9c2-46ce12454a3b">
+    <name>Подтверждение_СтритАрт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение стрит арт</value>
+    </synonym>
+  </templates>
+  <templates uuid="e026cca4-2246-46e3-88ad-40c01dcc509d">
+    <name>Подтверждение_Лайв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение лайв</value>
+    </synonym>
+  </templates>
+  <templates uuid="63cd8c88-551c-4095-bf1e-66ca4b89fb5e">
+    <name>Аннуляция_Реноме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннуляция реноме</value>
+    </synonym>
+  </templates>
+  <templates uuid="245f5e89-5ca7-4fb4-9b0c-9bce590588a5">
+    <name>Аннуляция_СтритАрт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннуляция стрит арт</value>
+    </synonym>
+  </templates>
+  <templates uuid="ef64ac60-744c-4d6e-8d90-1e12967f7300">
+    <name>Аннуляция_Лайв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннуляция лайв</value>
+    </synonym>
+  </templates>
+  <templates uuid="7b265a43-144a-46e1-a092-a942c75e541a">
+    <name>НовоеПодтверждение_Реноме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение реноме</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="735c9122-8914-453d-b7a0-6afea6b8f20b">
+    <name>НовоеПодтверждение_А_Реноме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение а реноме</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="f89e0eee-d880-49d5-8b10-c061ada3ee89">
+    <name>НовоеПодтверждение_СтритАрт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение стрит арт</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="a2b1ef88-0136-42e1-9366-66c9132e3d8b">
+    <name>НовоеПодтверждение_А_СтритАрт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение а стрит арт</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="602c9d87-f6c6-47b8-b785-8e16057c8508">
+    <name>НовоеПодтверждение_Лайв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение лайв</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="f016c56e-dba4-4d56-a595-5ec1800c371b">
+    <name>НовоеПодтверждение_А_Лайв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение а лайв</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="2e667c1d-227a-4d21-89f1-8aa6e3604ad6">
+    <name>НовоеПодтверждение1_Стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение1 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="3b18aedc-5f1f-489e-9f71-2a6a0cf0ef5c">
+    <name>НовоеПодтверждение2_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение2 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="35aaac3b-9bfa-43eb-b7b3-b9c72a0e338d">
+    <name>НовоеПодтверждение3_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение3 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="a1e8288a-e30e-48d1-9b8d-8daaefd30321">
+    <name>НовоеПодтверждение4_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение4 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="2df8bef5-17bd-4042-83e7-e951a31f41b9">
+    <name>НовоеПодтверждение5_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение5 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="30383655-3fad-4c0b-9d8b-5e0504483698">
+    <name>НовоеПодтверждение6_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение6 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="b9b9da5d-68af-4409-afe0-ff1dc958ddf0">
+    <name>НовоеПодтверждение7_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение7 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="bda230db-41bf-43f3-af3c-db2660e630fb">
+    <name>НовоеПодтверждение8_стар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение8 стар</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="b0da1ed8-ecca-4919-8d73-6e046f6003fb">
+    <name>НовоеПодтверждение2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение2</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="94bc0cfe-b378-481e-a8be-7dbae60b6867">
+    <name>НовоеПодтверждение3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение3</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="edcde9de-b551-4406-91a5-0cc63c3807d4">
+    <name>НовоеПодтверждение3_А</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение3 А</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="02c0737f-f739-46c9-94e9-82aa10f24dc9">
+    <name>НовоеПодтверждение2_А</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение2 А</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="7dd4dc77-0467-4b6f-9705-6c4188700efc">
+    <name>НовоеПодтверждение11</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение11</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="e78cb6d8-d72e-4f22-8550-de75a8a54fac">
+    <name>НовоеПодтверждение11_А</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение11 А</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="e62faa1f-e44f-4309-8e8c-4df86939ef82">
+    <name>ПодтверждениеРеномеРус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение реноме рус</value>
+    </synonym>
+  </templates>
+  <templates uuid="86106ee2-8f11-445a-8d90-4689c16b491c">
+    <name>ПодтверждениеРеномеАнгл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение реноме англ</value>
+    </synonym>
+  </templates>
+  <templates uuid="7cf4a121-d973-4923-a76e-b131552568eb">
+    <name>НовоеПодтверждение12</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение12</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="78a8382e-ee28-4b78-975f-642b2e49e058">
+    <name>Подтверждение_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение исходный</value>
+    </synonym>
+  </templates>
+  <templates uuid="15b3457c-2bd4-4a57-b73e-9cff8a103d66">
+    <name>Аннуляция_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннуляция исходный</value>
+    </synonym>
+  </templates>
+  <templates uuid="7ac636c2-9d37-4618-9cec-6916c8200030">
+    <name>НовоеПодтверждение1_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение1 исходный</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="8cadcb8e-2c3c-4b0b-b5a3-6bfdd41e8ce9">
+    <name>НовоеПодтверждение1_А_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое подтверждение1 а исходный</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+  <templates uuid="5c6f91f6-8a49-4ab2-8a6f-b26b63f2d92d">
+    <name>Подтверждение2018_Лайв_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтверждение2018 лайв исходный</value>
+    </synonym>
+    <templateType>ActiveDocument</templateType>
+  </templates>
+</mdclass:Document>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc2324e8-c212-4298-840e-05e366512cf6">
+  <producedTypes>
+    <objectType typeId="b41f67c3-56b0-482e-baad-8742e77e5b78" valueTypeId="58ffd126-a5f9-4b03-9cb7-48eea045be81"/>
+    <managerType typeId="ea141c40-4349-4f45-8da1-4d4d21a065f5" valueTypeId="0b048fb7-7046-4388-96d4-3c0d24dca6da"/>
+  </producedTypes>
+  <name>ОбщийОтчетПоГорничным</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общий отчет по горничным</value>
+  </synonym>
+  <defaultForm>Report.ОбщийОтчетПоГорничным.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="bfdbe99b-143d-4e1b-938a-817e8f57d606">
+    <name>ДатаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="113163bf-774d-4359-a48c-180908d4926d">
+    <name>ДатаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d781fc34-297b-4ff7-a237-3d3c9f000db9">
+    <name>Авто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авто</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad9e308f-948c-414c-ae6a-87abddc04d10">
+    <name>Этаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этаж</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2832a477-4613-4c11-89da-d2435332de58">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомернойФонд</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="944a0c23-d7f2-4ef7-87d8-bd2fa1b654f9">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f79f3c80-ceb6-4889-830a-9a3b85e35287">
+    <name>МинибарРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минибар расшифровка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f5f32f05-f0e8-4e36-9a77-743a5a7abb42">
+    <name>ТехническиеНеисправностиРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Технические неисправности расшифровка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c93fed72-c981-4b9f-b9ac-010db2684c92">
+    <name>МакетОбщий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет общий</value>
+    </synonym>
+  </templates>
+  <templates uuid="4db0befc-5c12-4ec5-88ff-684c844015b3">
+    <name>МакетОбщий_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет общий 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="78788746-fff3-4803-84c4-62476b41e243">
+    <name>МакетТемп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет темп</value>
+    </synonym>
+  </templates>
+  <templates uuid="3aec6d13-dee8-4d81-993f-d3ff924d8749">
+    <name>МакетНеисправность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет неисправность</value>
+    </synonym>
+  </templates>
+  <templates uuid="02c61043-1c0f-465e-8cef-5f336f4655bd">
+    <name>МакетНеисправность_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет неисправность 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="93d733fb-bd93-45a8-9a0e-5288c6f571aa">
+    <name>МакетУщерб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет ущерб</value>
+    </synonym>
+  </templates>
+  <templates uuid="749fe192-2ee5-4bf5-a59d-643d4c1d2e8b">
+    <name>МакетГорничные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет горничные</value>
+    </synonym>
+  </templates>
+  <templates uuid="d09c7dfa-0bfd-42c4-8717-77adb176338f">
+    <name>МакетЗабытые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет забытые</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

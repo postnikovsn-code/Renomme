@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77365f26-da49-4a6f-a01b-d3f92dc92180">
+  <producedTypes>
+    <selectionType typeId="9d0ec2c8-7d7a-4fb3-9078-ad238e105786" valueTypeId="cfc08d91-d290-4721-8a2a-4168ed470db4"/>
+    <listType typeId="352cb32a-bc1c-417c-b7fe-35469d59710d" valueTypeId="70d2dcd7-4a44-4aa2-9acb-4652d120b545"/>
+    <managerType typeId="940285e2-31da-40b3-a242-4960b508e3ad" valueTypeId="88d5e610-b305-47e4-8f2d-ee80db3388c8"/>
+    <recordSetType typeId="133c28e1-d389-49c1-a8d5-4d1a3d993cc0" valueTypeId="9de0eb94-77a7-4ef2-8eaf-d5e1d4b74e93"/>
+    <recordKeyType typeId="98d57f33-5ab5-403a-889e-2fbe5d6ce10e" valueTypeId="fc17bc37-515c-4155-a1c2-a24cc8a6f339"/>
+    <recordType typeId="ae935315-b601-4c45-954c-95e4f5a7aec3" valueTypeId="869036a0-b86e-4ca4-9e84-2a17412e18d7"/>
+  </producedTypes>
+  <name>ОстаткиПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки продукции</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="ccfe4a4a-2bd4-42fc-8185-94df09c6d601">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="365e6bc5-9690-4613-aa70-b71e79c96200">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

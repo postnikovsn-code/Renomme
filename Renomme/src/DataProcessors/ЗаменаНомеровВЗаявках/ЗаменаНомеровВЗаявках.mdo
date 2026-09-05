@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02878a74-c20e-4063-a975-ac4ff5358ca0">
+  <producedTypes>
+    <objectType typeId="d840ef33-6fc5-4a4f-889a-8d1d1691d070" valueTypeId="45a1cc1d-5350-4518-a0ae-f4e61622ebe4"/>
+    <managerType typeId="f0d51a24-bcb0-4eda-926d-771520ea815f" valueTypeId="48b2d2fa-74f9-4e9b-a214-f07dbfd34fd6"/>
+  </producedTypes>
+  <name>ЗаменаНомеровВЗаявках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замена номеров в заявках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаменаНомеровВЗаявках.Form.Форма</defaultForm>
+  <forms uuid="5b743cc0-cee5-4ce2-8be8-f2ac9f76f0df">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

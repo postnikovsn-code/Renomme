@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5de57ba-9e09-4e19-8e6c-581b04a32b04">
+  <producedTypes>
+    <managerType typeId="8cb30564-8957-4070-b010-7b14a1ca7f15" valueTypeId="ab6d530a-670a-4d48-9d63-07467bb8527d"/>
+    <valueManagerType typeId="03006489-0651-4c89-ba5e-0554a24a4ecf" valueTypeId="74b83607-42cd-49e6-b223-acd3a8aed659"/>
+    <valueKeyType typeId="27af0871-5a1e-43b3-b1f8-69772bbcb35e" valueTypeId="64abaa3f-5b55-4c34-934b-c83c5fd21be5"/>
+  </producedTypes>
+  <name>Минибар_Нет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минибар нет</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

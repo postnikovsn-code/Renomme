@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6a658b1-e55e-4b74-b3ca-4fe125124c86">
+  <name>КоворкингКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коворкинг клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

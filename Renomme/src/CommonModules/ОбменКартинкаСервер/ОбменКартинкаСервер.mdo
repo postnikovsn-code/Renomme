@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6309290f-68f1-4ebf-8c4b-8b161a5c6c43">
+  <name>ОбменКартинкаСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен картинка сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

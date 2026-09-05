@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6db0962f-8ab4-441d-8c1d-399226c98d79">
+  <producedTypes>
+    <selectionType typeId="da223e33-16a4-4e2e-94f6-0047ee3daf0b" valueTypeId="485e2bcd-20bc-4a04-90b5-0cfc05597ae9"/>
+    <listType typeId="d72ea262-a6e6-4ca9-9ffd-e9a96e27c29d" valueTypeId="85413291-78a9-4956-b972-6c9c56776fd9"/>
+    <managerType typeId="77acde83-ea21-4988-9010-a25d3a90baec" valueTypeId="9211e2b6-c634-4f06-b483-77fd9a7aa964"/>
+    <recordSetType typeId="6f0be9aa-7723-4c74-ab11-aef81340f6ea" valueTypeId="b4abaf45-36ab-4738-883e-f4b7b8eae6c3"/>
+    <recordKeyType typeId="a2e8e54a-4ba5-4327-aeac-b601adfe6cd3" valueTypeId="bdcfe8b4-7be8-42cf-86ec-b1824496437e"/>
+    <recordType typeId="3923a1bf-344d-433d-bc7d-036fe5a00a13" valueTypeId="bb4ff277-901c-4295-989d-569a24046aed"/>
+    <recordManagerType typeId="ac203d42-a730-438b-b2d3-b8c1f0d767a8" valueTypeId="95904aeb-6263-4600-9ee9-571751bc4c71"/>
+  </producedTypes>
+  <name>СкидкиКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скидки клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="58e63d28-1ef3-458f-a209-e26069c52f1a">
+    <name>Скидка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидка %</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07fca0e0-7378-473b-a465-a937b3948df2">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="eddb9af5-bb52-4c97-b74a-2125fa72291c">
+    <name>КоличествоНочей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ночей</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68625cae-e8cc-4af1-8ef6-24cee9d79c0d">
+  <producedTypes>
+    <managerType typeId="28ced7df-ab22-45a6-a9e5-8edce6cc2de4" valueTypeId="80cf61b0-ed82-4f79-9550-f2cf406d191c"/>
+    <valueManagerType typeId="8e0c62cf-37f1-4d38-bb2d-08dd514779c9" valueTypeId="e81d6c7f-81e9-4c7d-ac88-e847b0341c0b"/>
+    <valueKeyType typeId="a2bc3e82-a242-4e2f-b517-89333b8dca41" valueTypeId="65e265ff-2db1-4fe2-8649-c5bfe8cc782f"/>
+  </producedTypes>
+  <name>GREENIdInstanceTelegram</name>
+  <synonym>
+    <key>ru</key>
+    <value>GREENId instance telegram</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

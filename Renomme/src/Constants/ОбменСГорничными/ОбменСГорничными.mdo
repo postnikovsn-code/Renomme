@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8def54b0-3afd-42c1-9c55-7b448031ffa8">
+  <producedTypes>
+    <managerType typeId="ad9201e3-d2f9-4439-90d7-e212e241492d" valueTypeId="cc6ce24b-caac-4bc9-b509-9e04838aedfa"/>
+    <valueManagerType typeId="6c2acda9-da7d-4f58-9c60-8d8defc81033" valueTypeId="3b4cfb05-1bd4-4393-8e6f-48efb636097c"/>
+    <valueKeyType typeId="f3077d41-4b47-42e2-abdf-fdc8d7567ac3" valueTypeId="34de6bbf-6242-4e37-85b2-471a654f433c"/>
+  </producedTypes>
+  <name>ОбменСГорничными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с горничными</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca467e61-43c2-480b-978d-ce9f9cf63619">
+  <producedTypes>
+    <refType typeId="39386dec-d738-4e2a-8c71-cf87638a3760" valueTypeId="eea7b16e-d598-4367-99f6-ea20e63e5935"/>
+    <listType typeId="c704766a-8440-41cc-9cba-349ae1262060" valueTypeId="c1b0cec7-ba34-4f48-9eec-362f06c250a7"/>
+    <managerType typeId="10ea2dbf-7e50-436c-ae0c-0ad965219b39" valueTypeId="8fd6d1ad-a061-45b2-91c0-89e344ad0ff5"/>
+  </producedTypes>
+  <name>КалендарьЦенВидЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь цен вид цены</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ccf78f69-3684-4c43-8318-2b4101169da0">
+    <name>ДолгосрочнаяЦена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгосрочная цена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d67fc479-9958-4a79-bde8-b3c01ea581c0">
+    <name>ТекущаяЦена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущая цена</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

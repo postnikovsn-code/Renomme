@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d03d35c-806f-4ab8-ab6e-afb617f41766">
+  <producedTypes>
+    <objectType typeId="3943d623-8ab7-461b-96b8-e87e37b508bd" valueTypeId="ab5a3b9c-03ba-44ff-8c16-8fb6f508ee2e"/>
+    <managerType typeId="2c8a9ce0-1792-4fea-bcb8-16f2648f567b" valueTypeId="32436d29-eabf-426a-abd9-169dbf386ed9"/>
+  </producedTypes>
+  <name>ОтчетГорничныеПомещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет горничные помещения</value>
+  </synonym>
+  <defaultForm>Report.ОтчетГорничныеПомещения.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="a476aeff-879a-4762-8f25-49f138d2496a">
+    <name>ДатаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73edc8ff-b650-48d8-b983-34fb778a0fc2">
+    <name>ДатаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="efcbea9f-6f9e-425c-8539-5c69f8b2b0c5">
+    <name>Авто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авто</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1b78c639-4e56-4fd3-8748-3e3dff69479a">
+    <name>Помещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помещение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГорничныеПомещения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d986892a-c95c-48ba-8331-f43b474fda87">
+    <name>Горничная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Горничная</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Горничные</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="259f401b-b3dc-438a-9a89-fc93d9fbde48">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="84bbda8b-c146-4f03-af0b-b7999d534c4d">
+    <name>МакетОбщий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет общий</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

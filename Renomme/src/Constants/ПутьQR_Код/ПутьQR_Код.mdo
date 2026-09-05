@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8cb7182-49f3-4631-b54e-9bbf3d665533">
+  <producedTypes>
+    <managerType typeId="ba266742-a2c2-4e1e-9928-c9e52ce1a25d" valueTypeId="af004745-d2a6-45a0-b37b-5f5b0ecf9453"/>
+    <valueManagerType typeId="8d3bd2f5-23ca-4190-91cb-155e85887c3d" valueTypeId="1c001198-fd23-4da0-a146-73ae6e8a61ee"/>
+    <valueKeyType typeId="08baeacd-fbf4-4c3a-8f07-dadf6103b894" valueTypeId="58ccbe26-f5d2-4bf4-acaa-55c5bd8a7c2f"/>
+  </producedTypes>
+  <name>ПутьQR_Код</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь QR код</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

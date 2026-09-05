@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e18ec28-acfc-4394-a983-17e75eac6658">
+  <producedTypes>
+    <objectType typeId="41330770-75f6-476a-9f0f-25396db0d08c" valueTypeId="600096f9-4641-40fe-b27c-5b19edbcdd0c"/>
+    <managerType typeId="1401ee65-e13c-40b3-89b3-3945206e77be" valueTypeId="8e8f3062-7e18-471c-9895-057a3dee6906"/>
+  </producedTypes>
+  <name>Минибар</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минибар</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Минибар.Form.Форма</defaultForm>
+  <forms uuid="1543565b-1fa3-443b-9934-13b0def76e94">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="515f40aa-0ea5-4078-8196-c2611bdb67ab">
+    <name>МакетМинибарОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет минибар отчет</value>
+    </synonym>
+  </templates>
+  <templates uuid="0b7c9a58-e2cb-4c2b-94f6-e32f0342a5aa">
+    <name>МакетМинибарПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет минибар прибыль</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

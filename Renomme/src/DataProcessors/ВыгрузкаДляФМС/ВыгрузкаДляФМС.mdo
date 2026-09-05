@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7394a35f-3d8f-4465-a1d7-a53bbedb7b22">
+  <producedTypes>
+    <objectType typeId="4104ff8d-2210-48fb-9fe5-2f547405eb56" valueTypeId="d7499903-ea2c-45b2-a95f-6db4c5fb39f2"/>
+    <managerType typeId="e0531bb7-2be9-4ef1-8c5a-5e1a5ecf8ee7" valueTypeId="60026096-44d8-465d-9667-51f06cbb1399"/>
+  </producedTypes>
+  <name>ВыгрузкаДляФМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка для ФМС</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыгрузкаДляФМС.Form.Форма</defaultForm>
+  <attributes uuid="505641c6-0c6c-47fa-a94b-556485d71d07">
+    <name>ДатаЗаезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заезда</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="b2bd7d55-767f-47d4-80d0-aa769bf1040c">
+    <producedTypes>
+      <objectType typeId="27d1346f-1de0-45ec-94df-7f7d7ed52896" valueTypeId="5ffed0c5-6209-4af3-bbb3-4a2ff2cf0843"/>
+      <rowType typeId="09ca3d64-cd9a-468e-8ef9-3e150db8097f" valueTypeId="f593d341-554e-48c4-beb5-d56bfcd2cfc3"/>
+    </producedTypes>
+    <name>ТаблицаДляВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица для выгрузки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a5c6b7d2-d43e-437a-8adc-b33a0c6b86ce">
+      <name>Выгружать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выгружать</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="23d41577-9f49-40d2-be5c-29dd4641e7b7">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="39b84706-66ed-4f33-b4f3-9f6fbd5a985f">
+      <name>Бронирование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Бронирование</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаНаБронирование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="35583cc6-c2be-4528-9e20-6fa42433a0cf">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

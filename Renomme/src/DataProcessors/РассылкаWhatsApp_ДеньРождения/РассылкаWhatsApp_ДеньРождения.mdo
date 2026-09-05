@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="257d36bd-4ba5-4fe8-9d1f-9725b23887e4">
+  <producedTypes>
+    <objectType typeId="4459fb77-d92a-408f-ac6c-58cd540ee190" valueTypeId="69230c21-6790-416a-bb08-873262c00582"/>
+    <managerType typeId="6f1e0127-a3b5-4dba-8594-0172a0fce6c2" valueTypeId="01e168c8-eb8d-46bb-8e68-bbe2bebbd411"/>
+  </producedTypes>
+  <name>РассылкаWhatsApp_ДеньРождения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка whats app день рождения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РассылкаWhatsApp_ДеньРождения.Form.Форма</defaultForm>
+  <forms uuid="ed11ac64-d27a-42f3-bfcf-437a08ec236a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

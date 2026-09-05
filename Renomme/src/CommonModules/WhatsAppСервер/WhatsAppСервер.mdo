@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3fa7f442-94b2-49a6-b0ad-c06114f7a13d">
+  <name>WhatsAppСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Whats app сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

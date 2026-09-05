@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57c09e1d-a0c2-4977-8ae4-a9e91bfe1ae1">
+  <producedTypes>
+    <managerType typeId="0818e74a-2efa-4f6f-873b-ad324f789fcd" valueTypeId="efe0be93-2b0c-401d-b419-dedd0cd1d3b8"/>
+    <valueManagerType typeId="78ccfb72-7c1a-4d67-9ba7-559de10e51a7" valueTypeId="e6d4b458-adea-4dca-8763-a8e7cf50ac0b"/>
+    <valueKeyType typeId="550b08f1-b479-4e91-91db-37f390d22f72" valueTypeId="e12ef1a5-de53-4760-bb78-0c7415bdba92"/>
+  </producedTypes>
+  <name>СерверДомСоветовHTTP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервер дом советов HTTP</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>20</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

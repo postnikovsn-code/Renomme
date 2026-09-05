@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb12b80b-9dac-409e-a5b8-55ed3c6c5f85">
+  <producedTypes>
+    <selectionType typeId="ecfd19a3-1e88-4b9a-b761-f00d112a1735" valueTypeId="cbe1d912-1aca-4ab7-a352-b57df51d2e58"/>
+    <listType typeId="0a429bb1-e02b-4eb5-a69f-5ed23c39d606" valueTypeId="7d7ee975-1e47-4874-8c59-252f4b5e043b"/>
+    <managerType typeId="a5c988b3-8adb-4599-87f3-80a91ae60866" valueTypeId="9e7e7072-25d5-4b61-a5d7-8cedb857029f"/>
+    <recordSetType typeId="b2f900fb-d9a8-4595-8e44-fc6f813ed6fd" valueTypeId="5a678f68-9062-4fe0-a744-499bad032df7"/>
+    <recordKeyType typeId="c5b0ca61-7845-40d7-bac2-57f76a66f728" valueTypeId="fd2dcfc7-10ff-4ab1-a9fc-e6d3d3169d22"/>
+    <recordType typeId="d8ad4448-727d-42fd-8ceb-4a25aab73b26" valueTypeId="a61b43c5-ed6a-403b-9099-5b0959815e8f"/>
+    <recordManagerType typeId="b3dd829e-8cd4-4df3-b463-ad1766f5d040" valueTypeId="aeec0dfc-3bdd-4cb2-9b93-bece4d59fca9"/>
+  </producedTypes>
+  <name>ПроцентыЭквайринга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проценты эквайринга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b4eb396a-6ebc-4ca9-8ab5-df2905e360a7">
+    <name>ПроцентЭквайринга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент эквайринга</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e9a06e21-c26f-4a06-be1b-cd37a128a153">
+    <name>ПроцентЭквайрингаСБП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент эквайринга СБП</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="57677947-4642-49af-a4b7-57f849e8a751">
+    <name>ДатаУстановкиПроцентаЭквайринга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки процента эквайринга</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

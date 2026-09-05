@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d934dce-1f0c-427f-a9de-5db1dfd5b602">
+  <name>ПодключаемоеОборудованиеЭквайринговыйТерминал32</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эквайринговый терминал (32х32)</value>
+  </synonym>
+</mdclass:CommonPicture>

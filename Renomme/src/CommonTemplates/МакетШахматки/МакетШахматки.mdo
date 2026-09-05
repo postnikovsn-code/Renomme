@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79e82245-dbb8-4581-aab9-be16bec79655">
+  <name>МакетШахматки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Макет шахматки</value>
+  </synonym>
+</mdclass:CommonTemplate>

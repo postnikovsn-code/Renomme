@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af820e33-48a6-41b8-a277-efc973bbf82e">
+  <producedTypes>
+    <objectType typeId="2748469d-4719-479e-bb0e-4ba4afe88699" valueTypeId="2361ce96-e81d-4fd8-903a-9bd0e521b4b1"/>
+    <managerType typeId="9d151e6e-be01-41c4-852e-954dbe2bf705" valueTypeId="dc54c0cf-f90a-4003-81d9-f7e7d6334713"/>
+  </producedTypes>
+  <name>РассылкаWhatsApp_Сайт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка whats app сайт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РассылкаWhatsApp_Сайт.Form.Форма</defaultForm>
+  <forms uuid="5fe9efb9-bc55-482c-a319-1de58ba10de7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

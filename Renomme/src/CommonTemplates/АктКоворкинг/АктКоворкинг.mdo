@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b48944e-db62-4009-8cdd-5e1cda0b5f42">
+  <name>АктКоворкинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт коворкинг</value>
+  </synonym>
+</mdclass:CommonTemplate>

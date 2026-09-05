@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41c04339-1ad2-485e-84c9-2c124502e001">
+  <producedTypes>
+    <refType typeId="e971835d-385b-4204-a07a-d26619b27493" valueTypeId="cb5889f9-d316-48e8-b71c-14a7e7601405"/>
+    <listType typeId="cb8d1692-8657-49df-a468-9896e30e0789" valueTypeId="79bb134c-a8dd-41cf-99ea-bbd87be28579"/>
+    <managerType typeId="cc0436f8-a80a-459e-8516-aef64a369223" valueTypeId="d74ebaa0-49a4-4fc5-bef7-f440ed58ce15"/>
+  </producedTypes>
+  <name>ПраваПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Права пользователя</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9116bcd6-2456-4e94-a44f-24591203a0b8">
+    <name>Горничные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Горничные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5658b5d9-f27b-4daa-835d-242da23d6593">
+    <name>МинибарРасчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минибар расчет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="199a5f56-d5b8-4de1-bb37-eb1572776f12">
+    <name>Администраторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администраторы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="968b3673-0c7a-4d97-b022-a2481ed8102c">
+    <name>СписаниеДолгов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание долгов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cd7fc2ef-92ce-42d8-9e64-00eb5300b78b">
+    <name>Бухгалтерия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерия</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01a950ab-2abb-46b2-9782-091eff8b4d7f">
+  <producedTypes>
+    <objectType typeId="b2af8a4e-aad9-4311-8cfc-bd05d007afcf" valueTypeId="08b2f126-0e65-4a2e-abe2-813b0feaaf5c"/>
+    <managerType typeId="107864ea-82b9-4651-85b8-43d73bbfd4ba" valueTypeId="1f4a1e6a-da91-4ae7-afd5-3642037edcd4"/>
+  </producedTypes>
+  <name>ЗакрытьСмену</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрыть смену</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗакрытьСмену.Form.Форма</defaultForm>
+  <forms uuid="c4556c57-8777-4e95-b1f4-3bbd281f0dea">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

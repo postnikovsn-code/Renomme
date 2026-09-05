@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f50eaf3a-402d-42a0-abdc-541cd77d3d59">
+  <name>МакетПризыИБаллы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Макет призы и баллы</value>
+  </synonym>
+</mdclass:CommonTemplate>

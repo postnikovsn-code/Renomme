@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f7552e0-bac5-4c71-ac60-9a6e893bd857">
+  <producedTypes>
+    <objectType typeId="18b1c705-146c-4baa-b5da-35c9d467fe8f" valueTypeId="e2d131de-53f8-4acf-b0a9-712d72b2645b"/>
+    <managerType typeId="ce0c1ffe-ac13-4316-b02d-af70257e8d0c" valueTypeId="5da9be6b-59f8-46d0-8f43-79459f21b918"/>
+  </producedTypes>
+  <name>ОтчетПоЗагрузкеНомеров_Исходный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по загрузке номеров исходный</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОтчетПоЗагрузкеНомеров_Исходный.Form.Форма_OLD</defaultForm>
+  <forms uuid="3bbe3ab5-5dea-4410-8df3-f78d1b74e6fd">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1c96a3e2-7a87-4d97-b500-50650efdd45b">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

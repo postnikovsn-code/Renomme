@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b648c4a-b7e8-4925-b099-20830e1383b8">
+  <producedTypes>
+    <objectType typeId="af9fa499-cca2-45b3-88d8-6c3929ac5e4d" valueTypeId="c9170438-0927-4765-93dc-f313b7b3078d"/>
+    <managerType typeId="b97b20f5-7b5f-40cd-ab15-1dc3bf8e6d1d" valueTypeId="391a731a-6d6c-4590-9bdc-3803fa46fc4f"/>
+  </producedTypes>
+  <name>ОтчетПоКлиентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по клиентам (рассылка)</value>
+  </synonym>
+  <defaultForm>Report.ОтчетПоКлиентам.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="32ce9064-8491-45d2-a87f-3b11caf20cb5">
+    <name>Аудит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аудит</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ab44f883-32ba-420f-88de-be078a953fe1">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="623ac4e1-1fb7-4ffc-84d8-2f27b83aad37">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cf1b4461-3ac9-42b1-8cd1-779e82104762">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="132e648f-b4b3-4bd0-a78a-baac17695852">
+    <name>МакетШахматки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет шахматки</value>
+    </synonym>
+  </templates>
+  <templates uuid="e2402b18-64f2-4e8a-be6b-62ab89dca6e6">
+    <name>Макет1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет1</value>
+    </synonym>
+  </templates>
+  <templates uuid="b10db4c1-63c9-4019-affc-5c4ca77a0608">
+    <name>МакетАудит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет аудит</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

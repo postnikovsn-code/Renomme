@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4370c805-30e3-424d-bcb5-0d5c3cebb9df">
+  <producedTypes>
+    <objectType typeId="24da0fbc-32c4-457e-977e-1c77b1939cc8" valueTypeId="b103aaf7-c18d-46b0-8d00-633e199894ca"/>
+    <managerType typeId="de421cea-23e7-480a-95f7-d1702fe309a5" valueTypeId="a7a69b35-c77b-43c6-a46c-77549c4def80"/>
+  </producedTypes>
+  <name>СтатистикаБронирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика бронирования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтатистикаБронирования.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="feacefa4-0cad-4a13-8007-32d8d33173d3">
+    <name>ДН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ff550fd8-2b96-42c0-a6d2-d0ba518aabd5">
+    <name>ДК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="68916b6a-0b19-4018-9285-c3e5dba320fc">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="54153399-d5bb-4e28-b050-b3dfa3c863dd">
+    <name>МакетОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет основной</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

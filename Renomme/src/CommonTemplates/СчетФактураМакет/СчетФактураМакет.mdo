@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b823456a-737f-4185-857e-3ac3785b02fa">
+  <name>СчетФактураМакет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет фактура макет</value>
+  </synonym>
+</mdclass:CommonTemplate>

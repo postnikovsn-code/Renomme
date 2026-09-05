@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f5d4482-9062-432e-a554-0193b1961bcd">
+  <producedTypes>
+    <objectType typeId="6d6fc7e0-84c1-417a-a574-8510c0df6ea9" valueTypeId="0163634a-2451-43e6-b7bd-b84c50df2d30"/>
+    <managerType typeId="4c583ab2-fc39-4e6d-9181-d795b0d73154" valueTypeId="6f2e7424-2584-4447-8cd2-0b84d7775cd6"/>
+  </producedTypes>
+  <name>ПрогнозТурНалог</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прогноз тур налог</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПрогнозТурНалог.Form.Форма</defaultForm>
+  <forms uuid="3f0f28bd-cc20-436e-8c3f-3dad8742477b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
