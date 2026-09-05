@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="602ad234-2592-40d4-bb66-c491f41e8e99">
+  <name>PayKeeperСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Pay keeper сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

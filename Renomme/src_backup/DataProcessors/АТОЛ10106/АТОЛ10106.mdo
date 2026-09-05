@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3653b75-6a72-475b-ad72-0bb728f56473">
+  <producedTypes>
+    <objectType typeId="79aab293-c2c4-40a9-80c5-c16282114317" valueTypeId="b1220a03-191e-42c4-a6a6-1e725cd5ccdd"/>
+    <managerType typeId="4ea48cb9-5409-4866-ba45-c6393ae576b9" valueTypeId="fa359cbb-2a8a-49d2-bf4a-024c99e49618"/>
+  </producedTypes>
+  <name>АТОЛ10106</name>
+  <synonym>
+    <key>ru</key>
+    <value>АТОЛ10106</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АТОЛ10106.Form.Форма</defaultForm>
+  <forms uuid="8f47821c-ab0b-41e3-933d-114ddbc33de3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

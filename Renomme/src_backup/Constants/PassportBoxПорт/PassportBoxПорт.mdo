@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5fe4cdc-c106-4823-9e64-4221904cd1b1">
+  <producedTypes>
+    <managerType typeId="ab9431b1-d2ed-4831-b4f5-b0edf2d66820" valueTypeId="ced6c030-cfc2-463c-90ae-abd540ff8263"/>
+    <valueManagerType typeId="bd75c0ba-4286-4639-8e55-d15f87266cf9" valueTypeId="cc5b14a5-dac9-4e15-a7b0-cfe0452b9e71"/>
+    <valueKeyType typeId="5e1356eb-2eea-4248-b007-165f874ffaa4" valueTypeId="b36ed0e8-d86b-483f-9793-9546f195f567"/>
+  </producedTypes>
+  <name>PassportBoxПорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>PassportBox: TCP-порт</value>
+  </synonym>
+  <comment>TCP-порт HTTP-сервера сканера паспортов PassportBox. По умолчанию 80.</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

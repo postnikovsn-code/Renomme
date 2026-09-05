@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe58573d-d27e-4121-bcbe-e21c7d2a574b">
+  <producedTypes>
+    <objectType typeId="5a8724a6-e374-4974-bb82-4e0f82594806" valueTypeId="16cdd59a-ea3b-416e-8856-2ee9e3c9aff5"/>
+    <managerType typeId="44b19a60-8b51-4308-ae2e-c511b4e41ed3" valueTypeId="93fc72b5-c16f-44b1-9c49-70a0d565e6e0"/>
+  </producedTypes>
+  <name>ПрямоеРедактирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прямое редактирование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПрямоеРедактирование.Form.Форма</defaultForm>
+  <forms uuid="3630ca7b-09f3-4d1f-9ec6-860ed4848862">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

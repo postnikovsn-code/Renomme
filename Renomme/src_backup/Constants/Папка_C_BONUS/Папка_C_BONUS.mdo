@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93e4ce6b-57aa-4a5b-8eb8-4fc4bfde4c05">
+  <producedTypes>
+    <managerType typeId="93a5b294-ce39-44de-996f-6eacd098ca1e" valueTypeId="e35e77eb-1b2c-4fe4-bfe2-dec5f3e85c2c"/>
+    <valueManagerType typeId="a71d32f4-98dc-41b5-b959-b1d27a33fbe8" valueTypeId="91d4a102-15a7-4cab-a819-66a07a4e4f8f"/>
+    <valueKeyType typeId="00d4ae38-1c13-42e1-b1a9-4c3db5cb6cb9" valueTypeId="4d2b47f0-193c-499e-86fa-6ed656363bb3"/>
+  </producedTypes>
+  <name>Папка_C_BONUS</name>
+  <synonym>
+    <key>ru</key>
+    <value>Папка c BONUS</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

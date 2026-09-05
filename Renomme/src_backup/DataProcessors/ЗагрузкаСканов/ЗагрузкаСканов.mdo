@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07a1db44-bbe2-4984-ada9-5c7fdb720311">
+  <producedTypes>
+    <objectType typeId="03a5b393-71dd-4125-80a0-9b28d558eb81" valueTypeId="809de960-abe3-48ca-a04d-3bbe2fcceb89"/>
+    <managerType typeId="7d23f308-d6b6-4287-bc55-5fb815d581ba" valueTypeId="fd5db547-3fd3-4c62-be2e-687c5513a7d8"/>
+  </producedTypes>
+  <name>ЗагрузкаСканов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка сканов</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗагрузкаСканов.Form.Форма</defaultForm>
+  <tabularSections uuid="ad291988-bdda-4b4a-8033-0c4b05fa23b5">
+    <producedTypes>
+      <objectType typeId="3f78062f-8320-4245-8c4e-250cffcd0a9f" valueTypeId="68d8085e-77bb-4717-8d48-4797122bf7b1"/>
+      <rowType typeId="93b1e725-def8-4657-b7e5-b7b5a34b81c4" valueTypeId="fe338e6e-52f8-4356-aca8-4390bcc286c6"/>
+    </producedTypes>
+    <name>СканыДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканы документов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="aaa379d3-611e-4193-8a41-071b529c8931">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8e6c4309-abed-4663-9dd7-2d1d3d9cd572">
+      <name>ПутьДоФото</name>
+      <synonym>
+        <key>ru</key>
+        <value>Путь до фото</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>128</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+    <attributes uuid="7bc8593a-57b1-48dc-88da-7d487441fdb1">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ac05e903-0a02-4af1-97c3-776c5ae2d4fc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

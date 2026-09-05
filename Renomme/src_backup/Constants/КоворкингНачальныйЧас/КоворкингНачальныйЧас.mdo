@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d703ea2-62f8-49ee-801e-fdeeb4d6d3ca">
+  <producedTypes>
+    <managerType typeId="bd8dca85-3f39-4539-9ee9-85a524a3ae5b" valueTypeId="07c7bbc2-19dd-4527-a6a7-9ded65eb58eb"/>
+    <valueManagerType typeId="5bd68e3f-1f05-4f20-a32a-00de34e96ef5" valueTypeId="cfcdf3c8-40b9-488d-b87e-c149147ee87d"/>
+    <valueKeyType typeId="b43e107a-6cb3-44cb-bac8-2311845e8d90" valueTypeId="387657ae-e292-42a4-b1e3-32da3e321866"/>
+  </producedTypes>
+  <name>КоворкингНачальныйЧас</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коворкинг начальный час</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

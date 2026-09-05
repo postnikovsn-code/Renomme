@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3495f2a-7612-497a-9660-7a30cc85168b">
+  <producedTypes>
+    <objectType typeId="59be19ec-7bfa-4719-bb69-b7858c93bd38" valueTypeId="3b3c7e08-2be6-4088-97a5-b553b7631aff"/>
+    <refType typeId="84af9940-4337-45f7-a656-f45ab44b9c69" valueTypeId="d02e263b-2935-4bbc-a457-b2e64df2b637"/>
+    <selectionType typeId="120d7043-7214-4f5a-8311-dc18dd501b75" valueTypeId="92b12f36-4d21-4ef1-a76c-38df8393c7cb"/>
+    <listType typeId="9393fbba-9507-46de-92f4-4e97ecad9b55" valueTypeId="b148c7ae-8937-4aa9-83ac-17f767859951"/>
+    <managerType typeId="7995df39-1bca-463e-a581-5ef6f089719b" valueTypeId="8319d3e0-cbf5-46eb-879f-eea9377f1c7c"/>
+  </producedTypes>
+  <name>ЛистОжидания_НеИспользуется</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лист ожидания не используется</value>
+  </synonym>
+  <inputByString>Document.ЛистОжидания_НеИспользуется.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЛистОжидания_НеИспользуется.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЛистОжидания_НеИспользуется.Form.ФормаСписка</defaultListForm>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <attributes uuid="7532a185-1abe-42cf-949b-3dad7c0d1051">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf439663-2016-487e-8dbc-8523b5082205">
+    <name>РезервС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="385391ff-667b-413e-817c-3470979bc4e5">
+    <name>РезервПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a78d0c0-54ce-4c26-a4ca-1895a16110a3">
+    <name>ВремяЗаезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время заезда</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВремяЗаезда</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae0104d2-cbe8-4171-b5bc-d49aac905288">
+    <name>ВремяВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выезда</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВремяЗаезда</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1909b043-015f-4be3-b2a0-8a267e143406">
+    <name>КатегорияНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория номера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНомеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0ffe6a5-ccc5-4b4f-a077-51492c41ca14">
+    <name>Курящий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курящий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="621d9e15-26f5-413a-a16e-e5fe8c15eaa5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="87226678-6456-4e82-996b-6364a02898c2">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

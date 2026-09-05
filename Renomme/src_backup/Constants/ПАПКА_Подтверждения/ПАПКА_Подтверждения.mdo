@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad94390e-63c7-439c-bb62-70ce3a98d06c">
+  <producedTypes>
+    <managerType typeId="77e55e86-0227-46f3-bdca-01148089be73" valueTypeId="020be380-47f0-427a-8f9c-517f5c9c1b3b"/>
+    <valueManagerType typeId="5b6ea99f-4ecc-442d-8494-0a6c2b0366d3" valueTypeId="8851a864-463d-411f-b58b-d7a6aff4aca5"/>
+    <valueKeyType typeId="d189cee4-1e4a-4cac-b30a-a80e0f08dd6e" valueTypeId="b7de44c5-1e34-4323-858b-cd0c77a95557"/>
+  </producedTypes>
+  <name>ПАПКА_Подтверждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПАПКА подтверждения</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

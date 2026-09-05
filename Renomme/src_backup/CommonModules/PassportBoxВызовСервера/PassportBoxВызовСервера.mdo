@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68e0eef7-98b6-41d9-853f-e2e015c8b8b0">
+  <name>PassportBoxВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сканер паспортов PassportBox (вызов сервера)</value>
+  </synonym>
+  <comment>HTTP-клиент для сканера паспортов PassportBox. Перенесен из проекта Паспорт.</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

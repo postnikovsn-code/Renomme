@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37150f93-21bf-47d7-ab7b-2cb59d0fc495">
+  <producedTypes>
+    <objectType typeId="94e76774-473e-4048-bf71-d5038e572ceb" valueTypeId="52fe93e5-ae32-4a93-8982-3ffdf967718a"/>
+    <managerType typeId="97a1a6ad-b75b-4aff-8bf6-c18b2cf16e37" valueTypeId="b75886cd-7967-4c3b-8ea3-1a4d6818d620"/>
+  </producedTypes>
+  <name>ЗагрузкаГорничные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка горничные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаГорничные.Form.Форма</defaultForm>
+  <forms uuid="343c94e7-ee08-4b91-8497-dbe8ec6b214f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

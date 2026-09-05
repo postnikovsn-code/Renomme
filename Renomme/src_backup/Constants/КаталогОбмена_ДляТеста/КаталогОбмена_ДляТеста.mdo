@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a2ba2b1-be09-49e9-906b-8a22df61c91b">
+  <producedTypes>
+    <managerType typeId="109c6ff7-2c45-4e9a-9850-1cfc463a499d" valueTypeId="f26081eb-ad3c-44be-a640-a32bc6eec8af"/>
+    <valueManagerType typeId="df85d26d-c25f-4214-a79b-0ecda96b906c" valueTypeId="058598f2-bbde-4336-b2bb-f8cf54492955"/>
+    <valueKeyType typeId="61bdc47b-e7b6-4d5b-a814-6da985f8b2a1" valueTypeId="a36146c7-541f-4ab3-8c18-2d4b342122fb"/>
+  </producedTypes>
+  <name>КаталогОбмена_ДляТеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог обмена для теста</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

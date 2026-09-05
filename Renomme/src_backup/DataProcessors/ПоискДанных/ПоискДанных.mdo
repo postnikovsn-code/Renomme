@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a69eed6-c2cb-4ad4-b6c7-edee9a898926">
+  <producedTypes>
+    <objectType typeId="32b9bd7e-1f47-4cb9-be52-d583e5fb7f97" valueTypeId="06523adb-f516-4a25-b4a3-142c0900e412"/>
+    <managerType typeId="741d833a-2324-41bd-8c91-d90ef907cdb9" valueTypeId="fcb7d610-0961-4acb-a113-bf1ceeb498ee"/>
+  </producedTypes>
+  <name>ПоискДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск данных</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПоискДанных.Form.Форма</defaultForm>
+  <attributes uuid="725fc90b-88bf-4e0f-a50b-5782e524fbf8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2f2b4691-0316-479b-a6b8-dccdc6195c89">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd17fd1c-ad9c-4be3-b393-29123b3876a5">
+    <name>ФормаВыбораМетаданных_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора метаданных OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="69377b34-f14c-4f9f-874b-7def4f38e288">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c3cf19bf-d329-4b51-825f-270b36c555d6">
+    <name>ФормаВыбораМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора метаданных</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

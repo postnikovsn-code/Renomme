@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5839bd27-f54a-4e72-8f1a-8d81bfa7d232">
+  <producedTypes>
+    <objectType typeId="fa32866b-4294-4f5b-8c51-f624e7414379" valueTypeId="afeb1f99-09d3-4ea9-927e-153c48ec83f4"/>
+    <managerType typeId="289e87ab-587f-4e25-b3fa-791c2787d70f" valueTypeId="970fce93-39d6-4cbb-b3d1-9446067d04f8"/>
+  </producedTypes>
+  <name>РасчетПроживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет проживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РасчетПроживания.Form.Форма</defaultForm>
+  <forms uuid="57f8d1a3-842e-4d09-83a2-240cd81eadc9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ad162d0d-3dd3-4504-b46f-950f33a2b98d">
+    <name>РасшифровкаСтоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка стоимости</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ccf4406-5e20-46ee-8bf7-6e0b6fc9e7a2">
+  <producedTypes>
+    <refType typeId="313803f4-7417-44ba-9bea-7385d87e209d" valueTypeId="a7d63d33-9773-45f6-9cea-6e2e191e7e96"/>
+    <listType typeId="d7b2e76a-9e63-41cf-ab28-5f114f460210" valueTypeId="286bf66e-9ea5-409a-a444-1d5ee1baf3f1"/>
+    <managerType typeId="b1d013a2-4128-48ad-bf84-a5e002a0cf1f" valueTypeId="6e29d89d-fe24-4567-bd2d-2ed88d5e837d"/>
+  </producedTypes>
+  <name>ВидОперацииПрочиеОплаты_КУдалению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид операции прочие оплаты к удалению</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0487781e-79a7-45a6-a6f1-6a8eeef0db19">
+    <name>Взаимозачет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимозачет</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

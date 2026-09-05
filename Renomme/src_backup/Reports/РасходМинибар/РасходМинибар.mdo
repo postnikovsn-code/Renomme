@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40a0f130-5b5f-458b-8317-416c0a51c03c">
+  <producedTypes>
+    <objectType typeId="76e99753-6622-439f-8e51-f2e5e094df57" valueTypeId="4a72bc26-f74f-4d26-9372-96c6df28ccca"/>
+    <managerType typeId="8de03640-57f5-4ca1-8436-67b333551848" valueTypeId="ef641b52-cb62-4326-8abf-1eb39f60a80e"/>
+  </producedTypes>
+  <name>РасходМинибар</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход минибар</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РасходМинибар.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РасходМинибар.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="c28263bb-e2bb-4416-9d64-ea6b4213a53c">
+    <name>ДатаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9115b25b-7074-4db2-8162-2a2b90d6f02c">
+    <name>ДатаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="784f32cb-0027-4b56-8319-f1041d14266f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="540ab526-f291-419d-a922-0f9042ccab01">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

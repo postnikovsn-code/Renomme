@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22ab5db2-150d-4757-80d5-23168f2b7ea6">
+  <producedTypes>
+    <objectType typeId="46fc6745-f952-42a6-814b-531a1ef0f85f" valueTypeId="32beb716-9fa2-41e0-a658-f80114eedcee"/>
+    <managerType typeId="5c059322-ebef-4a56-b754-0b4cdabb06f4" valueTypeId="28d9662a-3f4d-4652-b5af-1cad45377304"/>
+  </producedTypes>
+  <name>КоворкингЗаявкаОбработка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коворкинг заявка обработка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КоворкингЗаявкаОбработка.Form.Форма</defaultForm>
+  <forms uuid="7f6a071c-79c8-43a0-8f0b-99b34caa5388">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

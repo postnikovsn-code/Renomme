@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b443123c-a8b3-44f0-b466-62e559ad112c">
+  <producedTypes>
+    <objectType typeId="7400cb7b-bbc5-4b3f-940e-e52bf9c9011b" valueTypeId="88fe0153-027a-48e6-9aff-ebf126b4189a"/>
+    <managerType typeId="b0f9a547-325c-4fa0-88f5-a737f86431fb" valueTypeId="f7c78d33-20d6-4e3b-bfb7-e8f4a9d6255e"/>
+  </producedTypes>
+  <name>ОтчетДолгиЗаявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет долги заявки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтчетДолгиЗаявки.Form.Форма</defaultForm>
+  <forms uuid="123936b7-1ae8-4f8d-9704-5b8363a32c30">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8f67c0cd-ffb3-4e30-bd97-38161cd8727b">
+    <name>ОтчетДолгиЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет долги заявки</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

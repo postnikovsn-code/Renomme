@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3275cc54-4bac-4cfc-b3ef-759aceef86e8">
+  <producedTypes>
+    <objectType typeId="347bd035-e686-4937-9fa0-f87c1f71ab71" valueTypeId="50cfcc93-9c89-40de-b93a-a4e70cb2f54a"/>
+    <managerType typeId="845e362b-5063-4ee0-8090-7026b269e623" valueTypeId="ead8b7d5-4d56-4073-9fb7-340827b437af"/>
+  </producedTypes>
+  <name>ОбновитьДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить данные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбновитьДанные.Form.Форма</defaultForm>
+  <forms uuid="372f36b5-e86b-4188-8751-e1cebfdbbfb7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="745ecb6a-7443-44cc-9068-00c89333c495">
+    <name>ФормаЗаполнитьГрупповойСчетКомиссияСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнить групповой счет комиссия счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a1fad732-075a-4943-8125-f86126b3b559">
+    <name>ОшибкиЗаменыКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки замены контрагентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

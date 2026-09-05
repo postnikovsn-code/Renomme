@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="caa2db08-cedd-46e1-aca9-3da5bb2c8d09">
+  <producedTypes>
+    <selectionType typeId="3bca0415-79a1-4851-8a82-7e020cf6247c" valueTypeId="4a639649-3d6b-4ac2-8dfc-b20528088c80"/>
+    <listType typeId="eaf75222-9f00-43c1-8864-6784de866d0b" valueTypeId="22c028a4-fb2a-4556-8d82-92e780bcd001"/>
+    <managerType typeId="82529665-f7d8-4be6-895b-b82ccc8294fe" valueTypeId="42ebbfba-bbf4-4a4e-9cec-9c0d75bc216f"/>
+    <recordSetType typeId="e97a9e0f-b416-4639-b985-fe36fc663f5d" valueTypeId="6f0a1910-d7e2-446a-b2a2-54143449d579"/>
+    <recordKeyType typeId="0126f596-5602-4854-b0c6-b7dab7c2a92c" valueTypeId="13408b7b-c982-483d-9a5b-14c673f2aa84"/>
+    <recordType typeId="5db57e55-0d00-49dd-8e73-d269de6c57aa" valueTypeId="ab07a476-53a2-4edb-8b29-8d7bc0b9d5e4"/>
+    <recordManagerType typeId="65f23439-f1ec-4a24-991d-74918de992e1" valueTypeId="1e6800e7-6c9e-40ac-9ff8-279aac051110"/>
+  </producedTypes>
+  <name>ЗамечанияПоНомерам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замечания по номерам</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dimensions uuid="e7a707df-5307-489f-bef3-031a09d8a228">
+    <name>Комната</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комната</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомернойФонд</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="06dd5b34-b940-4da0-963d-c55ac3f1f57f">
+    <name>Замечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замечание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Замечания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="77bd1b30-9aa7-4f82-913b-4e8d7432bcd8">
+    <name>ВремяПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время проверки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="969ab912-7c4e-4bcc-a302-69158e1909cf">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3f86f61c-b811-4917-8d24-51a9a9fe177b">
+    <name>Супервайзер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супервайзер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

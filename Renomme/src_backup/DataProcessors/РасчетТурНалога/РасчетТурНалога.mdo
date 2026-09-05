@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00875df3-c740-4251-ada3-786c0343cd2b">
+  <producedTypes>
+    <objectType typeId="3857bd3b-98d8-4722-bf57-a9f6f8e93090" valueTypeId="1eba7771-dc23-412b-83aa-449b8f47b872"/>
+    <managerType typeId="005f9232-2e31-4324-a70b-d0b909291050" valueTypeId="9ec9ce21-6e0d-4735-ac15-c5d31b5ca495"/>
+  </producedTypes>
+  <name>РасчетТурНалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет тур. налога</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РасчетТурНалога.Form.Форма</defaultForm>
+  <forms uuid="f4186bba-2c95-4c94-8111-0e0360792d1e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

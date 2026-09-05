@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ded81d1-f06e-465c-b556-b4e8b7181a57">
+  <producedTypes>
+    <objectType typeId="dc6e0c33-6bd5-4d6f-be2f-9778d26415da" valueTypeId="6c606c7d-7305-4a35-96f3-8eebe9419d6a"/>
+    <managerType typeId="81bf5877-ba8c-445d-931c-97be45de435c" valueTypeId="0b7269f5-0234-42dd-b369-5c313597745a"/>
+  </producedTypes>
+  <name>GREEN_Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>GREEN тест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.GREEN_Тест.Form.Форма</defaultForm>
+  <attributes uuid="e91c671e-4eb5-4c96-90d3-796976619098">
+    <name>ТекстПолученноеСообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст полученное сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f49eaaa6-0301-4992-a249-341af639c1fc">
+    <name>IdInstance</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID Instance</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>ID Instance</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="abdcd637-f7d1-4a55-88e8-774bef8bc5e6">
+    <name>ApiToken</name>
+    <synonym>
+      <key>ru</key>
+      <value>API Token</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>API Token</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="4f9809d4-945a-4ac5-8a05-702c048723e4">
+    <name>PartnerToken</name>
+    <synonym>
+      <key>ru</key>
+      <value>Partner token</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Partner Token</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="829996dd-401b-4e25-8011-9f9b02563a09">
+    <name>ПолученФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получен файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1307034c-1ebf-4a58-ad23-d5eafc9fea98">
+    <name>host</name>
+    <synonym>
+      <key>ru</key>
+      <value>API URL</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>API URL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="de0b3c1c-c2d7-4d65-a145-b2c9eaa228ae">
+    <name>mediaHost</name>
+    <synonym>
+      <key>ru</key>
+      <value>mediaHost</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>MediaURL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9b1461b4-74e5-40f6-8f2e-777e9c103441">
+    <name>indMessager</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индекс настройки месседжера</value>
+    </synonym>
+    <comment>0 - whatapp, 1 - max</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ad4160c7-e371-47c0-b5ff-12be878d1870">
+    <name>Отладка_Запрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отладка запрос</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="401589be-b03a-4f9b-b2c5-2874f2eef741">
+    <name>Отладка_Ответ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отладка ответ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b3e58235-aa01-47aa-a0c4-20025f99b79d">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a1cab69a-1ac0-45be-b01c-fe4d02080296">
+    <name>ПроизошлаОшибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произошла ошибка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b64a41a3-c75f-4066-924f-bd7d4a4fb5bf">
+    <name>message</name>
+    <synonym>
+      <key>ru</key>
+      <value>Message</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f317695d-8933-4852-8c5f-4b161d6f14f2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aca5693b-3837-44c3-a3af-dc25ba22230e">
+  <producedTypes>
+    <selectionType typeId="c4f5e424-2b34-4868-83cb-bfb4da4b3c81" valueTypeId="00af5e7c-40d0-45a8-a70b-7301686f2dfe"/>
+    <listType typeId="b23ec313-d0e3-408d-8aa8-66be63ca9aaa" valueTypeId="60583b24-2f8f-44af-a540-7980a7957b1c"/>
+    <managerType typeId="2b599979-760a-4094-8256-f8562e889f5e" valueTypeId="42233162-cb10-4cdd-b330-9b0e448e6aa7"/>
+    <recordSetType typeId="3dc59312-1b71-448d-a412-6ce275afc137" valueTypeId="c5fb3c7e-f45f-4a8e-878c-bce9aca26a5b"/>
+    <recordKeyType typeId="65c22cd9-285c-4abe-a64e-cd2f049658a6" valueTypeId="4ee6792a-e2c8-4a8a-8139-d7409b179001"/>
+    <recordType typeId="0fbb84b7-2baa-4be1-9771-617174f84f8d" valueTypeId="59833e78-351b-4c68-bc6a-3a8894b335a0"/>
+    <recordManagerType typeId="60d27a19-9dca-42b4-a460-e8fbce982e0c" valueTypeId="3d6181b2-51fb-4c4c-9278-783f0b87981e"/>
+  </producedTypes>
+  <name>ГостиницыНастройкиОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гостиницы настройки обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="9ed0839f-240c-4b1a-9198-806c480a6dd5">
+    <name>АдресФТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес ФТП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="8b0af700-4af4-4948-afea-358aa1d85938">
+    <name>ИмяПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="15941dcb-49a1-46c2-9ae8-e3811dd922e8">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="97a7e5b7-d400-485f-985d-54dced9e8689">
+    <name>КаталогОбменаFTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог обмена FTP</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="89a04801-8d68-4889-81c2-a0b2b902070e">
+    <name>ПолучательПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель платежа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="fdc6ac21-4edf-4f40-aa75-dc3b397c446d">
+    <name>КодУзлаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код узла обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

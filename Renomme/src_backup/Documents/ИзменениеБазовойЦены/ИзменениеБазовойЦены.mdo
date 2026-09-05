@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da812585-bcaf-4fe3-ad6f-5ec3feea5f05">
+  <producedTypes>
+    <objectType typeId="ec1f9832-2707-4621-a97b-f562d617ce14" valueTypeId="e9723907-a6ae-4201-92b6-07bb6308b95c"/>
+    <refType typeId="a98090f3-1254-4958-bceb-067747bc04b7" valueTypeId="b42fe119-773b-44c9-8b20-3273343b919a"/>
+    <selectionType typeId="e9b19a12-d624-44a3-a8db-700137eace0e" valueTypeId="5458df58-5da2-42ad-a8ac-b3c55be543b7"/>
+    <listType typeId="4711bc61-ed40-4ab5-a650-817599d293e8" valueTypeId="5e2c9ec8-fe93-4c3c-adae-d4f821c0cae4"/>
+    <managerType typeId="fc945f22-0ab7-433a-93fd-6c7afa39eaaa" valueTypeId="265ad1cc-42f6-4a25-ac83-3efd43cb8e37"/>
+  </producedTypes>
+  <name>ИзменениеБазовойЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение базовой цены</value>
+  </synonym>
+  <inputByString>Document.ИзменениеБазовойЦены.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИзменениеБазовойЦены.Form.ФормаДокумента</defaultObjectForm>
+  <attributes uuid="d85ba3a1-d9d0-4722-8eb7-01034250c923">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="804c16e5-7a50-4285-9c29-fec7c37154db">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииНомеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae22a1f0-9094-4d86-ba30-239481742631">
+    <name>БазовыйТарифБудни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Будни БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d533e9d9-6055-4d25-a883-7066faaf4cb2">
+    <name>БазовыйТарифВыходные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходные БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f20b376-82ff-4e7c-94ba-ac1999e1b9b1">
+    <name>БазовыйТарифБудниБезЗавтрака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Будни без завтрака БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="177c1564-1a79-47a5-b7f1-cc58c927ab13">
+    <name>БазовыйТарифВыходныеБезЗавтрака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходные без завтрака БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b2a9a980-c859-41ad-a738-f9b7d4181275">
+    <name>БазовыйТарифБудниДвух</name>
+    <synonym>
+      <key>ru</key>
+      <value>Будни двухместный БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e1fd3ff2-587d-40c6-8b53-006939b1d5b7">
+    <name>БазовыйТарифВыходныеДвух</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходные двухместный БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d6f2e3d4-2220-4392-a5a4-b1e1e7853536">
+    <name>БазовыйТарифБудниДвухБезЗавтрака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Будни двухместный без завтрака БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a660d84b-593a-4297-a0ff-e0d440b4e9f9">
+    <name>БазовыйТарифВыходныеДвухБезЗавтрака</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходные двухместный без завтрака БТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="8c0cf9ea-2a5f-4aed-978b-f647ce18364a">
+    <name>ДатаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата цены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6a7a4707-6f36-41d5-8219-8ab39ca3b7f7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="3c7a22f6-5987-4c35-808e-c1fd8d8c63b7">
+    <producedTypes>
+      <objectType typeId="636223a0-b8a4-42eb-97d6-c7c2655ef53d" valueTypeId="3b1d0efb-3109-4c20-9bf8-b98c1584f68d"/>
+      <rowType typeId="356e7463-8ed8-4026-ac4a-9ac73ec0189d" valueTypeId="cee63ff8-dbe3-4c93-8f66-27412406bd09"/>
+    </producedTypes>
+    <name>Цены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цены</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e242f86c-9d81-4b06-8d9a-4256c89a7843">
+      <name>КатегорияНомера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория номера</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КатегорииНомеров</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="55395633-2cd3-47e1-8eb0-882d75e0c226">
+      <name>БазовыйТарифБудни</name>
+      <synonym>
+        <key>ru</key>
+        <value>Будни БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7964d701-97c2-4ba5-85c5-6a8f07302c1f">
+      <name>БазовыйТарифВыходные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выходные БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c5b4108-e34d-42a7-83e6-7e9b1531ae5f">
+      <name>БазовыйТарифБудниБезЗавтрака</name>
+      <synonym>
+        <key>ru</key>
+        <value>Будни без завтрака БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d4bbd4d1-c128-4473-8fc6-f76d37005779">
+      <name>БазовыйТарифВыходныеБезЗавтрака</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выходные без завтрака БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="987505f7-908e-48b2-93ea-9b4bf2fa7d45">
+      <name>БазовыйТарифБудниДвух</name>
+      <synonym>
+        <key>ru</key>
+        <value>Будни двухместный БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e1e85c5-f8df-4770-a690-de73001f56de">
+      <name>БазовыйТарифВыходныеДвух</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выходные двухместный БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="51b30d10-4f46-4233-9e34-93d5ff58a34c">
+      <name>БазовыйТарифБудниДвухБезЗавтрака</name>
+      <synonym>
+        <key>ru</key>
+        <value>Будни двухместный без завтрака БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="648aa255-c0b4-42a1-8beb-57892770d703">
+      <name>БазовыйТарифВыходныеДвухБезЗавтрака</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выходные двухместный без завтрака БТ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

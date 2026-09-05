@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dababb8e-668f-4f07-bd53-0b2f1be95ca4">
+  <producedTypes>
+    <managerType typeId="f2e93b3c-e00a-4149-86bc-d74e4812e247" valueTypeId="9512676a-ccdb-47ef-b523-7a6a59ca695e"/>
+    <valueManagerType typeId="dc41d4e4-7dad-45a9-a77d-8f6b56c7e83a" valueTypeId="8adb3101-acea-4f5f-967d-05b237083cf1"/>
+    <valueKeyType typeId="91c543a0-c08a-4893-93c0-7ede44c5d809" valueTypeId="8c7e1b69-7d57-4a59-ac35-b9b59d123af8"/>
+  </producedTypes>
+  <name>PayKeeperВыводНаЭкран</name>
+  <synonym>
+    <key>ru</key>
+    <value>Pay keeper вывод на экран</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

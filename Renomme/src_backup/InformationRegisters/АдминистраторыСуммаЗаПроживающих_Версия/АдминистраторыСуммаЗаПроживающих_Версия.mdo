@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adb91852-5eea-4ec0-bdf1-3e60d3f535bf">
+  <producedTypes>
+    <selectionType typeId="9c82a245-4e86-4910-be13-e0e26e979533" valueTypeId="b438074d-9f32-411e-b1c5-55ea40da427e"/>
+    <listType typeId="425975f3-dd36-4c92-a298-450632a78d2c" valueTypeId="00443091-ff87-4378-8ec3-bb488756a533"/>
+    <managerType typeId="c4e7d9a0-698e-4329-b3de-d39ff079bf17" valueTypeId="cdd45e90-8667-4218-8db3-8b26fa6f9d8e"/>
+    <recordSetType typeId="aa6def09-c587-460d-9d7e-bb883e4480f2" valueTypeId="61bea2d6-f58f-4313-936e-9858b575ec7b"/>
+    <recordKeyType typeId="d6b13223-5665-467f-b7c6-b97197188b92" valueTypeId="419a6e79-2d64-4d09-b42b-766e1ba81786"/>
+    <recordType typeId="ed7e723a-42d3-4b5c-a957-7af6509c442e" valueTypeId="25d77fdf-3f60-466f-82ec-4d7058475e25"/>
+    <recordManagerType typeId="741436de-8ee1-4570-a4c7-3f904b71386d" valueTypeId="9e655fc4-f17e-49a1-8ebb-bf743f3a038b"/>
+  </producedTypes>
+  <name>АдминистраторыСуммаЗаПроживающих_Версия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администраторы сумма за проживающих версия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АдминистраторыСуммаЗаПроживающих_Версия.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b993aa51-2517-408c-896d-1d5cf269d349">
+    <name>ДатаНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата назначения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d6f4d4e4-c6ef-4182-ad21-c5b5d7cbf01d">
+    <name>КоличествоНомеровС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество номеров С</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe1af3f3-65a7-460a-8673-3dcdfd5f430b">
+    <name>КоличествоНомеровПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество номеров по</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ef2daa2c-1639-4e34-b0ec-aedfa2e8e168">
+    <name>Сумма_12</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма 12</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e4f8bd0d-1c8e-483d-83b6-41b9cdeb9781">
+    <name>Сумма_24</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма 24</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0762d3d0-7ad9-4abf-85fd-3e8af46cfcb6">
+    <name>ГУИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГУИД</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="eb4442ff-98d3-4355-b99a-d5c572e5f853">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f5782c7-428b-4929-b71d-d00e58fa42bc">
+  <producedTypes>
+    <objectType typeId="1897e50e-364c-4129-b32b-3a2bb89f10de" valueTypeId="38d8b595-19ce-4a49-87cf-b079bed2d253"/>
+    <managerType typeId="0b9fb38f-4d3b-4017-b0c6-828626e3f654" valueTypeId="66de82f8-8c1f-422f-b1a3-0913c6e7fbc0"/>
+  </producedTypes>
+  <name>ПолитикаЛояльности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Политика лояльности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолитикаЛояльности.Form.Форма</defaultForm>
+  <forms uuid="ae57bf0e-f191-4bf4-a7fd-4c25a2000055">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1c464b74-6ec2-4680-80cd-b59ceb18979a">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="c8c6f671-46bd-494a-8a3d-3a5f49cc1b24">
+    <name>Макет1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет1</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

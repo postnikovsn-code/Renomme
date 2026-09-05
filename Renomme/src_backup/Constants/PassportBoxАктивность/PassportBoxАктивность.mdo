@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c59ea6d-9d67-4778-a009-0ac6418b13a8">
+  <producedTypes>
+    <managerType typeId="5175af63-af79-49c8-a705-cdaa27be08dd" valueTypeId="00d1c052-a71c-4d09-8443-97ac2f00429b"/>
+    <valueManagerType typeId="0945062d-ca58-4340-a3ef-7b016607dec8" valueTypeId="7fea7778-1308-4f4b-9806-06be2cfc75be"/>
+    <valueKeyType typeId="f0e9565b-7831-4c5d-ae8d-3ebad5d74f05" valueTypeId="6002ea3b-acf7-46c4-8f36-ed445379eb33"/>
+  </producedTypes>
+  <name>PassportBoxАктивность</name>
+  <synonym>
+    <key>ru</key>
+    <value>PassportBox: использовать сканер</value>
+  </synonym>
+  <comment>Признак: использовать сканер паспортов PassportBox в данной базе. Если выключено — кнопки сканирования недоступны.</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

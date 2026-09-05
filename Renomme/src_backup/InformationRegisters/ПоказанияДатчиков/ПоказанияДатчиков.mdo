@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0758cb6-109a-4f45-a8d9-9c4a1c2ad51a">
+  <producedTypes>
+    <selectionType typeId="c4e975e5-b5d9-4926-9e30-8ca2bce723dd" valueTypeId="0ec0c8aa-fb45-4524-b334-fb88fda13597"/>
+    <listType typeId="9324a3f8-b7c6-49e5-afe5-b9428a822b19" valueTypeId="127bf872-763e-4a53-aa02-27648dbfc989"/>
+    <managerType typeId="58be495b-41f3-4db0-91e8-2346762eab43" valueTypeId="befeeb32-6b54-4b36-95fa-2f8eb5c1bea6"/>
+    <recordSetType typeId="1add26e6-d042-4e8b-9487-40d71ec29b89" valueTypeId="00f38ce6-e32a-4f1b-a94d-3b479d584bef"/>
+    <recordKeyType typeId="82937d44-21bc-47c0-b015-53fa5e2f2690" valueTypeId="987451bc-7034-405b-acf0-6b925b404b7b"/>
+    <recordType typeId="0d092de0-9bba-441b-be0f-370da3ff2920" valueTypeId="595fc7d0-9aec-41ae-81af-a0a82ecdae68"/>
+    <recordManagerType typeId="c8fd442d-b398-4356-9e15-85573cc480d9" valueTypeId="577f6d6c-6639-43ca-b0e7-8598f8c5dd68"/>
+  </producedTypes>
+  <name>ПоказанияДатчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показания датчиков</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="099ae047-25b2-4027-8b1f-73c5744bd439">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="522acb21-b8db-47ce-9588-dbe217ca7ca5">
+    <name>НомерКадра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер кадра</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c3b40bf1-97ac-422f-89b8-a008f0597b73">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cf8a9124-2dc1-40ac-beb5-32dd3ae47da5">
+    <name>Датчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Датчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Датчики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

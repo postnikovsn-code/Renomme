@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ed8d73b-233e-4983-8297-457dc66b18dd">
+  <producedTypes>
+    <objectType typeId="db9ccb66-237b-467f-a51d-68c3014c6649" valueTypeId="872f6b25-5429-461e-859c-45309ce4f431"/>
+    <managerType typeId="45f91f8f-be56-4e6b-a194-5c2c1ac959b1" valueTypeId="bafbe0d1-229c-45ee-b7e0-a780491cb6a3"/>
+  </producedTypes>
+  <name>СтатистикаПоНомерам_Исходная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика по номерам исходная</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтатистикаПоНомерам_Исходная.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="512ddcb7-c141-4677-bc80-9f81d4a09884">
+    <name>ДН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ee47bbd1-9741-490e-9200-3fd87e91fe0f">
+    <name>ДК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="01a5ad8f-3c7c-4463-bba0-e6acd361ec6b">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8abed7d8-718a-40ea-98e8-756009f4c57f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1aad184d-eac1-4850-87ef-1412095f4115">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="e775fe18-431f-4086-acfd-415549b83536">
+    <name>МакетСтатистикаРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет статистика РК</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

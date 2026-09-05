@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98687c7f-98e5-4591-b13e-21ef24cc173f">
+  <producedTypes>
+    <objectType typeId="10a30689-0046-4e54-b070-01122a054859" valueTypeId="0e0d7d40-6dda-434d-a75b-46c2054a0283"/>
+    <managerType typeId="d15bd5bc-c3ba-4e9f-9308-12ed00da9040" valueTypeId="9f5d21b4-dfb0-4e1e-b0f3-14127dfc192d"/>
+  </producedTypes>
+  <name>Интерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерфейс</value>
+  </synonym>
+  <defaultForm>DataProcessor.Интерфейс.Form.Форма</defaultForm>
+  <forms uuid="c748977a-f960-475c-9138-48a0e28b4442">
+    <name>ФормаФинансы_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма финансы OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2a1b31a5-0c26-43b6-bfa7-290150ef4b00">
+    <name>Оповещение_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещение OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7e3d9d9-282a-4fe5-a0ba-dcb832d3f8f7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1373ec46-385c-4e03-8a36-056224d5f0a3">
+    <name>Оповещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещение</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0a56e601-39f3-46e7-85bb-9a8e2fe9b294">
+    <name>ФормаФинансы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма финансы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2a5f8985-e0ac-4972-96fa-7babe28dea0a">
+    <name>ФормаФинансы_Старая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма финансы старая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="917b7372-68f3-4a60-879c-5579c719e026">
+    <name>ФормаБар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бар</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bfc38782-20f6-4ba6-b8e7-6ad813e5802c">
+    <name>ФормаВыбораБонШанс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора бон шанс</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="064bbc4f-d556-45c5-ba5a-7a098375cd70">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="1483ff56-c2f2-4832-8bea-f8b064b24d62">
+    <name>МакетШахматкаДни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет шахматка дни</value>
+    </synonym>
+  </templates>
+  <templates uuid="7c8a01c9-72fb-4d9c-ba5f-51abe994cba1">
+    <name>Пересечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересечения</value>
+    </synonym>
+  </templates>
+  <templates uuid="f360eb81-ec86-437c-9ed2-f7ce16bf8199">
+    <name>КалендарьЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь цен</value>
+    </synonym>
+  </templates>
+  <templates uuid="032223fc-8fe4-40cf-85b6-4666d77a534f">
+    <name>ПредпочтенияКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предпочтения клиента</value>
+    </synonym>
+  </templates>
+  <templates uuid="6d9f489f-de0d-440a-ad92-a95b3911bdb4">
+    <name>КалендарьЦен_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь цен исходный</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

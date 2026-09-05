@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bce8bee7-0d31-4d1a-b40a-71b6a695bb9b">
+  <producedTypes>
+    <objectType typeId="750a3fad-eb6e-46c8-8f04-a88c8975f984" valueTypeId="ac0b43f3-3da2-4336-85fb-7963679af296"/>
+    <managerType typeId="78ee64a3-cf21-4141-bdbb-798e013dac21" valueTypeId="9127e529-817b-4c86-8dc2-8d58d2712d87"/>
+  </producedTypes>
+  <name>ОтчетПоДатчикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по датчикам</value>
+  </synonym>
+  <defaultForm>Report.ОтчетПоДатчикам.Form.Отчет</defaultForm>
+  <forms uuid="bfa581c0-9b35-4b8b-88c2-4842593dc3a6">
+    <name>Отчет_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет OLD</value>
+    </synonym>
+    <comment>Отчет</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f211a08f-09d0-4126-84fe-c38032405d99">
+    <name>ОтчетНастройка</name>
+    <comment>ОтчетНастройка</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="63fc6777-dc5a-4937-be94-7df0a29ba8d4">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

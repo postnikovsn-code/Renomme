@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1e7a12d-be40-49a5-b3de-3e564c8b6996">
+  <producedTypes>
+    <objectType typeId="99f45aef-0a5a-4aac-8559-c4e37253aada" valueTypeId="a7ae2c91-6d16-4ab6-b7a3-07b53e4c27c2"/>
+    <managerType typeId="0989ac0d-3678-42ca-b9e5-b148fac60eae" valueTypeId="05b9717f-5b19-437b-928c-baa53d04a6e7"/>
+  </producedTypes>
+  <name>ЗамечанияПоГорничным</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замечания по горничным</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ЗамечанияПоГорничным.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="630bb7d6-d453-4ee2-8f2e-a7bb55d8dd29">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

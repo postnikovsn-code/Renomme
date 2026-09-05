@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76662701-87ba-43b1-b22a-233eb9b4a099">
+  <producedTypes>
+    <selectionType typeId="0b645621-31b0-4128-9799-b6a397282666" valueTypeId="b82631db-1879-4e0b-bc56-5e3c9b99751c"/>
+    <listType typeId="8c243772-d886-4d83-aa59-7693ad877208" valueTypeId="41fa8233-cf97-4c94-93e0-c7194410d933"/>
+    <managerType typeId="e4d23fd3-ebeb-4710-b0ed-b8805457c620" valueTypeId="7994c2bb-e1de-4027-86ac-c10ff8113cef"/>
+    <recordSetType typeId="027b9126-ad9c-442b-90be-3930708a0182" valueTypeId="fa65d338-698e-4e21-b363-74d004382b08"/>
+    <recordKeyType typeId="f6d30ac4-3933-4df0-8512-096454d54edd" valueTypeId="d9b926d0-f5d2-4dd7-9852-5bbfe9432750"/>
+    <recordType typeId="973bf332-95ed-4b4a-81de-18a9e74cd348" valueTypeId="cebdd00d-44dc-4875-a81c-f979497c192b"/>
+    <recordManagerType typeId="8472aad7-ac37-49a7-9a82-10ea5a7b0644" valueTypeId="83c4bd9b-d4bb-4e8e-ab33-e36f84b3d0ff"/>
+  </producedTypes>
+  <name>ИННЭквайринг</name>
+  <synonym>
+    <key>ru</key>
+    <value>ИННЭквайринг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="216e0206-85ef-46be-affc-bce67e4a468e">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

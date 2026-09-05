@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48c1087f-017a-4b64-a91c-a74bc1b921a6">
+  <producedTypes>
+    <refType typeId="ac436425-b47c-4538-b9f6-bc2f3130874a" valueTypeId="d5c29ae1-5838-4d14-ab76-4653252a07ca"/>
+    <listType typeId="8c3e9e99-a56e-4936-a690-f10a1ffa918f" valueTypeId="bc663b65-18e3-4a47-aaaa-03708bf65074"/>
+    <managerType typeId="6678c2bc-9f49-4f5d-9d40-164707775fc2" valueTypeId="5446d742-0e57-4e16-831c-f7a8dc66f47e"/>
+  </producedTypes>
+  <name>ТипРассылкиWhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип рассылки whats app</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="be6152aa-c418-46ae-a1ac-7ec29767e36e">
+    <name>Сайт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сайт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c4f8ff42-0565-4786-8afc-40f4d2d55f6b">
+    <name>ДеньРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>День рождения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

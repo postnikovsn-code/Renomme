@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="810edafd-a906-45df-8c52-2291b8ae6706">
+  <name>PassportBoxВызовСервера_Переопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сканер паспортов PassportBox (вызов сервера) переопределяемый</value>
+  </synonym>
+  <comment>Адаптер универсального кода сканера PassportBox к текущей конфигурации: преобразование значений и приведение типов.</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95d186f4-1372-4fd4-af7f-781d7293a379">
+  <producedTypes>
+    <managerType typeId="a2ffef87-32b8-4d3c-8b50-b5c85b2f24b4" valueTypeId="08892731-646d-41bc-b82f-300868433404"/>
+    <valueManagerType typeId="265e9aee-71d4-4944-80d4-0542d7090d57" valueTypeId="8cab6fef-42a7-444c-8f54-013f75e76eee"/>
+    <valueKeyType typeId="70180c91-18af-4a65-8a2b-9e28136aba65" valueTypeId="0ffaccb8-7dd6-443c-ba7e-3f06b5512802"/>
+  </producedTypes>
+  <name>GREENIdInstance_WhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>GREENId instance whats app</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>20</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

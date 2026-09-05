@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1997b9f3-511b-4301-b475-73c3ad610ab1">
+  <producedTypes>
+    <objectType typeId="a560b5be-4e74-4985-97e3-4694b0a80d89" valueTypeId="1907d725-4c9e-4b61-a723-3c3d89191a54"/>
+    <managerType typeId="ff855014-a28f-4233-b8b2-11bd63002ff1" valueTypeId="3c1c6bd8-2833-49c4-9934-9bde84a4d1b5"/>
+  </producedTypes>
+  <name>ОтчетВТрэвелЛайн</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет в трэвел лайн</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетВТрэвелЛайн.Form.ФормаОтчета</defaultForm>
+  <forms uuid="7e87b803-d8f9-4f27-be30-bdae52f01de6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="04125605-b0ee-4693-b044-f521b4b9b547">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="7303f6df-2371-4c6a-8f8a-67112d03b0b7">
+    <name>МакетEXEL_Исходный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет EXEL исходный</value>
+    </synonym>
+  </templates>
+  <templates uuid="9515d10f-7745-4d4c-b4f0-ea3d3f7077ac">
+    <name>МакетEXEL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет EXEL</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8953372-4a68-48ed-b0ad-8f2db9a6bacb">
+  <producedTypes>
+    <objectType typeId="a17eae4d-dbcc-4e5a-a949-2fd219804438" valueTypeId="f0a031f1-3d3b-43d9-9adc-feff4f8f8d3b"/>
+    <managerType typeId="6b040c3a-b335-451c-a96e-4d832463e7b8" valueTypeId="7b3bdc11-b23a-4928-9f12-b258a2b33561"/>
+  </producedTypes>
+  <name>УдалениеРегистровСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление регистров сведений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалениеРегистровСведений.Form.Форма</defaultForm>
+  <forms uuid="ae53b999-2b06-44cd-934e-94db83ae8787">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

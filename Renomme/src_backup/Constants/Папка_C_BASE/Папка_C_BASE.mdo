@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2057c1c0-497e-455c-8afb-45398e2a513d">
+  <producedTypes>
+    <managerType typeId="ca8d4a57-f9b1-49c7-a3b8-f2cfc4b06ce7" valueTypeId="04a64492-76e0-419e-b845-977b252ae11b"/>
+    <valueManagerType typeId="61ee374f-8d19-435c-8308-b62c2cce7b8e" valueTypeId="0995b333-5d77-4374-bf20-99badc6e40ee"/>
+    <valueKeyType typeId="f819223f-21d0-4f94-80dc-366060a5c227" valueTypeId="aeb1af22-0413-445a-9810-1f2a9c4edbfd"/>
+  </producedTypes>
+  <name>Папка_C_BASE</name>
+  <synonym>
+    <key>ru</key>
+    <value>Папка c BASE</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

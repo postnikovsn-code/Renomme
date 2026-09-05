@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fba6d726-4f2c-4c3e-a4d0-c6adffe0b104">
+  <producedTypes>
+    <refType typeId="ed7af3e1-ee9f-4a30-badf-9e6e99ac3a1e" valueTypeId="fd80746e-577a-409d-b158-22625532b82c"/>
+    <listType typeId="50919f81-da24-4f4b-b713-95c37bc3acca" valueTypeId="b35f5b96-c10c-47e8-9d1b-7393de3ccbc2"/>
+    <managerType typeId="752579dc-150d-4fcd-ad7d-646a6e811fde" valueTypeId="8ca74d7f-e9f3-4e21-a00b-933081426509"/>
+  </producedTypes>
+  <name>ПрограммныйКодУслуги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программный код услуги</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f2d0419c-ad43-4b2d-be72-f8094a150243">
+    <name>ТРАНСПОРТНЫЕ_УСЛУГИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТРАНСПОРТНЫЕ УСЛУГИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b7c35420-5d29-48c0-ae1a-45798eb608ca">
+    <name>ПРОЖИВАНИЕ_УСЛУГИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПРОЖИВАНИЕ УСЛУГИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a672b92e-fa52-4af8-a34e-e7f7004eb73b">
+    <name>ЗАВТРАКИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗАВТРАКИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="19965cbe-97ff-4e18-80f9-b831daf14ac3">
+    <name>КОВОРКИНГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>КОВОРКИНГ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc7988cf-d1b7-43d8-84be-de50e627544d">
+    <name>МИНИБАР</name>
+    <synonym>
+      <key>ru</key>
+      <value>МИНИБАР</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b33f731d-bd2a-4a3e-be69-7d5964fc9f91">
+    <name>ПРАЧЕЧНАЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПРАЧЕЧНАЯ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2a038155-53cd-48f2-b219-96d3554d1591">
+    <name>ШТРАФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ШТРАФ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

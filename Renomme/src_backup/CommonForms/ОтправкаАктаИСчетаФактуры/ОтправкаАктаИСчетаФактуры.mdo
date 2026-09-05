@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37f627d9-4b94-4420-9649-52e68d1832b4">
+  <name>ОтправкаАктаИСчетаФактуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка акта и счета фактуры</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

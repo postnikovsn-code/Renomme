@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8e5fdc8-4ac1-4af3-8415-d6d77725541d">
+  <producedTypes>
+    <selectionType typeId="bce907a9-b4e9-4b6c-9f3b-25c99c8e1cf0" valueTypeId="223d6007-1d04-41cd-aa78-10719da270f0"/>
+    <listType typeId="a6241a80-0eea-40e7-a2f4-ce6d65a9c6ed" valueTypeId="3f010089-ee71-4c0c-b419-c791c34be5cb"/>
+    <managerType typeId="d05b0af7-3aaa-40f0-a85d-e35edabdedcb" valueTypeId="98ef4911-0112-4e98-8ef7-1a85e26fb3df"/>
+    <recordSetType typeId="0a01d8a4-d69f-4879-85ef-181c37123c34" valueTypeId="04cdc25a-bef7-4741-acf3-a588d6f641a1"/>
+    <recordKeyType typeId="946ffb5d-c1d7-4c76-aff7-78be0d53e4c4" valueTypeId="f1fee81e-8a1b-41a1-bf6d-fbad58e94e57"/>
+    <recordType typeId="f1dab663-1ee0-498d-9e84-a625a0bb5859" valueTypeId="66beb0a4-c761-416c-a03a-dc8630b09c71"/>
+    <recordManagerType typeId="12bf155c-affc-4bac-9ffe-4de9ac4b02ba" valueTypeId="630baf52-81f2-470d-b68c-73abe2ab8de7"/>
+  </producedTypes>
+  <name>АдминистраторыСуммаЗаЗавтраки_Версия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администраторы сумма за завтраки версия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АдминистраторыСуммаЗаЗавтраки_Версия.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1dbf1d03-2bab-4cef-a2c0-c8055b69f7ea">
+    <name>ДатаНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата назначения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="32700a47-0f94-46ed-986d-8e30aa464ba3">
+    <name>СтавкаЗавтракиЧехов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка завтраки чехов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c2334302-221f-4c92-9d53-c4285f063f53">
+    <name>СтавкаЗавтракиДомСоветов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка завтраки дом советов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="69239e09-154f-4365-a372-cfdf5b3f0f8a">
+    <name>СтавкаЗавтракиЛайв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка завтраки лайв</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="357e6fbe-b69f-43a6-8f88-7832004e4abc">
+    <name>ГУИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГУИД</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0537e288-8ee8-4c2c-8075-fc6e2560dcc4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

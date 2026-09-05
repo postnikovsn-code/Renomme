@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0af06b24-d026-4c0d-b1b3-6385874ad327">
+  <producedTypes>
+    <selectionType typeId="bfbcdbeb-08a6-4a08-879e-9511275ce3ab" valueTypeId="ff5ef3e3-11ad-43b1-80de-996c53cadf65"/>
+    <listType typeId="0a5a61ff-10f9-4835-bc3a-d9841d1cc088" valueTypeId="11795f28-81be-4fc5-83aa-f7647408f927"/>
+    <managerType typeId="41bc9d48-e2a0-445d-9b03-e164ac512cc9" valueTypeId="cc86b83b-dd00-4dbe-9883-47ff9966cd37"/>
+    <recordSetType typeId="1e1dd069-85d6-44e3-89bc-9282b31ccd87" valueTypeId="75716fbe-e825-4079-8fcf-062e40188df5"/>
+    <recordKeyType typeId="28fe3967-0e9c-4893-a73f-7af0a0c51df0" valueTypeId="e7fee433-09de-4f7d-a84a-a211723bbc35"/>
+    <recordType typeId="02d9b049-27af-4db7-a12d-339ff242090c" valueTypeId="d2c3a7bb-0cf4-4192-b85a-411ebf76ec37"/>
+    <recordManagerType typeId="d590031e-2e89-4521-969d-2d0a953015e2" valueTypeId="db287f06-b22c-414e-8c39-c517e15129b9"/>
+  </producedTypes>
+  <name>РассылкаWhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка whats app</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="3a3ceb49-fcc7-479f-9576-607da3f95fe9">
+    <name>ДатаРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рассылки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="28d0e1dc-6a68-4338-b4f3-84cf8f0e1970">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0207e14c-1235-4fcf-bcf8-38e066745e4e">
+    <name>ТипРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип рассылки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипРассылкиWhatsApp</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

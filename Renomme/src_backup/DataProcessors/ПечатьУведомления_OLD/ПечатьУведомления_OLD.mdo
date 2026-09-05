@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b21401c-b4e1-4623-b1ce-c7cf8005b341">
+  <producedTypes>
+    <objectType typeId="379401b6-abfe-4635-a8c2-d1e43e68aabf" valueTypeId="63acca3a-eafe-4735-9a17-3c95a5982a1d"/>
+    <managerType typeId="e781a52b-8c3f-4166-a8d7-b2b952eb618c" valueTypeId="83af0997-4272-4b9a-9894-4aa0973fb415"/>
+  </producedTypes>
+  <name>ПечатьУведомления_OLD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать уведомления OLD</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПечатьУведомления_OLD.Form.Форма</defaultForm>
+  <attributes uuid="d4533b64-8cd2-4313-8b3d-1b1882fa0148">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="dcd731a3-8601-49d9-8f44-cb0e4822b8d2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

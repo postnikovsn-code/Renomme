@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf792b0d-ffcd-49c2-ba92-298ce64e2297">
+  <producedTypes>
+    <objectType typeId="c9947a96-70f5-4533-b525-31e1af46bcd6" valueTypeId="66913041-f763-4df0-b51c-bdff93412be7"/>
+    <managerType typeId="43a0474f-f673-496b-b965-015e9c7d2ccf" valueTypeId="92fed335-cc39-43d6-b7ea-e5517f790dd7"/>
+  </producedTypes>
+  <name>ОтчетПоПродажамБара</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по продажам бара</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОтчетПоПродажамБара.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b9e84191-e012-4d20-8416-59016a2c84c6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

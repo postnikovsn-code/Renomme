@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b37e6236-bf1c-4db1-afff-78be5e2235e2">
+  <producedTypes>
+    <objectType typeId="3a8a911a-3ba2-4d2c-9056-d888dd7cfaaa" valueTypeId="6a2abc0d-6bf4-4f98-9818-02562b28ab3f"/>
+    <managerType typeId="1b8d6926-ab9f-4c12-b921-b8fadd663a8b" valueTypeId="90b0227f-3d2a-4600-988a-d6280105e86d"/>
+  </producedTypes>
+  <name>СтатистикаПоАнкетам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика по анкетам</value>
+  </synonym>
+  <defaultForm>Report.СтатистикаПоАнкетам.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="d6ec7fa2-b446-4eac-bdb2-a48e459291cc">
+    <name>ДатаНачалаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="715e5261-ec39-4d72-8160-4f75c9345eb8">
+    <name>ДатаОкончанияПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bfe6ede1-dda9-4342-841d-d61af22461ba">
+    <name>ФильтрПоНомеру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр по номеру</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомернойФонд</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="19c597d8-abde-4574-b164-be096e27a7cf">
+    <name>ФильтрПоГостю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр по гостю</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d9892ec3-cba0-4fcc-9a5f-554bd32f49a4">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="694aa2e4-3538-4458-9fc0-41045a6824b1">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e15b78e8-56ef-4b76-a358-486efda41e7b">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

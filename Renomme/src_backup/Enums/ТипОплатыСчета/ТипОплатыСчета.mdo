@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da9f2e49-e303-4098-8a69-c5e8f8867ac1">
+  <producedTypes>
+    <refType typeId="b17d1ae4-2bcb-4482-b3e8-89a6bde98ef3" valueTypeId="5cf4ae4f-e7ec-4ec9-ba3b-39abca0fa7ad"/>
+    <listType typeId="2dc6e7b9-f0dd-428b-8717-27d9a964a565" valueTypeId="c3829558-af65-44ef-84a9-931ef690ee37"/>
+    <managerType typeId="345a74ea-334d-4d58-9f29-af1bce8f1642" valueTypeId="5951e555-d8e3-4fb8-b4e4-4fd4726104b7"/>
+  </producedTypes>
+  <name>ТипОплатыСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип оплаты счета</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3b56c119-3091-47ce-b691-2aed37452568">
+    <name>Взаимозачет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимозачет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="445ad85f-7015-48a0-bde8-d7427e1a2d1e">
+    <name>ОплатаТурагентствомСоСкидкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата турагентством со скидкой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="de3dfb5a-645a-4292-a7c5-60b38017cdb7">
+    <name>ПолнаяОплатаТурагентствомСВозвратомКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полная оплата турагентством с возвратом комиссии</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

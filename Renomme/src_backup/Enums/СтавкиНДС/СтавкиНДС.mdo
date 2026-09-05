@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae17ae48-7f23-44da-ab95-4db425447dbc">
+  <producedTypes>
+    <refType typeId="a6c6ecf4-166b-4b91-9e98-a66d0900d664" valueTypeId="3ace211b-e6e1-4be0-8ec1-e24d096cf9cb"/>
+    <listType typeId="7455e75c-7160-4f83-a2c5-f7709da5676c" valueTypeId="f6598918-ea3a-4984-950d-0acad79d28b6"/>
+    <managerType typeId="2aa587b1-0b6f-443e-8037-e4ee02fa5026" valueTypeId="397d214e-2e65-4f42-bdd3-6492aab81687"/>
+  </producedTypes>
+  <name>СтавкиНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки НДС</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e6745256-2e46-48b0-b6f0-ef46594d50c1">
+    <name>НДС0</name>
+    <synonym>
+      <key>ru</key>
+      <value>0 %</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="62546067-cd83-4bbc-80bd-ee65f5413d60">
+    <name>НДС20</name>
+    <synonym>
+      <key>ru</key>
+      <value>20 %</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f371ea48-f86b-446d-a9ad-0d1f47e61920">
+    <name>НДС5</name>
+    <synonym>
+      <key>ru</key>
+      <value>5 %</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9c7f0f24-d272-4176-8848-a05b7e80808a">
+    <name>БезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без НДС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e3d523d9-ebac-46fd-8954-8a63b0783aa3">
+    <name>НДС22</name>
+    <synonym>
+      <key>ru</key>
+      <value>22 %</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

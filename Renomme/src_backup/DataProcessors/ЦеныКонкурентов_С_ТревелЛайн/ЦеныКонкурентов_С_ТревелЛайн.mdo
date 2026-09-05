@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59680695-bb0a-47b0-9df6-f87a7ae80d1a">
+  <producedTypes>
+    <objectType typeId="c0dbebd5-6083-4d21-8460-6c1f0e2ba1f8" valueTypeId="0091875b-d174-4143-9deb-5f3f2ec6a0ec"/>
+    <managerType typeId="28f7eced-9451-4ffb-8854-61e5ea4471f4" valueTypeId="c9ca6177-8808-443c-b497-64124da7951c"/>
+  </producedTypes>
+  <name>ЦеныКонкурентов_С_ТревелЛайн</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены конкурентов с тревел лайн</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЦеныКонкурентов_С_ТревелЛайн.Form.Форма</defaultForm>
+  <forms uuid="ffde4708-120c-4fb8-86e4-a9ca78b0f389">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

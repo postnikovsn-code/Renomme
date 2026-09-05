@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a646e0fa-c457-4418-a6e1-4e6384aeb977">
+  <producedTypes>
+    <objectType typeId="fd96461b-dca1-4a09-9300-fe313fc82238" valueTypeId="687d9c51-2055-4e0a-b5f0-f731ead5f776"/>
+    <managerType typeId="d0d94495-60dd-4df0-9e03-f7606b34a1eb" valueTypeId="4d4d4531-eaa1-4919-ad98-bccd30a46614"/>
+  </producedTypes>
+  <name>ФормированиеЗаданийНаСменуБелья_КУдадению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование заданий на смену белья к удадению</value>
+  </synonym>
+  <defaultForm>DataProcessor.ФормированиеЗаданийНаСменуБелья_КУдадению.Form.Форма</defaultForm>
+  <forms uuid="e1562e59-3b35-4b50-a93b-aa4304a559b3">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a26bbeb4-43ac-4582-99ff-6a8dcbb718a5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

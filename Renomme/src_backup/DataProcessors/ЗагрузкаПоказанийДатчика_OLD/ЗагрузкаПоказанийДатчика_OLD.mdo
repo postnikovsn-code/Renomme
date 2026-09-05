@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1725366a-234c-4e55-ae87-b7b9ddee74d1">
+  <producedTypes>
+    <objectType typeId="69421065-443d-4cba-9471-f81daadba632" valueTypeId="85c3b0ca-550c-417a-99df-0b10636febf2"/>
+    <managerType typeId="944036a1-a21e-4b21-80eb-2d78174996ee" valueTypeId="3cee8fd4-d230-4aeb-bc45-4c01c47be43e"/>
+  </producedTypes>
+  <name>ЗагрузкаПоказанийДатчика_OLD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка показаний датчика OLD</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗагрузкаПоказанийДатчика_OLD.Form.Форма</defaultForm>
+  <attributes uuid="3f90f336-71b1-45c3-ac9c-7b270d119615">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="47720f51-1fdf-4cd2-8e27-c061d84b85e5">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2d232bb-cef2-4a13-9d2c-ae5356c3fe89">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

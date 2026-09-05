@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2b0dbe1-0613-4025-8d35-750acae51ae2">
+  <producedTypes>
+    <objectType typeId="cf83f010-8e6d-43b3-9e33-121ab934d248" valueTypeId="3ba300e7-ecce-4795-a0dc-753e7d929eac"/>
+    <managerType typeId="700a049c-35c7-4727-b340-b0e93600224b" valueTypeId="6594a9d7-3361-4389-9eba-8baf658cc04c"/>
+  </producedTypes>
+  <name>ВыгрузкаКассовойСмены_OLD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка кассовой смены OLD</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыгрузкаКассовойСмены_OLD.Form.Форма</defaultForm>
+  <attributes uuid="64e70dff-6fda-4fe6-9eb8-d30b804c0ccd">
+    <name>ДТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ДТ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="1d8ae9ae-15b4-40f2-9866-a9fce9f8970e">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="62d76161-160f-4719-9a47-def1ab0eef05">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

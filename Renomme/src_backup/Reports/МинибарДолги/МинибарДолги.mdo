@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20128dc0-1203-420f-b407-0f68b57f8c32">
+  <producedTypes>
+    <objectType typeId="afbbaa21-ec94-4cba-b088-71c942c95c83" valueTypeId="e9b97e9c-0ffb-482e-9bd2-aee8c0b7b7ca"/>
+    <managerType typeId="bbaf63e4-f3c9-4919-9436-c0e6dfc1b88f" valueTypeId="534372f1-c48c-4789-80cc-4c952b7f6699"/>
+  </producedTypes>
+  <name>МинибарДолги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минибар долги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.МинибарДолги.Form.ФормаОтчета</defaultForm>
+  <forms uuid="6a9591fc-626b-48cd-ba25-797223df1362">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7a434ff7-eff0-42f2-8111-933bcd0a0525">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

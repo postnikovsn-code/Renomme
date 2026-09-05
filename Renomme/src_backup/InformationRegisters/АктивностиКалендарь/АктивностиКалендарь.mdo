@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3daaec2-f575-4e9a-b58b-fa3f68a42b66">
+  <producedTypes>
+    <selectionType typeId="e905ab7d-8d6f-4e08-9171-e72946948ebe" valueTypeId="b12aebe7-bd0a-4159-8e88-a65252fd98e5"/>
+    <listType typeId="e08a1b19-ef8c-41d9-a5a9-0dbdb1d7921b" valueTypeId="ae5c401c-ccc9-4c93-b167-2081687a0de2"/>
+    <managerType typeId="975f2b0c-1af2-47a8-bbe5-898ec1343d5c" valueTypeId="4d117f10-758a-4675-9f9f-c40621f3cfe7"/>
+    <recordSetType typeId="ba2e6afd-5057-4060-b953-c8bede94f7e1" valueTypeId="c88366eb-ecdb-4b8f-a0d7-bc98b5da66eb"/>
+    <recordKeyType typeId="c60f2e06-26eb-4d3c-94d7-6fd7857de829" valueTypeId="e3c5fba1-9edb-4f0e-8afd-4ac25f50b15c"/>
+    <recordType typeId="0b8ea509-a5fc-4e6a-9b04-46a432de21d4" valueTypeId="4cca36ca-5d21-4f2f-a611-0f68ffb68a94"/>
+    <recordManagerType typeId="ca8a5cf3-86d6-4f48-b63d-e0c88e94333f" valueTypeId="4f1c973a-e949-46dc-b01f-bd5ac9ba1f3a"/>
+  </producedTypes>
+  <name>АктивностиКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активности календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e0b31d8d-967b-4f28-87cc-6c3702d74782">
+    <name>АктивностьКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активность календарь</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c20ecbdf-adab-447e-bee0-58a39162483f">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7bac286b-c739-45d1-aeb5-543d1e593937">
+  <producedTypes>
+    <objectType typeId="efce56e4-3eaf-4000-978a-9288229c49e3" valueTypeId="9eed468b-3ee7-4763-9cd8-2cc2cbdb45ea"/>
+    <managerType typeId="96166b47-fcad-4008-ab46-a7ad5127943b" valueTypeId="cb5fbc49-fde6-412f-beee-3bc132b79b0c"/>
+  </producedTypes>
+  <name>ВзаиморасчетыОстатки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты остатки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВзаиморасчетыОстатки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="46475624-4739-406f-9456-81df1339d99c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

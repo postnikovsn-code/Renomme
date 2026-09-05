@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c2a9917-4097-44d4-bf15-c47698d3d639">
+  <producedTypes>
+    <managerType typeId="534b25c1-621c-4124-8518-93b4f6279696" valueTypeId="abd07eb0-e7a7-4dc8-b22b-d6cfe62f5547"/>
+    <valueManagerType typeId="92d520d5-6edf-4be1-93a1-73cfa621bcad" valueTypeId="98b2d51f-c19e-4bf6-823e-fd70f71978f7"/>
+    <valueKeyType typeId="31a9c476-d1d6-44bb-8e1b-a29a2beb969e" valueTypeId="e40765bd-b0eb-4b54-9779-8f8d2faf340a"/>
+  </producedTypes>
+  <name>ДлинаКодаВесовогоТовара</name>
+  <synonym>
+    <key>ru</key>
+    <value>Длина кода весового товара</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bad2ca90-b476-4967-b0f6-5c2efe7339b7">
+  <name>ЧекВозвратВыборДокументДолг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чек возврат выбор документ долг</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

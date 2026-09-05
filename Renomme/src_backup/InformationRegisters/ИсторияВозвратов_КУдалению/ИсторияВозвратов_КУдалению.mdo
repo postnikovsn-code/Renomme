@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10bf7528-e822-42a1-8c08-2fc3dd713922">
+  <producedTypes>
+    <selectionType typeId="50bf2524-d613-4e2a-8f09-f38912eab507" valueTypeId="f2e58023-3ee6-4b0f-ad80-935c5f96bc9c"/>
+    <listType typeId="dbdaade7-3710-48ed-89c0-46fc44651bde" valueTypeId="3ae251a2-9d53-4732-bc81-7778135e970f"/>
+    <managerType typeId="8f2512ca-bb54-43f2-b6f1-5939d58905f2" valueTypeId="d00e751e-727c-4580-b96d-4bb29ee3fb49"/>
+    <recordSetType typeId="bf2b2649-77ee-4033-96b8-185c758bf9fb" valueTypeId="e8d989e7-8867-4758-8b28-c0636096dddf"/>
+    <recordKeyType typeId="e8cfbc4e-a022-42b4-8f7e-2232fea1bb5d" valueTypeId="4338311f-94f9-400d-aa51-98de412abff5"/>
+    <recordType typeId="53f852c7-903e-4ec9-97d3-904eb8dc2067" valueTypeId="8e8fa365-5178-486d-8dee-d4190807d69f"/>
+    <recordManagerType typeId="96620cca-2a72-4ae6-8c7a-ad9c5eaaeb4c" valueTypeId="9338e096-4a13-4582-a376-e28ec4bcb490"/>
+  </producedTypes>
+  <name>ИсторияВозвратов_КУдалению</name>
+  <synonym>
+    <key>ru</key>
+    <value>История возвратов к удалению</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3305c159-ba56-4d93-869a-f6ebd45daec6">
+    <name>СуммаВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма возврата</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="47193d54-e061-4d75-ab89-2adb317d3b62">
+    <name>ДатаВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата возврата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="13d16a96-897b-4c02-89fd-c4e8b9ee5340">
+    <name>ДокументДолг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ долг</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаБронирование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5ca32681-695d-4802-855c-a85d731d75a1">
+    <name>СчетГУИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет ГУИД</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2aad3be9-909b-47b5-9e55-47bc920629d8">
+    <name>ДокументВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ возврата</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КассовыйДокумент</types>
+      <types>DocumentRef.ВыпискаБанка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

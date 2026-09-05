@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30d36860-fe7c-4ece-9647-f06102bfb570">
+  <producedTypes>
+    <objectType typeId="720c43c3-e59a-4749-beaf-44183402f4e4" valueTypeId="41b2c0a5-5da5-4a8b-a304-cd3479bc6922"/>
+    <managerType typeId="09468666-5cb8-4998-bb5f-812b799688a0" valueTypeId="687f54d1-0c35-43d5-9f12-d195f1dec3cc"/>
+  </producedTypes>
+  <name>ОчисткаБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОчисткаБазы.Form.Форма</defaultForm>
+  <forms uuid="e06847db-eacf-46f3-8e6e-74f0ce9f43ef">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

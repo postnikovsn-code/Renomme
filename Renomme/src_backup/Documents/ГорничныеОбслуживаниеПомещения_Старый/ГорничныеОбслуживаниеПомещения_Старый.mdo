@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83614648-5765-4d9a-826c-388fc0c0362a">
+  <producedTypes>
+    <objectType typeId="5bfa1f3f-7793-47b2-beef-1b2e8ef0032c" valueTypeId="bef3676a-1abc-4625-a27f-e4cce24e3be9"/>
+    <refType typeId="0f36772a-2766-4117-82eb-e329cd4bbc18" valueTypeId="19f4f5cd-49be-4ac2-af11-525625f761c1"/>
+    <selectionType typeId="fe7d0867-90d7-4e0f-bf86-0c4f3422fd17" valueTypeId="8e493772-3d07-4533-9b7e-7895b263acce"/>
+    <listType typeId="7020fcf3-9970-4ca9-ad27-234e83405fa3" valueTypeId="1211370c-894a-4408-9477-df96754805ed"/>
+    <managerType typeId="2aac4415-8541-49cd-af8f-2501b65dae1c" valueTypeId="8d0cd24a-d25a-4581-ab32-0612296ee898"/>
+  </producedTypes>
+  <name>ГорничныеОбслуживаниеПомещения_Старый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Горничные обслуживание помещения старый</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ГорничныеОбслуживаниеПомещения_Старый.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4682689e-7c22-44e5-9ebf-b5b622feeb33">
+    <name>ДатаОбслуживания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обслуживания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aee14ca5-9055-45eb-98c1-69ea6a8150f9">
+    <name>НомерОбслуживания_пп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер обслуживания пп</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b171eeb4-3916-4450-be56-92a4461a6698">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>512</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2a8394cd-c53b-4224-8916-5cf7e35631ce">
+    <name>РучноеИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручное изменение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="1be3d4e6-4297-4eae-aebc-770f336ee100">
+    <producedTypes>
+      <objectType typeId="4b63d7ad-91c4-43c2-a9fd-e67d53fb6776" valueTypeId="785d9ce0-a833-476f-ab13-9ceb87000791"/>
+      <rowType typeId="a95c5ad9-28c4-43fa-b497-f290c9ba97b7" valueTypeId="77b200ec-169c-4834-ba43-a68198d93308"/>
+    </producedTypes>
+    <name>ПомещенияУборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помещения уборки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e8021c5d-f2ac-48b1-8140-9c7453f705f0">
+      <name>ГорничныеПомещение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Горничные помещение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ГорничныеПомещения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="08d6f2d1-0a8e-4885-ac69-181852b7cba5">
+      <name>Горничная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Горничная</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Горничные</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7efb4e36-9ad2-414b-8c28-e69ed425da86">
+      <name>ВремяУборки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время уборки</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="894cc22d-1f81-4245-93b4-dbf035e74aca">
+      <name>Обслужено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обслужено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f176ffef-26d6-415e-b16e-20740dcea4e0">
+  <name>MAXСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>MAXСервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

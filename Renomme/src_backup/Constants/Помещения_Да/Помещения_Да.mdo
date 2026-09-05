@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="788db803-fcd9-445c-a811-9f01651d885d">
+  <producedTypes>
+    <managerType typeId="7d930663-6c8b-4727-8510-5bbb1d7d20d0" valueTypeId="0fd0e383-ceaf-48af-bd88-c72ac1a1926a"/>
+    <valueManagerType typeId="518f3543-22a0-4231-91f2-fcab5829ddeb" valueTypeId="486003e5-e389-4ca1-bcf2-479b29c823c6"/>
+    <valueKeyType typeId="a492bb9c-6f8f-4584-939a-dcd1afdf4027" valueTypeId="2f698d4a-5206-4050-ac42-dc915628c869"/>
+  </producedTypes>
+  <name>Помещения_Да</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помещения да</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

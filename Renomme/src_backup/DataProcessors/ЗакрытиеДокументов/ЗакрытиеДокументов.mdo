@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79729552-19ab-41a5-9056-d5b0ff3e4c31">
+  <producedTypes>
+    <objectType typeId="78c3e5c4-1749-485d-a89e-2f02e739a83c" valueTypeId="e51a487a-124d-41db-81d9-2dec101efd6e"/>
+    <managerType typeId="451f8bab-72cd-42b8-9153-85fd9db6df8f" valueTypeId="d81c69e7-580b-419c-bc24-dd09c98d28a6"/>
+  </producedTypes>
+  <name>ЗакрытиеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗакрытиеДокументов.Form.Форма</defaultForm>
+  <forms uuid="e513221c-de57-44ef-8867-3dd87371129a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

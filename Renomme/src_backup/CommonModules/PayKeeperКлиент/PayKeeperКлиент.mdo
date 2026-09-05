@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d0286cb-33bc-417a-9d70-ce658b71ce49">
+  <name>PayKeeperКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Pay keeper клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

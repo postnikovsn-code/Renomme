@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c93a836d-6050-4b29-86a5-cc87300ce019">
+  <producedTypes>
+    <objectType typeId="50eefbf8-d18a-4084-b55f-8606f548d6c6" valueTypeId="97f973d0-feb6-4108-ad78-31396636be46"/>
+    <managerType typeId="f4fe5afa-0ece-412f-8b04-c216f6dfdc72" valueTypeId="e81afd63-e070-4ab8-a1b5-7c5be9e50ca7"/>
+  </producedTypes>
+  <name>Шахматка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шахматка</value>
+  </synonym>
+  <defaultForm>Report.Шахматка.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="e84d535e-4b73-4d8a-9a04-339de7ad1324">
+    <name>ПериодС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период С</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b9b8ad7d-e5d3-4da3-a63c-e290602ab0f7">
+    <name>ПериодПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="eb5b86c2-9dae-411f-b919-55497962f377">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="60cc79b6-e9f0-429a-91cb-ba8c165f4b53">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="71f39908-ef64-4660-bb66-188cf7469c1f">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

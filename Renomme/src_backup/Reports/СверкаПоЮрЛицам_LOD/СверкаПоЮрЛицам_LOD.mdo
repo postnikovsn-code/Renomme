@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a40ef6a-be0f-4640-9003-f26ebffb8e41">
+  <producedTypes>
+    <objectType typeId="bf765916-83f5-491d-9f37-897f0156cf0d" valueTypeId="6cfd74b4-f1d0-4f10-b964-d39b5deae131"/>
+    <managerType typeId="a34c4140-0149-4258-8226-87a6c1753ece" valueTypeId="ac9e4910-c9e6-414f-b48f-67b95a19a25c"/>
+  </producedTypes>
+  <name>СверкаПоЮрЛицам_LOD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка по юр лицам LOD</value>
+  </synonym>
+  <defaultForm>Report.СверкаПоЮрЛицам_LOD.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="3b59a3a5-8ea5-4eec-adf7-3feac5b2018a">
+    <name>ДатаН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата Н</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f7502233-015f-44b3-87f6-c0e2e9f63b38">
+    <name>ДатаК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата К</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="462a96b4-8a47-483f-b451-47df1de03ecf">
+    <name>ЮрЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юр лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8240cff5-abfa-4098-8ec1-1cf42929b9fa">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6ab62e1f-6948-452f-a8e7-d6b601770e1d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="395da6ca-0d44-4786-a1aa-259e1021a0f2">
+    <name>МакетСверка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет сверка</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

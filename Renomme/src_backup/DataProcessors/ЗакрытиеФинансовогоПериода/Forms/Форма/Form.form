@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>Группа1</name>
+    <id>7</id>
+    <items xsi:type="form:FormField">
+      <name>ДатаС</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДатаС</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ДатаСРасширеннаяПодсказка</name>
+        <id>6</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДатаСКонтекстноеМеню</name>
+        <id>5</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ДатаПо</name>
+      <id>1</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ДатаПо</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ДатаПоРасширеннаяПодсказка</name>
+        <id>3</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДатаПоКонтекстноеМеню</name>
+        <id>2</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Группа1РасширеннаяПодсказка</name>
+      <id>8</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Страницы</name>
+    <id>92</id>
+    <items xsi:type="form:FormGroup">
+      <name>ДолгиСтраница</name>
+      <id>94</id>
+      <items xsi:type="form:FormField">
+        <name>ПолеОтчетаДолги</name>
+        <id>86</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеОтчетаДолги</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПолеОтчетаДолгиПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ПолеОтчетаДолгиРасширеннаяПодсказка</name>
+          <id>88</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеОтчетаДолгиКонтекстноеМеню</name>
+          <id>87</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SpreadsheetDocumentField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+          <handlers>
+            <event>OnActivate</event>
+            <name>ПолеОтчетаДолгиПриАктивизации</name>
+          </handlers>
+          <width>50</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>10</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <verticalStretch>true</verticalStretch>
+          <showGrid>true</showGrid>
+          <pointerType>Special</pointerType>
+          <verticalScrollBar>ScrollAuto</verticalScrollBar>
+          <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
+          <selectionShowMode>Always</selectionShowMode>
+          <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
+          <showGroups>true</showGroups>
+          <enableStartDrag>true</enableStartDrag>
+          <enableDrag>true</enableDrag>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Долги</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Долги страница</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ДолгиСтраницаРасширеннаяПодсказка</name>
+        <id>95</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>СписаниеСтраница</name>
+      <id>101</id>
+      <items xsi:type="form:FormField">
+        <name>ПолеОтчетаСписание</name>
+        <id>103</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеОтчетаСписание</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <extendedTooltip>
+          <name>ПолеОтчетаСписаниеРасширеннаяПодсказка</name>
+          <id>105</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеОтчетаСписаниеКонтекстноеМеню</name>
+          <id>104</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SpreadsheetDocumentField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+          <handlers>
+            <event>OnActivate</event>
+            <name>ПолеОтчетаСписаниеПриАктивизации</name>
+          </handlers>
+          <width>50</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>10</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <verticalStretch>true</verticalStretch>
+          <showGrid>true</showGrid>
+          <pointerType>Special</pointerType>
+          <verticalScrollBar>ScrollAuto</verticalScrollBar>
+          <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
+          <selectionShowMode>Always</selectionShowMode>
+          <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
+          <showGroups>true</showGroups>
+          <enableStartDrag>true</enableStartDrag>
+          <enableDrag>true</enableDrag>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Списание акты</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Списание страница</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>СписаниеСтраницаРасширеннаяПодсказка</name>
+        <id>102</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>СписанияСтраница_НеИспользуется</name>
+      <id>99</id>
+      <items xsi:type="form:FormField">
+        <name>ПолеОтчетаСписание_НеИспользуется</name>
+        <id>89</id>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеОтчетаСписание</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПолеОтчетаСписаниеПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ПолеОтчетаСписание_НеИспользуетсяРасширеннаяПодсказка</name>
+          <id>91</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеОтчетаСписание_НеИспользуетсяКонтекстноеМеню</name>
+          <id>90</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SpreadsheetDocumentField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+          <handlers>
+            <event>OnActivate</event>
+            <name>ПолеОтчетаСписаниеПриАктивизации</name>
+          </handlers>
+          <width>50</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>10</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <verticalStretch>true</verticalStretch>
+          <showGrid>true</showGrid>
+          <pointerType>Special</pointerType>
+          <verticalScrollBar>ScrollAuto</verticalScrollBar>
+          <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
+          <selectionShowMode>Always</selectionShowMode>
+          <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
+          <showGroups>true</showGroups>
+          <enableStartDrag>true</enableStartDrag>
+          <enableDrag>true</enableDrag>
+        </extInfo>
+      </items>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Списания</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Списания страница не используется</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>СписанияСтраница_НеИспользуетсяРасширеннаяПодсказка</name>
+        <id>100</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Страницы</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>СтраницыРасширеннаяПодсказка</name>
+      <id>93</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаполнить</name>
+      <id>55</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаполнитьРасширеннаяПодсказка</name>
+        <id>56</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Заполнить</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаСохранить</name>
+      <id>84</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаСохранитьРасширеннаяПодсказка</name>
+        <id>85</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Сохранить</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаПолныйОтчет</name>
+      <id>106</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПолныйОтчетРасширеннаяПодсказка</name>
+        <id>107</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ПолныйОтчет</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ЗакрытиеФинансовогоПериода</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>Список</name>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	ЗаявкаНаБронирование.Ссылка КАК ЗаявкаНаБронирование,
+	ПроживаниеСумма.Сумма КАК СуммаПроживание,
+	УслугиСумма.Сумма КАК СуммаУслуги,
+	СчетаПроживание.СуммаДолг КАК СуммаПроживаниеСчета,
+	СчетаУслуги.СуммаДолг КАК СуммаУслугиСчета,
+	СчетаПроживание.СуммаКЗакрытию КАК СуммаДолгаПроживание,
+	СчетаУслуги.СуммаКЗакрытию КАК СуммаДолгаУслуги,
+	СписаниеПроживания.СуммаОплаты КАК СуммаСписанияПроживание,
+	СписаниеУслуги.СуммаОплаты КАК СуммаСписанияУслуги,
+	Списание.СуммаОплаты КАК СуммаСписания,
+	ЕСТЬNULL(СчетаПроживание.СуммаКЗакрытию, 0) + ЕСТЬNULL(СчетаУслуги.СуммаКЗакрытию, 0) КАК СуммаДолга,
+	ЗаявкаНаБронирование.КомментарийОтветственного КАК КомментарийОтветственного
+ИЗ
+	Документ.ЗаявкаНаБронирование КАК ЗаявкаНаБронирование
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеПроживание.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеПроживание.Сумма) КАК Сумма
+		ИЗ
+			Документ.ЗаявкаНаБронирование.Проживание КАК ЗаявкаНаБронированиеПроживание
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеПроживание.Ссылка) КАК ПроживаниеСумма
+		ПО ЗаявкаНаБронирование.Ссылка = ПроживаниеСумма.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеДопУслуги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеДопУслуги.Количество * ЗаявкаНаБронированиеДопУслуги.Цена) КАК Сумма
+		ИЗ
+			Документ.ЗаявкаНаБронирование.ДопУслуги КАК ЗаявкаНаБронированиеДопУслуги
+		ГДЕ
+			ЗаявкаНаБронированиеДопУслуги.ВСчет = ИСТИНА
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеДопУслуги.Ссылка) КАК УслугиСумма
+		ПО ЗаявкаНаБронирование.Ссылка = УслугиСумма.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеСчетаДетальноДолги.СуммаДолг) КАК СуммаДолг,
+			СУММА(ЗаявкаНаБронированиеСчетаДетальноДолги.СуммаКЗакрытию) КАК СуммаКЗакрытию
+		ИЗ
+			Документ.ЗаявкаНаБронирование.СчетаДетальноДолги КАК ЗаявкаНаБронированиеСчетаДетальноДолги
+		ГДЕ
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Услуга = ЛОЖЬ
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Ссылка) КАК СчетаПроживание
+		ПО ЗаявкаНаБронирование.Ссылка = СчетаПроживание.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеСчетаДетальноДолги.СуммаДолг) КАК СуммаДолг,
+			СУММА(ЗаявкаНаБронированиеСчетаДетальноДолги.СуммаКЗакрытию) КАК СуммаКЗакрытию
+		ИЗ
+			Документ.ЗаявкаНаБронирование.СчетаДетальноДолги КАК ЗаявкаНаБронированиеСчетаДетальноДолги
+		ГДЕ
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Услуга = ИСТИНА
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеСчетаДетальноДолги.Ссылка) КАК СчетаУслуги
+		ПО ЗаявкаНаБронирование.Ссылка = СчетаУслуги.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеРаспределениеОплатДолги.СуммаОплаты) КАК СуммаОплаты
+		ИЗ
+			Документ.ЗаявкаНаБронирование.РаспределениеОплатДолги КАК ЗаявкаНаБронированиеРаспределениеОплатДолги
+		ГДЕ
+			ТИПЗНАЧЕНИЯ(ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты) = ТИП(Документ.ПрочиеОплаты)
+			И ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты.ВидОперации = ЗНАЧЕНИЕ(Справочник.ВидыОпераций.СписаниеПроживание)
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка) КАК СписаниеПроживания
+		ПО ЗаявкаНаБронирование.Ссылка = СписаниеПроживания.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеРаспределениеОплатДолги.СуммаОплаты) КАК СуммаОплаты
+		ИЗ
+			Документ.ЗаявкаНаБронирование.РаспределениеОплатДолги КАК ЗаявкаНаБронированиеРаспределениеОплатДолги
+		ГДЕ
+			ТИПЗНАЧЕНИЯ(ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты) = ТИП(Документ.ПрочиеОплаты)
+			И ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты.ВидОперации = ЗНАЧЕНИЕ(Справочник.ВидыОпераций.СписаниеДопУслуг)
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка) КАК СписаниеУслуги
+		ПО ЗаявкаНаБронирование.Ссылка = СписаниеУслуги.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка КАК Ссылка,
+			СУММА(ЗаявкаНаБронированиеРаспределениеОплатДолги.СуммаОплаты) КАК СуммаОплаты
+		ИЗ
+			Документ.ЗаявкаНаБронирование.РаспределениеОплатДолги КАК ЗаявкаНаБронированиеРаспределениеОплатДолги
+		ГДЕ
+			ТИПЗНАЧЕНИЯ(ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты) = ТИП(Документ.ПрочиеОплаты)
+			И ЗаявкаНаБронированиеРаспределениеОплатДолги.ДокументОплаты.ВидОперации = ЗНАЧЕНИЕ(Справочник.ВидыОпераций.Списание)
+		
+		СГРУППИРОВАТЬ ПО
+			ЗаявкаНаБронированиеРаспределениеОплатДолги.Ссылка) КАК Списание
+		ПО ЗаявкаНаБронирование.Ссылка = Списание.Ссылка
+ГДЕ
+	ЗаявкаНаБронирование.ПометкаУдаления = ЛОЖЬ
+	И (ЗаявкаНаБронирование.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусБрони.Выехал)
+			ИЛИ ЗаявкаНаБронирование.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусБрони.Неустойка))
+	И ЗаявкаНаБронирование.РезервПо &lt;= &amp;ДатаПо
+	И ЗаявкаНаБронирование.РезервПо >= &amp;ДатаС</queryText>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ДатаС</name>
+    <title>
+      <key>ru</key>
+      <value>Дата С</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДатаПо</name>
+    <title>
+      <key>ru</key>
+      <value>Дата по</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>КомментарийОтветственного</name>
+    <title>
+      <key>ru</key>
+      <value>Комментарий ответственного</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДанныеДолги</name>
+    <title>
+      <key>ru</key>
+      <value>Данные долги</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>ЗаявкаНаБронирование</name>
+      <title>
+        <key>ru</key>
+        <value>Заявка на бронирование</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>DocumentRef.ЗаявкаНаБронирование</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>КомментарийОтветственного</name>
+      <title>
+        <key>ru</key>
+        <value>Комментарий ответственного</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ЕстьИзменения</name>
+      <title>
+        <key>ru</key>
+        <value>Есть изменения</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>ПолеОтчетаДолги</name>
+    <title>
+      <key>ru</key>
+      <value>Поле отчета долги</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>SpreadsheetDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:SpreadsheetDocumentExtInfo"/>
+  </attributes>
+  <attributes>
+    <name>НомерКомментарий_Долги</name>
+    <title>
+      <key>ru</key>
+      <value>Номер комментарий долги</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>флЗакрытиеФормы</name>
+    <title>
+      <key>ru</key>
+      <value>Фл закрытие формы</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НомерКомментарий_Списание</name>
+    <title>
+      <key>ru</key>
+      <value>Номер комментарий списание</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДолгиСдвиг_Долги</name>
+    <title>
+      <key>ru</key>
+      <value>Долги сдвиг долги</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДолгиСдвиг_Списание</name>
+    <title>
+      <key>ru</key>
+      <value>Долги сдвиг списание</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПолеОтчетаСписание</name>
+    <title>
+      <key>ru</key>
+      <value>Поле отчета списание</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>SpreadsheetDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:SpreadsheetDocumentExtInfo"/>
+  </attributes>
+  <attributes>
+    <name>НомерСтрокиШапкаДолги</name>
+    <title>
+      <key>ru</key>
+      <value>Номер строки шапка долги</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НомерСтрокиШапкаСписание</name>
+    <title>
+      <key>ru</key>
+      <value>Номер строки шапка списание</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДанныеСписание</name>
+    <title>
+      <key>ru</key>
+      <value>Данные долги</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>ЗаявкаНаБронирование</name>
+      <title>
+        <key>ru</key>
+        <value>Заявка на бронирование</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>DocumentRef.ЗаявкаНаБронирование</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>КомментарийОтветственного</name>
+      <title>
+        <key>ru</key>
+        <value>Комментарий ответственного</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ЕстьИзменения</name>
+      <title>
+        <key>ru</key>
+        <value>Есть изменения</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>НомерКолонкиЗаявкаДолги</name>
+    <title>
+      <key>ru</key>
+      <value>Номер колонки заявка долги</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НомерКолонкиЗаявкаСписание</name>
+    <title>
+      <key>ru</key>
+      <value>Номер колонки заявка списание</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПолеОтчетаСписание_Акты</name>
+    <title>
+      <key>ru</key>
+      <value>Поле отчета списание акты</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>SpreadsheetDocument</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:SpreadsheetDocumentExtInfo"/>
+  </attributes>
+  <formCommands>
+    <name>Заполнить</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполнить</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Заполнить</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Сохранить</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохранить</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Сохранить</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ПолныйОтчет</name>
+    <title>
+      <key>ru</key>
+      <value>Полный отчет</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Полный отчет</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПолныйОтчет</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

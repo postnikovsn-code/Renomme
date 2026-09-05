@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="341f127c-e83b-4dc6-8fec-e63a35ca802c">
+  <name>АсинхронныеВызовыКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Асинхронные вызовы клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

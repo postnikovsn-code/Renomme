@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7041507e-6eb4-4736-a921-dfc184e568ad">
+  <name>ВыгрузкаФинРезультат_Расширенный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка фин результат расширенный</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

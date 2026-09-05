@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1880c5c2-c98b-4ffb-8285-8f959a651be5">
+  <producedTypes>
+    <objectType typeId="6068bc2d-5971-4ed3-a790-34fe32e24123" valueTypeId="f11cd646-13e6-4583-a3c5-85ee3b6bc2f7"/>
+    <managerType typeId="0b831ba9-e480-44af-863a-17b2f68cd5c5" valueTypeId="90fe1f8b-a625-4c56-87ea-afa4def82998"/>
+  </producedTypes>
+  <name>ФинансовыйРезультатКоворкинг_Расширенный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовый результат коворкинг расширенный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФинансовыйРезультатКоворкинг_Расширенный.Form.Форма</defaultForm>
+  <forms uuid="1da2f2ae-42b8-4ad5-a63b-29c6957ba4ce">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="09624776-3136-429a-9192-e08ab38eabcf">
+    <name>ФинансовыйРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат</value>
+    </synonym>
+  </templates>
+  <templates uuid="ee7c545f-babc-46a5-9c36-19c0c93ab3c8">
+    <name>ФинансовыйРезультат_1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат 1</value>
+    </synonym>
+  </templates>
+  <templates uuid="7f7fc316-eeff-42a2-b223-e863257b4b27">
+    <name>ФинансовыйРезультат1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат1</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

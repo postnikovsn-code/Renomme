@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd82c0e9-803e-4b46-b25e-77713d6ed97f">
+  <producedTypes>
+    <objectType typeId="a20a0da2-bfdd-4d4d-928f-3311073e4806" valueTypeId="9eef58d6-7016-4056-bf86-7c6a563e8769"/>
+    <managerType typeId="ea462d11-0034-482b-9a95-3b313066f225" valueTypeId="eb5f73c5-1f93-4096-8d9b-ac6a2a4e5e0d"/>
+  </producedTypes>
+  <name>ОтчетПроживающие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проживающие</value>
+  </synonym>
+  <defaultForm>Report.ОтчетПроживающие.Form.ФормаОтчета</defaultForm>
+  <forms uuid="95416881-5382-45dc-b353-608536ce03a0">
+    <name>ФормаОтчета_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2cd5456c-644d-4bf5-b7dd-d05603732059">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="67f27ba8-5434-4c65-99a1-cfe5818580c5">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="644e48b0-1d8c-4084-b93d-89314f0249ff">
+    <name>Макет1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет1</value>
+    </synonym>
+  </templates>
+  <templates uuid="82ade46f-9544-49a3-8264-61d93fed68e3">
+    <name>Макет2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет2</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

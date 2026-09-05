@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="211bc9b8-3590-489a-ae1f-9d58da3aae81">
+  <producedTypes>
+    <managerType typeId="8d816066-5272-4c61-9c16-a4b22fef87af" valueTypeId="1da11aa2-6e9c-4637-bf9d-4b8b69f7b65a"/>
+    <valueManagerType typeId="42efcdc4-900a-44a0-8e72-04bf1c89e5fa" valueTypeId="d202f8dd-eea6-4c7b-900d-c8b0281a6bd5"/>
+    <valueKeyType typeId="b7ecaad3-6426-4249-9959-d92767998dac" valueTypeId="5117918a-27d6-4a40-a141-dccfa28183da"/>
+  </producedTypes>
+  <name>Папка_СКАНЫ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Папка СКАНЫ</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

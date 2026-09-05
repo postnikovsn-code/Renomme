@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5178df6-ddc3-46c3-a0d6-0d678c47118f">
+  <producedTypes>
+    <objectType typeId="a253cb74-668a-4cb4-9746-b1e1d26840f3" valueTypeId="5d6556f0-7dd5-41c3-bee0-222abdd75bbb"/>
+    <managerType typeId="c3cd6b7c-d302-49a2-b15a-b9a269aec8be" valueTypeId="a908232c-2132-4f03-ae10-484a63faba21"/>
+  </producedTypes>
+  <name>ОтчетПоЗагрузкеНомеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по загрузке номеров</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОтчетПоЗагрузкеНомеров.Form.Форма</defaultForm>
+  <forms uuid="3a5a245e-9158-494e-b808-1d87b0017f6a">
+    <name>Форма_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма OLD</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98133f2d-f7ad-4961-8366-2ef6289dd5cc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="df92f685-366c-4e20-a4eb-8a73c261c392">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

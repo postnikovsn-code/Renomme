@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8688694-24db-40d0-b63d-5bbec3c91830">
+  <producedTypes>
+    <objectType typeId="6d3f4c15-f94a-4089-8818-02146f3e61d5" valueTypeId="0be44d45-d443-43a3-af43-bab899c7cc57"/>
+    <managerType typeId="f1afc974-7c73-4f42-ba47-caa3dfc31e2d" valueTypeId="5b4200da-79bf-4c6c-9a9d-fd8519ac7fc2"/>
+  </producedTypes>
+  <name>ФинансовыйРезультат_Расширенный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовый результат расширенный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФинансовыйРезультат_Расширенный.Form.Форма</defaultForm>
+  <forms uuid="72136fa2-4ade-462e-9346-9b2955be0462">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="710b2174-a718-48d5-93e4-8f84ceb3d7cd">
+    <name>ФинансовыйРезультат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат</value>
+    </synonym>
+  </templates>
+  <templates uuid="96af2d7d-6c33-468e-ab64-d68ccfd2d230">
+    <name>РаспределениеОплат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределение оплат</value>
+    </synonym>
+  </templates>
+  <templates uuid="94fefadd-2ed3-42d0-a12a-70b33be82fe0">
+    <name>ФинансовыйРезультатНераспределенныеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат нераспределенные оплаты</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

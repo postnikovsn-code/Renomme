@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c65283f-d911-40bb-b0d1-3f31f566a45a">
+  <producedTypes>
+    <objectType typeId="db964d04-12ac-4738-82e9-c45fa7edd744" valueTypeId="d2f585ea-5ff3-477c-8211-026f25af9676"/>
+    <managerType typeId="e68e430a-8ffe-4f3b-afda-05a5158f46c0" valueTypeId="a301a7f2-7f02-4f64-94ee-184ee15b9acc"/>
+  </producedTypes>
+  <name>КлиентыОбъединиение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клиенты объединиение</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КлиентыОбъединиение.Form.ФормаОбъединениеКонтрагентов</defaultForm>
+  <forms uuid="ae446860-1859-4b9c-8c68-0bab38abd72d">
+    <name>ФормаОбъединениеКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма объединение контрагентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4e5156b4-5511-473a-aa21-f6b1fc601a16">
+    <name>ФормаВыбораКлиентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора клиентов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="202e473d-8f38-41a9-b51f-688b54efb5e6">
+    <name>ДвойныеИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Двойные ИНН</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

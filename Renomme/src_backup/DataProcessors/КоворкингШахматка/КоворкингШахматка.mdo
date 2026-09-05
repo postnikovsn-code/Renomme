@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a3cdb2d-7a3a-4ed9-befd-2c28a810ce6c">
+  <producedTypes>
+    <objectType typeId="f0de752e-e78d-44e2-947b-9a53feb12710" valueTypeId="ff64239d-af07-44a9-aa8a-ad13cb5e4298"/>
+    <managerType typeId="47c47015-5eef-41ea-997a-ab67eeeb0c79" valueTypeId="b2e80402-ac9a-4836-afa7-b29e7f314e6d"/>
+  </producedTypes>
+  <name>КоворкингШахматка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коворкинг шахматка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КоворкингШахматка.Form.Форма</defaultForm>
+  <forms uuid="4d207d67-f1d4-4d28-8ef7-664a3f6ff779">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="62f986aa-b3ef-4bb7-b11c-840208f7e62d">
+    <name>МакетШахматкаДни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет шахматка дни</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

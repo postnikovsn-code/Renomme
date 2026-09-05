@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43758e08-f4e3-4c49-b4ca-1f17ce2f2c32">
+  <producedTypes>
+    <objectType typeId="adffaf79-d48b-4b38-a2c5-9d5eb3d3dea0" valueTypeId="30c54439-6f0b-467b-a0c2-e8e02cb8236e"/>
+    <managerType typeId="ef690b66-8a80-41b9-b3a0-fc71a36732f4" valueTypeId="4d01fded-7684-4ebf-9e7f-208c9f1f9116"/>
+  </producedTypes>
+  <name>ЗакрытиеФинансовогоПериода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие финансового периода</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗакрытиеФинансовогоПериода.Form.Форма</defaultForm>
+  <forms uuid="3b499139-cb94-4712-8997-3703350ff50b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ea1754c1-b547-40ab-9bf0-c1414a87f378">
+    <name>МакетДолги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет долги</value>
+    </synonym>
+  </templates>
+  <templates uuid="b3219a8c-2484-4db3-87d6-8062f6a5588c">
+    <name>МакетСписание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет списание</value>
+    </synonym>
+  </templates>
+  <templates uuid="44769d4c-5878-42c2-ad54-ed1ece8d5b6d">
+    <name>МакетПолный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет полный</value>
+    </synonym>
+  </templates>
+  <templates uuid="400eccf3-561f-425b-b56c-275c403c1533">
+    <name>МакетСписание_OLD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет списание OLD</value>
+    </synonym>
+  </templates>
+  <templates uuid="69ce424a-264f-4800-858e-65946507cec5">
+    <name>МакетСписание1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет списание1</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

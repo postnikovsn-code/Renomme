@@ -321,14 +321,6 @@
     </synonym>
     <templateType>ActiveDocument</templateType>
   </templates>
-  <templates uuid="35aaac3b-9bfa-43eb-b7b3-b9c72a0e338d">
-    <name>НовоеПодтверждение3_стар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Новое подтверждение3 стар</value>
-    </synonym>
-    <templateType>ActiveDocument</templateType>
-  </templates>
   <templates uuid="a1e8288a-e30e-48d1-9b8d-8daaefd30321">
     <name>НовоеПодтверждение4_стар</name>
     <synonym>
@@ -342,30 +334,6 @@
     <synonym>
       <key>ru</key>
       <value>Новое подтверждение5 стар</value>
-    </synonym>
-    <templateType>ActiveDocument</templateType>
-  </templates>
-  <templates uuid="30383655-3fad-4c0b-9d8b-5e0504483698">
-    <name>НовоеПодтверждение6_стар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Новое подтверждение6 стар</value>
-    </synonym>
-    <templateType>ActiveDocument</templateType>
-  </templates>
-  <templates uuid="b9b9da5d-68af-4409-afe0-ff1dc958ddf0">
-    <name>НовоеПодтверждение7_стар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Новое подтверждение7 стар</value>
-    </synonym>
-    <templateType>ActiveDocument</templateType>
-  </templates>
-  <templates uuid="bda230db-41bf-43f3-af3c-db2660e630fb">
-    <name>НовоеПодтверждение8_стар</name>
-    <synonym>
-      <key>ru</key>
-      <value>Новое подтверждение8 стар</value>
     </synonym>
     <templateType>ActiveDocument</templateType>
   </templates>

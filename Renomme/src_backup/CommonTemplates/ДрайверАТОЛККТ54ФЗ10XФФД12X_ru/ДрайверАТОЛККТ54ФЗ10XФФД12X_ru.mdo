@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6b08736-d38c-4d9b-a778-2b534c390ebc">
+  <name>ДрайверАТОЛККТ54ФЗ10XФФД12X_ru</name>
+  <synonym>
+    <key>ru</key>
+    <value>АТОЛ:ККТ с передачей данных в ОФД 10.x (ФФД 1.2) УСН НДС</value>
+  </synonym>
+  <templateType>AddIn</templateType>
+</mdclass:CommonTemplate>

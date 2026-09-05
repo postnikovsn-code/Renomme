@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd9bd890-847c-44ea-ad52-9e967709023f">
+  <producedTypes>
+    <selectionType typeId="8849679d-98fa-451e-b973-9309c4c2ea64" valueTypeId="69ffd02b-c4cf-4e0b-9830-48378765a55e"/>
+    <listType typeId="6f0da4ed-b185-4a7e-8894-7d315d28f3dd" valueTypeId="482e7f9a-902a-496d-9513-9e2e51e7ba7c"/>
+    <managerType typeId="7bfedc22-994c-4d89-afb7-473997a9d89a" valueTypeId="a859d485-84cb-4fca-99c0-0f6fc73a438f"/>
+    <recordSetType typeId="6c33bc5b-2d0e-4d6c-9535-1753d4adfbaf" valueTypeId="887a65b6-dbae-4252-a706-86c84d5663ad"/>
+    <recordKeyType typeId="6803a827-6d6a-4c76-923b-69838f11f5f4" valueTypeId="e334c097-53d5-4cab-a942-6b3e08c44537"/>
+    <recordType typeId="2f9fd752-f1bd-4e46-8c9a-ace888f1d099" valueTypeId="c824f903-0ba6-435d-bb7a-1d2cb57db758"/>
+    <recordManagerType typeId="37e39f6d-418b-4617-862b-e25d7f2dd739" valueTypeId="6702edc4-04ea-497d-8bdd-eecbd7bbe210"/>
+  </producedTypes>
+  <name>ЗакрытыеДни</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытые дни</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="2e28a65d-5951-42b4-9f16-668b8caf1708">
+    <name>Закрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="79fa46a6-34fe-4a3d-95e8-d31bcbf41ca4">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
