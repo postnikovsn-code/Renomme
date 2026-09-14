@@ -588,6 +588,7 @@
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.Мероприятия</catalogs>
   <catalogs>Catalog.ТипМероприятия</catalogs>
+  <catalogs>Catalog.ТипНоменклатуры</catalogs>
   <documents>Document.КассоваяСмена</documents>
   <documents>Document.Анкета</documents>
   <documents>Document.ВыпискаБанка</documents>
