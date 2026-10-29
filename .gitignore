@@ -33,3 +33,11 @@ prompt-example-*.txt
 # Отчёт о сведении свидетелей: гейт читает его и без него не проходит.
 !/_source/ocr/reconcile-blocks.json
 __pycache__/
+# Крупные бинарники 1С вычищены из истории (git filter-repo): лимит GitHub и
+# размер pack. Файлы остаются на диске, хранятся вне git.
+*.cf
+/ПСН_РЕНОМЕ__АУДИТ/src/CommonTemplates/ДрайверАТОЛККТ54ФЗ107X_ru/Template.addin
+/ПСН_РЕНОМЕ__АУДИТ/src/CommonTemplates/ДрайверАТОЛККТ54ФЗ10XФФД12X_ru/Template.addin
+/ПСН_РЕНОМЕ__АУДИТ/src/CommonTemplates/ДрайверАТОЛККТ54ФЗ10XФФД12_ru/Template.addin
+node_modules/
+temp_*
